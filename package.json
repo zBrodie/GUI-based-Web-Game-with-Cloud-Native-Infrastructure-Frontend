@@ -1,0 +1,7 @@
+{
+  "name": "GUI-based-Web-Game-with-Cloud-Native-Infrastructure",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
