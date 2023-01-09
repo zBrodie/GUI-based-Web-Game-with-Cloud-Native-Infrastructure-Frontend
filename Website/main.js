@@ -13,7 +13,7 @@ app.get("/SignUp", (req, res) => {
         res.sendFile( __dirname+"/Templates/SignUp.html");
 });
 app.get("/home", (req, res) => {
-        res.sendFile( __dirname+"/Templates/homePage.html");
+        res.sendFile( __dirname+"/Templates/GameScreen.html");
 });
 
 
