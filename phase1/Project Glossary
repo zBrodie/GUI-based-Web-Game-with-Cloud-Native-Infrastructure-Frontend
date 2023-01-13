@@ -1,0 +1,11 @@
+AWS - Amazon Web Service
+CloudFront - AWS Web hosting service
+AWS Cognito - User data and game state service
+EC2 - Virtual computer instance hosted on AWS
+Containerized Hosting - A means of segregating computing power on a single instance into multiple smaller machines
+VPC - Virtual Private Cloud, network in which infrastructure is built in
+Public/Private Subnet - Range of IP addresses in the VPC
+Web Socket - System of communicating and updating game state from user to server and vice versa
+Socket.io - Web Socket framework
+Social Tier - Measure of score/progress in the game
+Job Title - For show only, measures progress of social tier
