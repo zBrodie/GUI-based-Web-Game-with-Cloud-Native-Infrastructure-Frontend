@@ -95,11 +95,17 @@
 }
 #DiceButton {
     fill: rgba(47,49,54,1);
+    width: 31.634556%;
+    height: 37.237569%;
+    left: 35.114978%;
+    top: 27.734807%;
 }
 .DiceButton {
     filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 1));
     overflow: visible;
     position: absolute;
+    background-color: #2F3136;
+    border-radius: 25px;
     width: 31.634556%;
     height: 37.237569%;
     left: 35.114978%;
@@ -116,8 +122,18 @@
     top: 30.497238%;
     overflow: visible;
 }
+.DiceImage{
+    content: url("./assets/GameDieBigpng.png");
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
+    position: absolute;
+    width: 23.430702%;
+    height: 28.287293%;
+    left: 39.284649%;
+    top: 30.497238%;
+    overflow: visible;
+}
 #A_pair_of_strange_dice_lay_bef {
-    left: 40.903356%;
+    left: 39.903356%;
     top: 66.883425%;
     position: absolute;
     overflow: visible;
