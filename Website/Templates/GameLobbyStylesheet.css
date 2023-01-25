@@ -3,6 +3,44 @@
     src:url("./assets/undertale-deltarune-text-font-extended.ttf") format('truetype')
 }
 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+    font-size: 2vw;
+    font-family: "Common Pixel";
+    text-align: left;
+}
+
+
+button{
+    height: 80px;
+    width: 249px;
+    margin-top: 400px;
+    margin-left: 60px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    background-color: #2F3136 ;
+    font-family: "Common Pixel";
+    font-size: 1vw;
+    color: white;
+}
+
+p{
+    font-family: "Common Pixel";
+    font-size: 32pt;
+    color: white;
+    margin-left: 10px ;
+}
+
+input{
+    width: 50.638906%;
+    height: 7.071823%;
+    margin-left: 20px;
+    background-color: #2F3136;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
 
 .mediaViewInfo {
     --web-view-name: Web 1920 – 5;
