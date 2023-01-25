@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Common Pixel';
+    src:url("./assets/undertale-deltarune-text-font-extended.ttf") format('truetype')
+}
+
+
+.mediaViewInfo {
+    --web-view-name: Web 1920 – 5;
+    --web-view-id: Web_1920__5;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: fit;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+:root {
+    --web-view-ids: Web_1920__5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#Web_1920__5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,1);
+    overflow: hidden;
+    --web-view-name: Web 1920 – 5;
+    --web-view-id: Web_1920__5;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: fit;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+#sideMenu {
+    fill: rgba(47,49,54,1);
+}
+.sideMenu {
+    position: inherit;
+    overflow: visible;
+    background-color:#2F3136;
+    width: 16%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+#Rectangle_34 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_34 {
+    position: absolute;
+    overflow: visible;
+    width: 1px;
+    height: 1px;
+    left: 0px;
+    top: 0px;
+}
+#Rectangle_35 {
+    fill: transparent;
+    stroke: rgba(0,0,0,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_35 {
+    position: absolute;
+    overflow: visible;
+    width: 1608px;
+    height: 905px;
+    left: 1px;
+    top: 0px;
+}
+#Rectangle_37 {
+    fill: transparent;
+    stroke: rgba(0,0,0,1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_37 {
+    position: absolute;
+    overflow: visible;
+    width: 1609px;
+    height: 905px;
+    left: 0px;
+    top: 0px;
+}
+#Create_your_account__ {
+    left: 35px;
+    top: 212px;
+    position: absolute;
+    overflow: hidden;
+    width: 237px;
+    height: 84px;
+    text-align: center;
+    font-family: "Common Pixel";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: rgba(255,255,255,1);
+}
+#Rectangle_38 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_38 {
+    position: absolute;
+    overflow: visible;
+    width: 209px;
+    height: 53px;
+    left: 49px;
+    top: 311px;
+}
+#Rectangle_39 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_39 {
+    position: absolute;
+    overflow: visible;
+    width: 209px;
+    height: 53px;
+    left: 50px;
+    top: 410px;
+}
+#Email {
+    left: 85px;
+    top: 419px;
+    position: absolute;
+    overflow: visible;
+    width: 137px;
+    height: 34px;
+    text-align: center;
+    font-family: "Common Pixel";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: rgba(255,255,255,1);
+}
+#Rectangle_40 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_40 {
+    position: absolute;
+    overflow: visible;
+    width: 209px;
+    height: 53px;
+    left: 50px;
+    top: 507px;
+}
+#Password {
+    left: 78px;
+    top: 517px;
+    position: absolute;
+    overflow: visible;
+    width: 153px;
+    height: 34px;
+    text-align: center;
+    font-family: "Common Pixel";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: rgba(255,255,255,1);
+}
+#Rectangle_41 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_41 {
+    position: absolute;
+    overflow: visible;
+    width: 209px;
+    height: 53px;
+    left: 50px;
+    top: 607px;
+}
+#Repeat_Password {
+    left: -5px;
+    top: 623px;
+    position: absolute;
+    overflow: visible;
+    width: 317px;
+    height: 24px;
+    text-align: center;
+    font-family: "Common Pixel";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(255,255,255,1);
+}
+#Already_have_an_account___Clic {
+    left: 39px;
+    top: 723px;
+    position: absolute;
+    overflow: visible;
+    width: 229px;
+    height: 104px;
+    text-align: center;
+    font-family: "Common Pixel";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Upward_Mobility_big {
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
+    position: absolute;
+    overflow: visible;
+    width: 16.147918%;
+    height: 17.569061%;
+    content: url("./assets/Upward_Mobility_big_z@2x.png");
+    top: 2.85635359%;
+    overflow: visible;
+}
+#Username {
+    left: 58px;
+    top: 322px;
+    position: absolute;
+    overflow: visible;
+    width: 191px;
+    height: 34px;
+    text-align: center;
+    font-family: "Common Pixel";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: rgba(255,255,255,1);
+}
+#nonsideMenu {
+    fill: rgba(54,57,63,1);
+}
+.nonsideMenu{
+    position: inherit;
+    overflow: visible;
+    width: 84%;
+    height: 100%;
+    background-color: #36393F;
+    left: 16%
+}
+#Rectangle_52 {
+    stroke: #707070;
+    stroke-width: 5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_52 {
+    position: absolute;
+    overflow: visible;
+    background-color: #36393F;
+    width: 31.173275%;
+    height: 49.944751%;
+    border-style: solid;
+    border-color: #707070;
+    left: 16%;
+    top: 1px;
+}
+#Rectangle_53 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_53 {
+    position: absolute;
+    overflow: visible;
+    background-color: #36393F;
+    width: 31.173275%;
+    height: 49.944751%;
+    left: 42.973275%;
+    border-style: solid;
+    border-color: #707070;
+    top: 1px;
+}
+#Rectangle_54 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_54 {
+    position: absolute;
+    overflow: visible;
+    width: 31.173275%;
+    height: 49.944751%;
+    left: 68.648229%;
+    background-color: #36393F;
+    border-style: solid;
+    border-color: #707070;
+    top: 1px;
+}
+#Rectangle_55 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_55 {
+    position: absolute;
+    overflow: hidden;
+    width: 31.173275%;
+    height: 49.944751%;
+    left: 16%;
+    background-color: #36393F;
+    border-style: solid;
+    border-color: #707070;
+    top: 49.944751%;
+}
+#Rectangle_56 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_56 {
+    position: absolute;
+    overflow: hidden;
+    width: 31.173275%;
+    height: 49.944751%;
+    left: 42.973275%;
+    background-color: #36393F;
+    border-style: solid;
+    border-color: #707070;
+    top: 49.944751%;
+}
+#Rectangle_57 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_57 {
+    position: absolute;
+    overflow: hidden;
+    width: 31.173275%;
+    height: 49.944751%;
+    left: 68.648229%;
+    top: 49.944751%;
+    background-color: #36393F;
+    border-style: solid;
+    border-color: #707070;
+}
