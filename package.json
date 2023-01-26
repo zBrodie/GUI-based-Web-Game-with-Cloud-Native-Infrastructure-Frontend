@@ -35,5 +35,5 @@
     "url": "https://github.com/zBrodie/GUI-based-Web-Game-with-Cloud-Native-Infrastructure/issues"
   },
   "homepage": "https://github.com/zBrodie/GUI-based-Web-Game-with-Cloud-Native-Infrastructure#readme",
-  "type": "module"
+  "type": "commonjs"
 }
