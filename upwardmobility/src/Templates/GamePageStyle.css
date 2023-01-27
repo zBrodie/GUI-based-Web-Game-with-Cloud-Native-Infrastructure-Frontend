@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Common Pixel';
-    src:url("./assets/undertale-deltarune-text-font-extended.ttf") format('truetype')
+    src:url("src/Templates/assets/undertale-deltarune-text-font-extended.ttf") format('truetype')
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #767980;
@@ -86,7 +86,7 @@
 }
 #ProgresionImage{
     position: absolute;
-    content: url("./assets/StartFinishScale.png");
+    content: url("src/Templates/assets/StartFinishScale.png");
     width: 14.916097%;
     height: 70.718232%;
     left: 7px;
@@ -113,7 +113,7 @@
     transform: matrix(1,0,0,1,0,0);
 }
 #NoPath_-_Copy_8 {
-    content: url("./assets/GameDieBigpng.png");
+    content: url("src/Templates/assets/GameDieBigpng.png");
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
     position: absolute;
     width: 23.430702%;
@@ -123,7 +123,7 @@
     overflow: visible;
 }
 .DiceImage{
-    content: url("./assets/GameDieBigpng.png");
+    content: url("src/Templates/assets/GameDieBigpng.png");
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
     position: absolute;
     width: 23.430702%;
@@ -166,7 +166,7 @@
 #NoPath_-_Copy_10 {
     position: absolute;
     overflow: hidden;
-    content: url("./assets/PlayerListBackground.png");
+    content: url("src/Templates/assets/PlayerListBackground.png");
     width: 61.901802%;
     height: 16.132597%;
     left: 19.080174%;

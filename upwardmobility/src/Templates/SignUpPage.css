@@ -1,9 +1,8 @@
 
-/*ONLY LOGIN PAGE CSS FILE SIGN UP IS SEPARATE FILE*/
 
 @font-face {
     font-family: 'Common Pixel';
-    src:url("./assets/undertale-deltarune-text-font-extended.ttf") format('truetype')
+    src: url("src/Templates/assets/undertale-deltarune-text-font-extended.ttf") format('truetype')
 }
 a:visited {
     color: white;
@@ -27,14 +26,15 @@ a:visited {
     box-sizing: border-box;
     border: none;
 }
-#Web_1920__2 {
+
+#Web_1920__3 {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,1);
     overflow: hidden;
-    --web-view-name: Web 1920 – 2;
-    --web-view-id: Web_1920__2;
+    --web-view-name: Web 1920 – 3;
+    --web-view-id: Web_1920__3;
     --web-scale-to-fit: true;
     --web-scale-to-fit-type: fit;
     --web-scale-on-resize: true;
@@ -47,7 +47,7 @@ a:visited {
     left: 18.955873%;
     top: 0px;
     overflow: visible;
-    content:url("/assets/sayonara4now-cyberpunk-city-sc.png");
+    content:url("src/Templates/assets/sayonara4now-cyberpunk-city-sc.png");
 }
 #Ellipse_1 {
     fill: rgba(255,255,255,1);
@@ -129,18 +129,18 @@ a:visited {
     left: 0px;
     top: 0px;
 }
-#Please_Log_In {
-    left: 1.243008%;
-    top: 28.176796%;
+#Create_your_account__ {
+    left: 2.175264%;
+    top: 23.425414%;
     position: absolute;
-    overflow: visible;
-    width: 16.718459%;
-    height: 4.861878%;
+    overflow: hidden;
+    width: 14.729646%;
+    height: 9.281768%;
     text-align: center;
     font-family: "Common Pixel";
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 32px;
     color: rgba(255,255,255,1);
 }
 #Username_Input_Field {
@@ -151,9 +151,6 @@ a:visited {
     stroke-linecap: butt;
     stroke-miterlimit: 4;
     shape-rendering: auto;
-    background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
     border: 3px solid white;
     white-space: nowrap;
     text-align: center;
@@ -166,13 +163,10 @@ a:visited {
 .Username_Input_Field {
     position: absolute;
     overflow: visible;
-    width: 12.969434%;
+    width: 12.989434%;
     height: 5.856354%;
-    left: 2.983219%;
-    top: 37.237569%;
-    background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
+    left: 3.04537%;
+    top: 34.364641%;
     border: 3px solid white;
     white-space: nowrap;
     text-align: center;
@@ -184,10 +178,57 @@ a:visited {
 }
 #Username {
     left: 58px;
-    top: 347px;
+    top: 322px;
     position: absolute;
     overflow: visible;
     width: 191px;
+    height: 34px;
+    text-align: center;
+    font-family: "Common Pixel";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: rgba(255,255,255,1);
+}
+#Email_Input_Field {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+}
+.Email_Input_Field {
+    position: absolute;
+    overflow: visible;
+    width: 12.989434%;
+    height: 5.856354%;
+    left: 3.10752%;
+    top: 45.303867%;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+}
+#Email {
+    left: 85px;
+    top: 419px;
+    position: absolute;
+    overflow: visible;
+    width: 137px;
     height: 34px;
     text-align: center;
     font-family: "Common Pixel";
@@ -204,9 +245,6 @@ a:visited {
     stroke-linecap: butt;
     stroke-miterlimit: 4;
     shape-rendering: auto;
-    background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
     border: 3px solid white;
     white-space: nowrap;
     text-align: center;
@@ -221,11 +259,8 @@ a:visited {
     overflow: visible;
     width: 12.989434%;
     height: 5.856354%;
-    left: 2.983219%;
-    top: 50.055249%;
-    background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
+    left: 3.10752%;
+    top: 56.022099%;
     border: 3px solid white;
     white-space: nowrap;
     text-align: center;
@@ -236,11 +271,11 @@ a:visited {
     -webkit-text-fill-color: white;
 }
 #Password {
-    left: 76px;
-    top: 463px;
+    left: 78px;
+    top: 517px;
     position: absolute;
     overflow: visible;
-    width: 148px;
+    width: 153px;
     height: 34px;
     text-align: center;
     font-family: "Common Pixel";
@@ -249,27 +284,60 @@ a:visited {
     font-size: 32px;
     color: rgba(255,255,255,1);
 }
-#Dont_have_an_account__Click_He {
-    left: 3.169671%;
-    top: 84.309392%;
+#Repeat_Input_Field {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+}
+.Repeat_Input_Field {
     position: absolute;
     overflow: visible;
-    width: 11.995028%;
-    height: 11.933702%;
+    width: 12.989434%;
+    height: 5.856354%;
+    left: 3.10752%;
+    top: 67.071823%;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+}
+#Repeat_Password {
+    left: -5px;
+    top: 623px;
+    position: absolute;
+    overflow: visible;
+    width: 317px;
+    height: 24px;
     text-align: center;
     font-family: "Common Pixel";
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 22px;
     color: rgba(255,255,255,1);
 }
-#Forgot_Password {
-    left: 3.169671%;
-    top: 71.933702%;
+#Already_have_an_account___Clic {
+    left: 2.423866%;
+    top: 79.889503%;
     position: absolute;
     overflow: visible;
-    width: 12.802983%;
-    height: 5.19337%;
+    width: 14.232443%;
+    height: 11.491713%;
     text-align: center;
     font-family: "Common Pixel";
     font-style: normal;
@@ -285,9 +353,9 @@ a:visited {
     left: 0.435053%;
     top: 5.856354%;
     overflow: visible;
-    content:url("/assets/Upward_Mobility_big.png");
+    content:url("src/Templates/assets/Upward_Mobility_big.png");
 }
-#Upward_Mobility_big_x {
+#Upward_Mobility_big_z {
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
     position: absolute;
     width: 53.697949%;
@@ -295,58 +363,5 @@ a:visited {
     left: 28.651336%;
     top: 17.900552%;
     overflow: visible;
-    content:url("/assets/Upward_Mobility_big_z@2x.png");
-}
-#Login_Button {
-    fill: transparent;
-    stroke: rgba(255,255,255,1);
-    stroke-width: 4px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-    background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
-    border: 3px solid white;
-    white-space: nowrap;
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 75px;
-    -webkit-text-fill-color: white;
-}
-.Login_Button {
-    position: absolute;
-    overflow: visible;
-    width: 12.969434%;
-    height: 5.856354%;
-    left: 2.983219%;
-    top: 62.872928%;
-    background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
-    border: 3px solid white;
-    white-space: nowrap;
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 75px;
-    -webkit-text-fill-color: white;
-}
-#Login {
-    left: 4.723431%;
-    top: 63.977914%;
-    position: absolute;
-    overflow: visible;
-    width: 9.19826%;
-    height: 3.756906%;
-    text-align: center;
-    font-family: "Common Pixel";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    color: rgba(255,255,255,1);
+    content:url("src/Templates/assets/Upward_Mobility_big_z.png");
 }

@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Common Pixel';
-    src:url("./assets/undertale-deltarune-text-font-extended.ttf") format('truetype')
+    src:url("src/Templates/assets/undertale-deltarune-text-font-extended.ttf") format('truetype')
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */

@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Common Pixel';
-    src:url("./assets/undertale-deltarune-text-font-extended.ttf") format('truetype')
+    src:url("https://github.com/zBrodie/GUI-based-Web-Game-with-Cloud-Native-Infrastructure/blob/7a75b12c805edcd1736f551ad186e9f0786368a3/upwardmobility/src/undertale-deltarune-text-font-extended.ttf") format('truetype')
 }
 
 /*
@@ -39,7 +39,7 @@ TODOS: Fix Font sizing not scalling down
     --web-enable-deep-linking: true;
 }
 #sayonara4now-cyberpunk-city-sc_k {
-    content:url("./assets/sayonara4now-cyberpunk-city-sc.png");
+    content:url("public/assets/sayonara4now-cyberpunk-city-sc.png");
     width: 100%;
     height: 100%;
     left: 305px;
@@ -113,7 +113,7 @@ TODOS: Fix Font sizing not scalling down
     left: 16%
 }
 #unknown {
-    content:url("./assets/unknown@2x.png");
+    content:url("public/assets/unknown@2x.png");
     position: fixed;
     width: 5.282784%;
     height: 10.14751%;
@@ -307,7 +307,7 @@ TODOS: Fix Font sizing not scalling down
     color: rgba(255,255,255,1);
 }
 #Upward_Mobility_big {
-    content:url("Upward_Mobility_big_z@2x.png");
+    content:url("public/assets/Upward_Mobility_big.png");
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
     position: fixed;
     width: 53.697949%;
