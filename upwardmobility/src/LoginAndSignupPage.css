@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Common Pixel';
-    src:url("src/Templates/assets/undertale-deltarune-text-font-extended.ttf") format('truetype')
+    src:url("undertale-deltarune-text-font-extended.ttf") format('truetype')
 }
 a:visited {
     color: white;
@@ -47,24 +47,7 @@ a:visited {
     left: 18.955873%;
     top: 0px;
     overflow: visible;
-    content:url("/assets/sayonara4now-cyberpunk-city-sc.png");
-}
-#Ellipse_1 {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Ellipse_1 {
-    position: absolute;
-    overflow: visible;
-    width: 84px;
-    height: 94px;
-    left: 108px;
-    top: 73px;
+    content:url("sayonara4now-cyberpunk-city-sc.png");
 }
 #Rectangle_30 {
     fill: rgba(47,49,54,1);
@@ -285,7 +268,7 @@ a:visited {
     left: 0.435053%;
     top: 5.856354%;
     overflow: visible;
-    content:url("/assets/Upward_Mobility_big.png");
+    content:url("Upward_Mobility_big.png");
 }
 #Upward_Mobility_big_x {
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
@@ -295,7 +278,7 @@ a:visited {
     left: 28.651336%;
     top: 17.900552%;
     overflow: visible;
-    content:url("./assets/Upward_Mobility_big_z@2x.png");
+    content:url("Upward_Mobility_big_z.png");
 }
 #Login_Button {
     fill: transparent;
