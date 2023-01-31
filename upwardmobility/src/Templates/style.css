@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'Common Pixel';
+    src:url("https://github.com/zBrodie/GUI-based-Web-Game-with-Cloud-Native-Infrastructure/blob/7a75b12c805edcd1736f551ad186e9f0786368a3/upwardmobility/src/undertale-deltarune-text-font-extended.ttf") format('truetype')
+}
+
+/*
+
+TODOS: Fix Font sizing not scalling down
+        Fix Images looking weird when downsizing screen
+*/
+.mediaViewInfo {
+    --web-view-name: HomePage;
+    --web-view-id: HomePage;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: fit;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: HomePage;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#HomePage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,1);
+    overflow: hidden;
+    --web-view-name: HomePage;
+    --web-view-id: HomePage;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: fit;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#sayonara4now-cyberpunk-city-sc_k {
+    content:url("public/assets/sayonara4now-cyberpunk-city-sc.png");
+    width: 100%;
+    height: 100%;
+    left: 305px;
+    top: 0px;
+    overflow: visible;
+}
+#joinGameButton {
+    fill: rgba(245,245,245,0.741);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    background-color: #F5F5F5;
+    opacity: 74%;
+    stroke-linejoin: miter;
+    white-space: nowrap;
+    text-align: center;
+    font-style: normal;
+    font-family: Common Pixel;
+    font-weight: normal;
+    font-size: 2vw;
+    line-height: 100px;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.joinGameButton {
+    position: fixed;
+    overflow: visible;
+    background-color: #F5F5F5;
+    opacity: 74%;
+    text-align: center;
+    -webkit-text-fill-color: black;
+    width: 12.159105%;
+    height: 8.850829%;
+    left: 39%;
+    top: 84%;
+}
+#Ellipse_1 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Ellipse_1 {
+    position: fixed;
+    overflow: visible;
+    width: 84px;
+    height: 94px;
+    left: 5.836544%;
+    top: 10.287293%;
+}
+#sideMenu {
+    fill: rgba(47,49,54,1);
+}
+.sideMenu {
+    position: inherit;
+    overflow: visible;
+    background-color:#2F3136;
+    width: 16%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+.nonsideMenu{
+    position: inherit;
+    overflow: visible;
+    width: 84%;
+    height: 100%;
+    left: 16%
+}
+#unknown {
+    content:url("public/assets/unknown@2x.png");
+    position: fixed;
+    width: 5.282784%;
+    height: 10.14751%;
+    left: 5.336544%;
+    top: 7.787293%;
+    overflow: visible;
+}
+#createGameButton {
+    fill: rgba(245,245,245,0.741);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    opacity: 74%;
+    white-space: nowrap;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Common Pixel;
+    font-size: 1.52vw;
+    height: 100px;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.createGameButton {
+    position: fixed;
+    overflow: visible;
+    width: 12.159105%;
+    height: 8.850829%;
+    background-color: #F5F5F5;
+    opacity: 74%;
+    text-align: center;
+    -webkit-text-fill-color: black;
+    left: 68%;
+    top: 84%;
+}
+#accountName {
+    left: 1.240211%;
+    top: 18.488398%;
+    position: fixed;
+    overflow: visible;
+    width: 252px;
+    height: 44px;
+    text-align: center;
+    font-style: normal;
+    font-family: Common Pixel;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(255,255,255,1);
+}
+#statsButton {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 3px;
+    background-color:#2F3136;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Common Pixel;
+    font-size: 30px;
+    line-height: 15px;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.statsButton {
+    background-color:#2F3136;
+    position: fixed;
+    overflow: visible;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+    width: 13.159105%;
+    height: 6.850829%;
+    left: 1.25%;
+    top: 26.25%;
+}
+#achievementsButton{
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 3px;
+    background-color:#2F3136;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    text-align: center;
+    font-family: Common Pixel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 15px;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.achievementsButton {
+    background-color:#2F3136;
+    position: fixed;
+    overflow: visible;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+    width: 13.159105%;
+    height: 6.850829%;
+    left: 1.25%;
+    top: 41.561326%;
+}
+#Stats {
+    left: 76px;
+    top: 253px;
+    position: absolute;
+    overflow: visible;
+    width: 151px;
+    height: 32px;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+}
+#Achievements {
+    left: 51px;
+    top: 391px;
+    position: absolute;
+    overflow: visible;
+    width: 204px;
+    height: 32px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+}
+#settingsButton {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 3px;
+    background-color:#2F3136;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    text-align: center;
+    font-family: Common Pixel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 50px;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.settingsButton {
+    background-color:#2F3136;
+    position: fixed;
+    overflow: visible;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+    width: 13.159105%;
+    height: 6.850829%;
+    left: 1.25%;
+    top: 56.79558%;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Settings_ {
+    left: 64px;
+    top: 525px;
+    position: fixed;
+    overflow: hidden;
+    width: 179px;
+    height: 40px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+}
+#Upward_Mobility_big {
+    content:url("public/assets/Upward_Mobility_big.png");
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
+    position: fixed;
+    width: 53.697949%;
+    height: 52.044199%;
+    left: 28%;
+    top: 17%;
+    overflow: visible;
+}
