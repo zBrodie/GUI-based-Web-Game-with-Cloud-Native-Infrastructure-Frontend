@@ -6,6 +6,7 @@ import { useNavigate} from "react-router-dom";
 import logo from './Upward_Mobility_big_x.png'
 
 function App() {
+
   return (
     <div className="App">
       <div id="Web_1920__2">
@@ -41,7 +42,7 @@ function App() {
           </svg>
 
           <div id="Dont_have_an_account__Click_He">
-            <a href="javascript:alert('Hello World!');">Dont have an account?<br/><br/>Click Here</a>
+            <a href="/SignupPage.js">Dont have an account?<br/><br/>Click Here</a>
           </div>
           <div id="Forgot_Password">
             <a href="">Forgot Password?</a>
@@ -56,13 +57,17 @@ function App() {
                 <button id="Login_Button" rx="0" ry="0" x="0" y="0">
                 </button>
               </svg>
-        <script>
-          var audio = new Audio('');
-          audio.play;
-        </script>
+
       </div>
+
+      <audio id="audio" >
+        <source src = "https://github.com/zBrodie/GUI-based-Web-Game-with-Cloud-Native-Infrastructure-Frontend/blob/main/upwardmobility/src/Super%20Mario%20Galaxy%20Wind%20Garden.mp3"/>
+      </audio>
+
     </div>
   );
 }
+
+
 
 export default App;
