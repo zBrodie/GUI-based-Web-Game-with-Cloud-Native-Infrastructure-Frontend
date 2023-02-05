@@ -7,6 +7,13 @@ import logo from './Upward_Mobility_big_x.png'
 import upwardz from './Upward_Mobility_big_z.png'
 
 function SignupPage() {
+
+    const navigate = useNavigate();
+
+    const loginPage = () => {
+        navigate("/")
+    }
+
     return (
         <div className="SignupPage">
             <div id="Web_1920__3">
@@ -48,9 +55,9 @@ function SignupPage() {
                                id="Rectangle_41" rx="0" ry="0" x="0" y="0">
                         </input>
                     </svg>
-                    <div id="Already_have_an_account___Clic">
+                    <button id="Already_have_an_account___Clic" onClick={loginPage}>
                         <a href="">Already have an account? <br/><br/>Click here</a>
-                    </div>
+                    </button>
                     <img id="Upward_Mobility_big" src="{upward}"
                          srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
 

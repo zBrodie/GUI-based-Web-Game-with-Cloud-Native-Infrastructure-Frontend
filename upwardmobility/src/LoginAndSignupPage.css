@@ -245,6 +245,7 @@ a:visited {
     font-weight: normal;
     font-size: 24px;
     color: rgba(255,255,255,1);
+    background: none;
 }
 #Forgot_Password {
     left: 3.169671%;
@@ -333,3 +334,4 @@ a:visited {
     font-size: 32px;
     color: rgba(255,255,255,1);
 }
+
