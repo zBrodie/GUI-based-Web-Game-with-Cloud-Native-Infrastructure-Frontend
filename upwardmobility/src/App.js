@@ -17,6 +17,8 @@ import {
 } from 'react-router-dom'
 import GamePage from "./GamePage";
 import GameLobby from "./GameLobby";
+import ReactAudioPlayer from 'react-audio-player';
+import song from "./SuperMarioGalaxyWindGarden.mp3";
 
 function App() {
 
@@ -31,7 +33,10 @@ function App() {
             <Route exact path = "/GamePage" element={<GamePage/>}/>
           </Routes>
         </Router>
+
+          <ReactAudioPlayer src={song} autoPlay={true}/>
       </>
+
   );
 }
 
