@@ -5,6 +5,13 @@
     font-family: 'Common Pixel';
     src:url("undertale-deltarune-text-font-extended.ttf") format('truetype')
 }
+
+input::placeholder{
+    font-family: "Common Pixel";
+    font-color: white;
+    font-size: large;
+}
+
 a:visited {
     color: white;
     background-color: transparent;
@@ -154,13 +161,12 @@ a:visited {
     left: 2.983219%;
     top: 37.237569%;
     background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
     border: 3px solid white;
     white-space: nowrap;
     text-align: center;
     font-style: normal;
     font-weight: normal;
+    font-color: white;
     font-size: 30px;
     line-height: 75px;
     -webkit-text-fill-color: white;
@@ -200,17 +206,16 @@ a:visited {
     -webkit-text-fill-color: white;
 }
 .Password_Input_Field {
-    position: absolute;
+    position: fixed;
     overflow: visible;
     width: 12.989434%;
     height: 5.856354%;
     left: 2.983219%;
     top: 50.055249%;
     background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
     border: 3px solid white;
     white-space: nowrap;
+    font-color: white;
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -235,7 +240,7 @@ a:visited {
 #Dont_have_an_account__Click_He {
     left: 3.169671%;
     top: 84.309392%;
-    position: absolute;
+    position: fixed;
     overflow: visible;
     width: 11.995028%;
     height: 11.933702%;
@@ -309,15 +314,14 @@ a:visited {
     left: 2.983219%;
     top: 62.872928%;
     background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
     border: 3px solid white;
     white-space: nowrap;
     text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: large;
     line-height: 75px;
+    font-family: "Common Pixel";
     -webkit-text-fill-color: white;
 }
 #Login {

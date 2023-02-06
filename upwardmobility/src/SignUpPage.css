@@ -1,5 +1,4 @@
 
-
 @font-face {
     font-family: 'Common Pixel';
     src: url("undertale-deltarune-text-font-extended.ttf") format('truetype')
@@ -9,6 +8,13 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
 }
+
+input::placeholder{
+    font-family: "Common Pixel";
+    font-color: white;
+    font-size: large;
+}
+
 .mediaViewInfo {
     --web-view-name: Web 1920 – 2;
     --web-view-id: Web_1920__2;
@@ -197,6 +203,7 @@ a:visited {
     height: 5.856354%;
     left: 3.10752%;
     top: 45.303867%;
+    background-color: #2f3136;
     border: 3px solid white;
     white-space: nowrap;
     text-align: center;
@@ -297,7 +304,47 @@ a:visited {
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
+    background-color:#2F3136;
     line-height: 75px;
+    -webkit-text-fill-color: white;
+}
+
+#Sign_Button {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+    background-color:#2F3136;
+    position: fixed;
+    overflow: visible;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+}
+.Sign_Button {
+    position: absolute;
+    overflow: visible;
+    width: 12.969434%;
+    height: 5.856354%;
+    left: 2.983219%;
+    top: 77.872928%;
+    background-color:#2F3136;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: large;
+    line-height: 75px;
+    font-family: "Common Pixel";
     -webkit-text-fill-color: white;
 }
 #Repeat_Password {
@@ -316,7 +363,7 @@ a:visited {
 }
 #Already_have_an_account___Clic {
     left: 2.423866%;
-    top: 79.889503%;
+    top: 85.889503%;
     position: absolute;
     overflow: visible;
     width: 14.232443%;

@@ -31,30 +31,27 @@ function SignupPage() {
                     <div className="Create_your_account__" id="Create_your_account__">
                         <span>Create your account:<br/></span><br/>
                     </div>
-                    <svg className="Username_Input_Field">
-                        <input type="text"
-                               placeholder="USERNAME"
-                               id="Rectangle_38" rx="0" ry="0" x="0" y="0">
+                    <form>
+                        <input placeholder={"USERNAME"} id = "Rectangle_38" type={"text"} className="Username_Input_Field">
                         </input>
-                    </svg>
-                    <svg className="Email_Input_Field">
-                        <input type="text"
-                               placeholder="EMAIL"
-                               id="Rectangle_39" rx="0" ry="0" x="0" y="0">
+                    </form>
+
+                    <form>
+                        <input type={"text"} placeholder={"EMAIL"} id ="Rectangle_39" className="Email_Input_Field">
                         </input>
-                    </svg>
-                    <svg className="Password_Input_Field">
-                        <input type="text"
-                               placeholder="PASSWORD"
-                               id="Rectangle_40" rx="0" ry="0" x="0" y="0">
+                    </form>
+
+                    <form>
+                        <input type = "text" id= "Rectangle_40"  placeholder={"PASSWORD"} className="Password_Input_Field">
                         </input>
-                    </svg>
-                    <svg className="Repeat_Input_Field">
-                        <input type="text"
-                               placeholder="REPEAT PASSWORD"
-                               id="Rectangle_41" rx="0" ry="0" x="0" y="0">
+                    </form>
+
+                    <form>
+                        <input id = "Rectangle_41" placeholder={"REPEAT PASSWORD"} type = "text" className="Repeat_Input_Field">
                         </input>
-                    </svg>
+                    </form>
+
+                    <button id = "SignUpBotton" className={"Sign_Button"}>SIGN UP</button>
                     <button id="Already_have_an_account___Clic" onClick={loginPage}>
                         <a href="">Already have an account? <br/><br/>Click here</a>
                     </button>

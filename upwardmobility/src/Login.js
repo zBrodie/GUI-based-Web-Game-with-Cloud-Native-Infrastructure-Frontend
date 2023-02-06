@@ -5,6 +5,9 @@ import background from './sayonara4now-cyberpunk-city-sc.png';
 import upward from './Upward_Mobility_big.png'
 import logo from './Upward_Mobility_big_x.png'
 import SignupPage from './SignupPage'
+
+
+
 import {
     BrowserRouter as Router,
     Routes,
@@ -38,18 +41,13 @@ function Login() {
                 <div id="Please_Log_In">
                     <span>Please Log In:</span>
                 </div>
-                <svg className="Username_Input_Field">
-                    <input type="text"
-                           placeholder="USERNAME"
-                           id="Username_Input_Field" rx="0" ry="0" x="0" y="0">
+                <form>
+                    <input type={"text"} placeholder={"USERNAME"} id ="Username_Input_Field" className="Username_Input_Field">
                     </input>
-                </svg>
-                <svg className="Password_Input_Field">
-                    <input type="text"
-                           placeholder="PASSWORD"
-                           id="Password_Input_Field" rx="0" ry="0" x="0" y="0">
-                    </input>
-                </svg>
+                </form>
+                <form>
+                    <input className={"Password_Input_Field"}  type = "text" placeholder={"PASSWORD"} id ="Password_Input_Field"/>
+                </form>
 
                 <button id="Dont_have_an_account__Click_He" onClick={createAccountPage}>
                     <a href="">Dont have an account?<br/><br/>Click Here</a>
@@ -64,10 +62,7 @@ function Login() {
                 <img id="Upward_Mobility_big_x" src="{logo}"
                      srcSet="Upward_Mobility_big_x.png 1x, Upward_Mobility_big_x@2x.png 2x"/>
 
-                <svg className="Login_Button">
-                    <button id="Login_Button" rx="0" ry="0" x="0" y="0">
-                    </button>
-                </svg>
+                <button className="Login_Button" type={"submit"}>LOGIN</button>
             </div>
         </div>
     );
