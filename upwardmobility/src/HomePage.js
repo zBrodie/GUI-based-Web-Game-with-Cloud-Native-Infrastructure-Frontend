@@ -16,6 +16,15 @@ import Login from "./Login";
 function HomePage(){
     const navigate = useNavigate();
 
+    const renderGamePage = () =>{
+        navigate("/GamePage")
+    }
+
+
+    function renderNothingYet(){
+        alert("SORRY! NOTHING IS THERE YET!")
+    }
+
     return(
         <div className="HomePage">
             <div className= "nonsideMenu" name = "nonSideMenu">
@@ -23,7 +32,7 @@ function HomePage(){
                      srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
                 <div className="joinGameButton">
-                    <button className="joinGameButton" type="submit" id="joinGameButton" rx="0" ry="0" x="0" y="0">JOIN GAME
+                    <button className="joinGameButton" onClick={renderGamePage} type="submit" id="joinGameButton" rx="0" ry="0" x="0" y="0">JOIN GAME
                     </button>
                 </div>
 
@@ -52,7 +61,7 @@ function HomePage(){
                 </div>
 
                 <div className="statsButton">
-                    <button id="statsButton" rx="0" ry="0" x="0" y="0">STATS</button>
+                    <button id="statsButton" rx="0" ry="0" x="0" y="0" onClick={renderNothingYet}>STATS</button>
                 </div>
 
                 <div className="achievementsButton">

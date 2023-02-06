@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Common Pixel';
-    src:url("src/Templates/assets/undertale-deltarune-text-font-extended.ttf") format('truetype')
+    src:url("./undertale-deltarune-text-font-extended.ttf") format('truetype')
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -281,7 +281,7 @@ input{
     overflow: visible;
     width: 16.147918%;
     height: 17.569061%;
-    content: url("./assets/Upward_Mobility_big_z@2x.png");
+    content: url("./Upward_Mobility_big.png");
     top: 2.85635359%;
     overflow: visible;
 }

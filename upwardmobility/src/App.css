@@ -186,7 +186,7 @@ TODOS: Fix Font sizing not scalling down
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 1.5vw;
   line-height: 75px;
   -webkit-text-fill-color: white;
   width: 13.159105%;
@@ -206,7 +206,7 @@ TODOS: Fix Font sizing not scalling down
   font-family: Common Pixel;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 1.5vw;
   line-height: 15px;
   stroke-miterlimit: 4;
   shape-rendering: auto;
@@ -280,7 +280,7 @@ TODOS: Fix Font sizing not scalling down
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 1.5vw;
   line-height: 75px;
   -webkit-text-fill-color: white;
   width: 13.159105%;

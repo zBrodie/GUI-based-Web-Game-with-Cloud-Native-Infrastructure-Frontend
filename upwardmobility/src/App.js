@@ -15,6 +15,8 @@ import {
     Route,
     Link
 } from 'react-router-dom'
+import GamePage from "./GamePage";
+import GameLobby from "./GameLobby";
 
 function App() {
 
@@ -26,6 +28,7 @@ function App() {
             <Route exact path = "/" element={<Login/>}/>
               <Route exact path="/HomePage" element={<HomePage/>}></Route>
             <Route exact path ="/CreateAccount" element={<SignupPage/>}/>
+            <Route exact path = "/GamePage" element={<GamePage/>}/>
           </Routes>
         </Router>
       </>
