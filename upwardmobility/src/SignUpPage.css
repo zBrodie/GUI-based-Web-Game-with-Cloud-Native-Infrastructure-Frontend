@@ -132,7 +132,7 @@ input::placeholder{
     font-size: 2vw;
     color: rgba(255,255,255,1);
 }
-#Username_Input_Field {
+#Username_Input_Field_Sign{
     fill: transparent;
     stroke: rgba(255,255,255,1);
     stroke-width: 4px;
@@ -149,7 +149,7 @@ input::placeholder{
     line-height: 75px;
     -webkit-text-fill-color: white;
 }
-.Username_Input_Field {
+.Username_Input_Field_Sign{
     position: absolute;
     overflow: visible;
     width: 12.989434%;
@@ -163,6 +163,7 @@ input::placeholder{
     font-weight: normal;
     font-size: 30px;
     line-height: 75px;
+    background-color: #2F3136;
     -webkit-text-fill-color: white;
 }
 #Username {
@@ -227,7 +228,7 @@ input::placeholder{
     font-size: 32px;
     color: rgba(255,255,255,1);
 }
-#Password_Input_Field {
+#Password_Input_Field_Sign{
     fill: transparent;
     stroke: rgba(255,255,255,1);
     stroke-width: 4px;
@@ -244,7 +245,7 @@ input::placeholder{
     line-height: 75px;
     -webkit-text-fill-color: white;
 }
-.Password_Input_Field {
+.Password_Input_Field_Sign{
     position: absolute;
     overflow: visible;
     width: 12.989434%;
@@ -258,6 +259,7 @@ input::placeholder{
     font-weight: normal;
     font-size: 30px;
     line-height: 75px;
+    background-color: #2F3136;
     -webkit-text-fill-color: white;
 }
 #Password {

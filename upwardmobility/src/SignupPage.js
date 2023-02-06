@@ -32,7 +32,7 @@ function SignupPage() {
                         <span>Create your account:<br/></span><br/>
                     </div>
                     <form>
-                        <input placeholder={"USERNAME"} id = "Rectangle_38" type={"text"} className="Username_Input_Field">
+                        <input placeholder={"USERNAME"} id = "Rectangle_38" type={"text"} className="Username_Input_Field_Sign">
                         </input>
                     </form>
 
@@ -42,7 +42,7 @@ function SignupPage() {
                     </form>
 
                     <form>
-                        <input type = "text" id= "Rectangle_40"  placeholder={"PASSWORD"} className="Password_Input_Field">
+                        <input id ="Password_Input_Field_Sign"  type = "text" id= "Rectangle_40"  placeholder={"PASSWORD"} className="Password_Input_Field_Sign">
                         </input>
                     </form>
 

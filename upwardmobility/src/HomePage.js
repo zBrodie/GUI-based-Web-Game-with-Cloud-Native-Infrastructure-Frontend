@@ -28,8 +28,7 @@ function HomePage(){
     return(
         <div className="HomePage">
             <div className= "nonsideMenu" name = "nonSideMenu">
-                <img id="sayonara4now-cyberpunk-city-sc" src="sayonara4now-cyberpunk-city-sc.png"
-                     srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
+                <img id="sayonara4now-cyberpunk-city-sc" src={background} srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
                 <div className="joinGameButton">
                     <button className="joinGameButton" onClick={renderGamePage} type="submit" id="joinGameButton" rx="0" ry="0" x="0" y="0">JOIN GAME
@@ -47,14 +46,14 @@ function HomePage(){
                     </ellipse>
                 </svg>
 
-                <img id="Upward_Mobility_big" src="src/Templates/Upward_Mobility_big_z@2x.png" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
+                <img className={"Upward_Mobility_big_Home_Page"} id="Upward_Mobility_big_Home_Page" src={logo}/>
             </div>
 
             <div className="sideMenu">
                 <rect id="sideMenu">
                 </rect>
 
-                <img id="unknown" src="src/Templates/assets/unknown@2x.png" srcSet="unknown.png 1x, unknown@2x.png 2x"/>
+                <img id="unknown" src={unknown} srcSet="unknown.png 1x, unknown@2x.png 2x"/>
 
                 <div id="accountName">
                     <span>THELEGNED27</span>
@@ -65,12 +64,12 @@ function HomePage(){
                 </div>
 
                 <div className="achievementsButton">
-                    <button id="achievementsButton" rx="0" ry="0" x="0" y="0">ACHIEVEMENTS
+                    <button id="achievementsButton"  onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">ACHIEVEMENTS
                     </button>
                 </div>
 
                 <div className="settingsButton">
-                    <button id="settingsButton" rx="0" ry="0" x="0" y="0">SETTINGS</button>
+                    <button id="settingsButton"  onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">SETTINGS</button>
                 </div>
             </div>
         </div>

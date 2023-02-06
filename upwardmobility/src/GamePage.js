@@ -95,7 +95,7 @@ function GamePage(){
             <svg className="Rectangle_49">
                 <rect id="Rectangle_49" rx="0" ry="0" x="0" y="0"></rect>
             </svg>
-            <img id="Upward_Mobility_big" src="Upward_Mobility_big.png" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
+            <img id="Upward_Mobility_big_Game_Page" src="Upward_Mobility_big.png" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
 
         </div>
     );

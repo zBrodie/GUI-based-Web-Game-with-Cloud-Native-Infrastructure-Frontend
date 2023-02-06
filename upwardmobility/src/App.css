@@ -302,13 +302,22 @@ TODOS: Fix Font sizing not scalling down
   font-size: 30px;
   color: rgba(255,255,255,1);
 }
-#Upward_Mobility_big {
+#Upward_Mobility_big_Home_Page {
+  position: absolute;
   content: url("Upward_Mobility_big.png");
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
-  position: fixed;
   width: 53.697949%;
   height: 52.044199%;
   left: 32.628962%;
+  top: 20.331492%;
+  overflow: visible;
+}
+.Upward_Mobility_big_Home_Page{
+  position: absolute;
+  content: url("Upward_Mobility_big.png");
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
+  width: 53.697949%;
+  height: 52.044199%;
   top: 20.331492%;
   overflow: visible;
 }
