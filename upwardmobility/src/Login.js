@@ -21,7 +21,11 @@ function Login() {
     const navigate = useNavigate();
 
     const createAccountPage = () => {
-        navigate("/Login")
+        navigate("/CreateAccount")
+    }
+
+    const loadHomePage = () =>{
+        navigate("/HomePage")
     }
 
     return (
@@ -62,7 +66,7 @@ function Login() {
                 <img id="Upward_Mobility_big_x" src="{logo}"
                      srcSet="Upward_Mobility_big_x.png 1x, Upward_Mobility_big_x@2x.png 2x"/>
 
-                <button className="Login_Button" type={"submit"}>LOGIN</button>
+                <button className="Login_Button" type={"submit"} onClick={loadHomePage}>LOGIN</button>
             </div>
         </div>
     );

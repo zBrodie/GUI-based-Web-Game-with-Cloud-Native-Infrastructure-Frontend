@@ -6,7 +6,9 @@ import logo from './Upward_Mobility_big_x.png'
 import { useNavigate } from "react-router-dom";
 import Login from './Login'
 import SignupPage from './SignupPage'
+import HomePage from './HomePage.js'
 import React from 'react'
+
 import {
     BrowserRouter as Router,
     Routes,
@@ -22,7 +24,8 @@ function App() {
         <Router>
           <Routes>
             <Route exact path = "/" element={<Login/>}/>
-            <Route exact path ="/Login" element={<SignupPage/>}/>
+              <Route exact path="/HomePage" element={<HomePage/>}></Route>
+            <Route exact path ="/CreateAccount" element={<SignupPage/>}/>
           </Routes>
         </Router>
       </>

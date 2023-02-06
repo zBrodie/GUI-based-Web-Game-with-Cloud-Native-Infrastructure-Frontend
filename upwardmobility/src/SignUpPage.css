@@ -120,16 +120,16 @@ input::placeholder{
 }
 #Create_your_account__ {
     left: 2.175264%;
-    top: 23.425414%;
+    overflow: visible;
+    top: 21.425414%;
     position: absolute;
-    overflow: hidden;
     width: 14.729646%;
     height: 9.281768%;
     text-align: center;
     font-family: "Common Pixel";
     font-style: normal;
     font-weight: normal;
-    font-size: 32px;
+    font-size: 2vw;
     color: rgba(255,255,255,1);
 }
 #Username_Input_Field {
@@ -383,6 +383,16 @@ input::placeholder{
     height: 17.569061%;
     left: 0.435053%;
     top: 5.856354%;
+    overflow: visible;
+    content:url("Upward_Mobility_big.png");
+}
+.Upward_Mobility_big{
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
+    position: absolute;
+    width: 18.147918%;
+    height: 17.569061%;
+    left: 0.435053%;
+    top: 3.856354%;
     overflow: visible;
     content:url("Upward_Mobility_big.png");
 }

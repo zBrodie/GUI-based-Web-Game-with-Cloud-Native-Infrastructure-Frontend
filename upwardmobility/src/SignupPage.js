@@ -55,11 +55,9 @@ function SignupPage() {
                     <button id="Already_have_an_account___Clic" onClick={loginPage}>
                         <a href="">Already have an account? <br/><br/>Click here</a>
                     </button>
-                    <img id="Upward_Mobility_big" src="{upward}"
-                         srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
+                    <img  className="Upward_Mobility_big" src="{logo}" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
 
-                        <img id="Upward_Mobility_big_z" src="{upwardz}"
-                             srcSet="Upward_Mobility_big_z.png 1x, src/Templates/Upward_Mobility_big_z@2x.png 2x"/>
+                    <img className="Upward_Mobility_big" id="Upward_Mobility_big_z" src="{logo}" srcSet="Upward_Mobility_big_z.png 1x, src/Templates/Upward_Mobility_big_z@2x.png 2x"/>
             </div>
         </div>
     );

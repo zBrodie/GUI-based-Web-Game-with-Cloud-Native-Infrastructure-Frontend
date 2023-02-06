@@ -40,10 +40,10 @@ TODOS: Fix Font sizing not scalling down
 }
 #sayonara4now-cyberpunk-city-sc_k {
   content:url("sayonara4now-cyberpunk-city-sc.png");
+  position: fixed;
   width: 100%;
   height: 100%;
-  left: 305px;
-  top: 0px;
+  left: 16%;
   overflow: visible;
 }
 #joinGameButton {
@@ -67,7 +67,6 @@ TODOS: Fix Font sizing not scalling down
 .joinGameButton {
   position: fixed;
   overflow: visible;
-  background-color: #F5F5F5;
   opacity: 74%;
   text-align: center;
   -webkit-text-fill-color: black;
@@ -97,27 +96,26 @@ TODOS: Fix Font sizing not scalling down
   fill: rgba(47,49,54,1);
 }
 .sideMenu {
-  position: absolute;
+  position: fixed;
   overflow: visible;
   background-color:#2F3136;
-  width: 16%;
+  width: 20%;
   height: 100%;
   left: 0;
   top: 0;
 }
 .nonsideMenu{
-  position: inherit;
+  position: absolute;
   overflow: visible;
-  width: 84%;
+  width: 100%;
   height: 100%;
-  left: 16%
 }
 #unknown {
   content:url("unknown@2x.png");
   position: fixed;
   width: 7.282784%;
   height: 14.14751%;
-  left: 4.336544%;
+  left: 6.336544%;
   top: 5.787293%;
   overflow: visible;
 }
@@ -143,7 +141,6 @@ TODOS: Fix Font sizing not scalling down
   overflow: visible;
   width: 12.159105%;
   height: 8.850829%;
-  background-color: #F5F5F5;
   opacity: 74%;
   text-align: center;
   -webkit-text-fill-color: black;
@@ -151,7 +148,7 @@ TODOS: Fix Font sizing not scalling down
   top: 84%;
 }
 #accountName {
-  left: 1.740211%;
+  left: 3.240211%;
   top: 20.488398%;
   position: fixed;
   overflow: visible;
@@ -161,7 +158,7 @@ TODOS: Fix Font sizing not scalling down
   font-style: normal;
   font-family: Common Pixel;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 32px;
   color: rgba(255,255,255,1);
 }
 #statsButton {
@@ -194,7 +191,7 @@ TODOS: Fix Font sizing not scalling down
   -webkit-text-fill-color: white;
   width: 13.159105%;
   height: 6.850829%;
-  left: 1.25%;
+  left: 3.25%;
   top: 31.027624%;
   justify-content: center;
 }
@@ -229,7 +226,7 @@ TODOS: Fix Font sizing not scalling down
   -webkit-text-fill-color: white;
   width: 13.159105%;
   height: 6.850829%;
-  left: 1.25%;
+  left: 3.25%;
   top: 46.334807%;
 }
 #Stats {
@@ -271,7 +268,6 @@ TODOS: Fix Font sizing not scalling down
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  line-height: 50px;
   stroke-miterlimit: 4;
   shape-rendering: auto;
 }
@@ -282,7 +278,6 @@ TODOS: Fix Font sizing not scalling down
   border: 3px solid white;
   white-space: nowrap;
   text-align: center;
-
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -290,7 +285,7 @@ TODOS: Fix Font sizing not scalling down
   -webkit-text-fill-color: white;
   width: 13.159105%;
   height: 6.850829%;
-  left: 1.25%;
+  left: 3.25%;
   top: 61.569061%;
   transform: matrix(1,0,0,1,0,0);
 }
