@@ -54,7 +54,7 @@ function Login() {
                 </form>
 
                 <button id="Dont_have_an_account__Click_He" onClick={createAccountPage}>
-                    <a href="">Dont have an account?<br/><br/>Click Here</a>
+                    Dont have an account?<br/><br/>Click Here
                 </button>
 
                 <div id="Forgot_Password">
