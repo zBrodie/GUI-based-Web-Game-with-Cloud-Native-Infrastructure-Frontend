@@ -46,8 +46,7 @@ function Login() {
                     <span>Please Log In:</span>
                 </div>
                 <form>
-                    <input type={"text"} placeholder={"USERNAME"} id ="Username_Input_Field_Login" className="Username_Input_Field_Login">
-                    </input>
+                    <input type={"text"} placeholder={"USERNAME"} id ="Username_Input_Field_Login" className="Username_Input_Field_Login"></input>
                 </form>
                 <form>
                     <input className={"Password_Input_Field"}  type = "text" placeholder={"PASSWORD"} id ="Password_Input_Field_Login"/>
@@ -64,7 +63,7 @@ function Login() {
 
                 <img  className="Upward_Mobility_big" id="Upward_Mobility_big_x" src="{logo}" srcSet="Upward_Mobility_big_x.png 1x, Upward_Mobility_big_x@2x.png 2x"/>
 
-                <button className="Login_Button" type={"submit"} onClick={loadHomePage}>LOGIN</button>
+                <button id={"Login_Button_Submit"} className="Login_Button_Submit" type={"submit"} onClick={loadHomePage}>LOGIN</button>
             </div>
         </div>
     );

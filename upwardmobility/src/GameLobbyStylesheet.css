@@ -11,11 +11,11 @@
 }
 
 
-button{
+button.GameLobby{
     height: 80px;
     width: 249px;
-    margin-top: 400px;
-    margin-left: 60px;
+    margin-top: 300px;
+    margin-left: 30px;
     border-width: 5px;
     border-style: solid;
     border-color: white;
@@ -32,7 +32,11 @@ p{
     margin-left: 10px ;
 }
 
-input{
+#MaxPlayerText{
+    margin-top: 175px;
+}
+
+input.GameLobby{
     width: 50.638906%;
     height: 7.071823%;
     margin-left: 20px;
@@ -51,15 +55,6 @@ input{
     --web-enable-deep-linking: true;
 }
 
-:root {
-    --web-view-ids: Web_1920__5;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-}
 #Web_1920__5 {
     position: absolute;
     width: 100%;
@@ -74,11 +69,11 @@ input{
     --web-enable-deep-linking: true;
 }
 
-#sideMenu {
+#sideMenuLobby {
     fill: rgba(47,49,54,1);
 }
-.sideMenu {
-    position: inherit;
+.sideMenuLobby {
+    position: fixed;
     overflow: visible;
     background-color:#2F3136;
     width: 16%;
@@ -86,71 +81,7 @@ input{
     left: 0px;
     top: 0px;
 }
-#Rectangle_34 {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_34 {
-    position: absolute;
-    overflow: visible;
-    width: 1px;
-    height: 1px;
-    left: 0px;
-    top: 0px;
-}
-#Rectangle_35 {
-    fill: transparent;
-    stroke: rgba(0,0,0,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_35 {
-    position: absolute;
-    overflow: visible;
-    width: 1608px;
-    height: 905px;
-    left: 1px;
-    top: 0px;
-}
-#Rectangle_37 {
-    fill: transparent;
-    stroke: rgba(0,0,0,1);
-    stroke-width: 4px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_37 {
-    position: absolute;
-    overflow: visible;
-    width: 1609px;
-    height: 905px;
-    left: 0px;
-    top: 0px;
-}
-#Create_your_account__ {
-    left: 35px;
-    top: 212px;
-    position: absolute;
-    overflow: hidden;
-    width: 237px;
-    height: 84px;
-    text-align: center;
-    font-family: "Common Pixel";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    color: rgba(255,255,255,1);
-}
+
 #Rectangle_38 {
     fill: transparent;
     stroke: rgba(255,255,255,1);
@@ -185,20 +116,7 @@ input{
     left: 50px;
     top: 410px;
 }
-#Email {
-    left: 85px;
-    top: 419px;
-    position: absolute;
-    overflow: visible;
-    width: 137px;
-    height: 34px;
-    text-align: center;
-    font-family: "Common Pixel";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    color: rgba(255,255,255,1);
-}
+
 #Rectangle_40 {
     fill: transparent;
     stroke: rgba(255,255,255,1);
@@ -216,20 +134,7 @@ input{
     left: 50px;
     top: 507px;
 }
-#Password {
-    left: 78px;
-    top: 517px;
-    position: absolute;
-    overflow: visible;
-    width: 153px;
-    height: 34px;
-    text-align: center;
-    font-family: "Common Pixel";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    color: rgba(255,255,255,1);
-}
+
 #Rectangle_41 {
     fill: transparent;
     stroke: rgba(255,255,255,1);
@@ -261,21 +166,8 @@ input{
     font-size: 22px;
     color: rgba(255,255,255,1);
 }
-#Already_have_an_account___Clic {
-    left: 39px;
-    top: 723px;
-    position: absolute;
-    overflow: visible;
-    width: 229px;
-    height: 104px;
-    text-align: center;
-    font-family: "Common Pixel";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#Upward_Mobility_big {
+
+#Upward_Mobility_big_Lobby {
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
     position: absolute;
     overflow: visible;
@@ -299,10 +191,10 @@ input{
     font-size: 32px;
     color: rgba(255,255,255,1);
 }
-#nonsideMenu {
+#nonsideMenuLobby {
     fill: rgba(54,57,63,1);
 }
-.nonsideMenu{
+.nonsideMenuLobby{
     position: inherit;
     overflow: visible;
     width: 84%;

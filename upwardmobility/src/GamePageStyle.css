@@ -17,12 +17,6 @@
 :root {
     --web-view-ids: GamePage;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-}
 #GamePage {
     position: absolute;
     width: 100%;

@@ -161,6 +161,7 @@ input::placeholder{
     text-align: center;
     font-style: normal;
     font-weight: normal;
+    font-family: "Common Pixel";
     font-size: 30px;
     line-height: 75px;
     background-color: #2F3136;
@@ -208,6 +209,7 @@ input::placeholder{
     border: 3px solid white;
     white-space: nowrap;
     text-align: center;
+    font-family: "Common Pixel";
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -254,6 +256,7 @@ input::placeholder{
     top: 56.022099%;
     border: 3px solid white;
     white-space: nowrap;
+    font-family: "Common Pixel";
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -301,6 +304,7 @@ input::placeholder{
     left: 3.10752%;
     top: 67.071823%;
     border: 3px solid white;
+    font-family: "Common Pixel";
     white-space: nowrap;
     text-align: center;
     font-style: normal;
