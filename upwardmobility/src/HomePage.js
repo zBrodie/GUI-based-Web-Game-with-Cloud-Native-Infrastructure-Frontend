@@ -27,8 +27,9 @@ function HomePage(){
 
     const [clickedStats, setClickedStats] = useState(true);
     const [clickedAch, setClickedAch] = useState(true);
-    const [clickedSettings, setclickedSettings] = useState(true);
+    const [clickedSettings, setClickedSettings] = useState(true);
     const [clickedJoin, setClickedJoin] = useState(true);
+    const [clickedCreate, setClickedCreate] = useState(true);
     const [showGIDText, setShowGameIDText] = useState(false)
     const [showJoinGameButton, setShowJoinGameButton] = useState(false)
     const [showNothingText, setShowNothingText] = useState(false)
@@ -43,18 +44,23 @@ function HomePage(){
     function setGameIDBox(){
         setShowGameIDText(!showGIDText);
         setShowJoinGameButton(!showJoinGameButton);
-        setclickedSettings(!clickedSettings);
+        setClickedSettings(!clickedSettings);
         setClickedAch(!clickedAch);
         setClickedStats(!clickedStats);
         setJoinGameBackButton(!showJoinGameBackButton);
+        setClickedJoin(!clickedJoin);
+        setClickedCreate(!clickedCreate);
+
     }
 
     function renderNothingYet(){
         setShowNothingText(!showNothingText);
-        setclickedSettings(!clickedSettings);
+        setClickedSettings(!clickedSettings);
         setClickedAch(!clickedAch);
         setClickedStats(!clickedStats);
         setRenderNothingBackButton(!showRenderNothingBackButton);
+        setClickedJoin(!clickedJoin);
+        setClickedCreate(!clickedCreate);
     }
 
 
@@ -74,7 +80,7 @@ function HomePage(){
                     </button>
                 </div>
 
-                <div className="createGameButtonHome">
+                <div className={clickedCreate ? "createGameButtonHome" : null}>
                     <button className="createGameButtonHome"  onClick={renderGameLobby} type="submit" id="createGameButtonHome" rx="0" ry="0" x="0" y="0" >CREATE
                         GAME
                     </button>
