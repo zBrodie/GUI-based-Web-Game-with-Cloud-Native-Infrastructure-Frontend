@@ -76,6 +76,7 @@ input::placeholder{
   height: 8.850829%;
   left: 39%;
   top: 84%;
+  cursor: pointer;
 }
 #Ellipse_1 {
   fill: rgba(255,255,255,1);
@@ -150,6 +151,7 @@ input::placeholder{
   -webkit-text-fill-color: black;
   left: 68%;
   top: 84%;
+  cursor: pointer;
 }
 #accountName {
   left: 3.240211%;
@@ -198,6 +200,7 @@ input::placeholder{
   left: 3.25%;
   top: 31.027624%;
   justify-content: center;
+  cursor: pointer;
 }
 #achievementsButtonHome{
   fill: transparent;
@@ -232,6 +235,7 @@ input::placeholder{
   height: 6.850829%;
   left: 3.25%;
   top: 46.334807%;
+  cursor: pointer;
 }
 #Stats {
   left: 76px;
@@ -293,6 +297,7 @@ input::placeholder{
   height: 6.850829%;
   left: 3.25%;
   top: 61.569061%;
+  cursor: pointer;
 }
 
 #Upward_Mobility_big_Home_Page {
@@ -353,6 +358,7 @@ input::placeholder{
   height: 6.850829%;
   left: 4.75%;
   top: 55.569061%;
+  cursor: pointer;
 }
 
 #joinGameBackButton{
@@ -376,6 +382,7 @@ input::placeholder{
   height: 6.850829%;
   left: 4.75%;
   top: 85.569061%;
+  cursor: pointer;
 }
 
 #renderNothingBackButton{
@@ -399,6 +406,7 @@ input::placeholder{
   height: 6.850829%;
   left: 4.75%;
   top: 85.569061%;
+  cursor: pointer;
 }
 
 .nothingText{
