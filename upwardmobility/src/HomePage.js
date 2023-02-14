@@ -3,6 +3,7 @@ import unknown from './unknown@2x.png';
 import background from './sayonara4now-cyberpunk-city-sc.png';
 import upward from './Upward_Mobility_big.png'
 import logo from './Upward_Mobility_big_x.png'
+import {useRef, useState} from "react";
 
 import {
     BrowserRouter as Router,
@@ -24,8 +25,39 @@ function HomePage(){
         navigate("/GameLobby")
     }
 
+    const [clickedStats, setClickedStats] = useState(true);
+    const [clickedAch, setClickedAch] = useState(true);
+    const [clickedSettings, setclickedSettings] = useState(true);
+    const [clickedJoin, setClickedJoin] = useState(true);
+    const [showGIDText, setShowGameIDText] = useState(false)
+    const [showJoinGameButton, setShowJoinGameButton] = useState(false)
+    const [showNothingText, setShowNothingText] = useState(false)
+
+    const joinGame = useRef(null);
+    const statsButton = useRef(null);
+    const achievementsButton = useRef(null);
+    const settingsButton = useRef(null);
+
+    function setGameIDBox(){
+        setShowGameIDText(!showGIDText);
+        setShowJoinGameButton(!showJoinGameButton);
+        setclickedSettings(!clickedSettings);
+        setClickedAch(!clickedAch);
+        setClickedStats(!clickedStats);
+    }
+
     function renderNothingYet(){
-        alert("SORRY! NOTHING IS THERE YET!")
+        setShowNothingText(!showNothingText);
+        setclickedSettings(!clickedSettings);
+        setClickedAch(!clickedAch);
+        setClickedStats(!clickedStats);
+    }
+
+
+    function launchJoinGame(){
+        let submittedGameID = document.getElementById("gameIDTextBoxHome").value
+        console.log(submittedGameID);
+        renderGamePage()
     }
 
     return(
@@ -33,8 +65,8 @@ function HomePage(){
             <div className= "nonsideMenuHome" name = "nonSideMenuHome">
                 <img id="sayonara4now-cyberpunk-city-sc" src={background} srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
-                <div className="joinGameButtonHome">
-                    <button className="joinGameButtonHome" onClick={renderGamePage} type="submit" id="joinGameButtonHome" rx="0" ry="0" x="0" y="0">JOIN GAME
+                <div className={clickedJoin ? "joinGameButtonHome" : null} >
+                    <button  ref = {joinGame}  className="joinGameButtonHome" onClick={setGameIDBox} type="submit" id="joinGameButtonHome" rx="0" ry="0" x="0" y="0">JOIN GAME
                     </button>
                 </div>
 
@@ -62,17 +94,21 @@ function HomePage(){
                     <span>THELEGNED27</span>
                 </div>
 
-                <div className="statsButtonHome">
-                    <button id="statsButtonHome" rx="0" ry="0" x="0" y="0" onClick={renderNothingYet}>STATS</button>
+                <div className={ clickedStats?  "statsButtonHome" : null}>
+                    <button ref = {statsButton} className={ clickedStats?  "statsButtonHome" : null} id="statsButtonHome" rx="0" ry="0" x="0" y="0" onClick={renderNothingYet}>STATS</button>
                 </div>
 
-                <div className="achievementsButtonHome">
-                    <button className={"achievementsButtonHome"} id="achievementsButtonHome"  onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">ACHIEVEMENTS
+                <input className={showGIDText? "gameIDTextBoxHome" : null} id = "gameIDTextBoxHome" placeholder={"Enter Game ID!"} type = "text"/>
+                <button className = {showJoinGameButton? "gameIDJoinButton" : null} type = "submit" id = "gameIDJoingButton" onClick = {launchJoinGame} >JOIN!</button>
+                <div id = "nothingText" className = {showNothingText? "nothingText" : null}>SORRY! THERE IS NOTHING HERE YET :,(</div>
+
+                <div className={ clickedAch?  "achievementsButtonHome" : null}>
+                    <button ref = {achievementsButton} className={ clickedAch?  "achievementsButtonHome" : null} id="achievementsButtonHome"  onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">ACHIEVEMENTS
                     </button>
                 </div>
 
-                <div className="settingsButtonHome">
-                    <button className={"settingsButtonHome"} id="settingsButtonHome" onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">SETTINGS</button>
+                <div className={ clickedSettings? "settingsButtonHome" : null}>
+                    <button ref = {settingsButton} className={ clickedSettings? "settingsButtonHome" : null} id="settingsButtonHome" onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">SETTINGS</button>
                 </div>
             </div>
         </div>
