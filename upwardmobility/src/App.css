@@ -54,20 +54,21 @@ input::placeholder{
   stroke: rgba(0,0,0,1);
   stroke-width: 3px;
   background-color: #F5F5F5;
-  opacity: 74%;
   stroke-linejoin: miter;
+  stroke-linecap: butt;
+  opacity: 74%;
   white-space: nowrap;
   text-align: center;
   font-style: normal;
-  font-family: Common Pixel;
   font-weight: normal;
+  font-family: Common Pixel;
   font-size: 1.5vw;
-  stroke-linecap: butt;
   stroke-miterlimit: 4;
   shape-rendering: auto;
 }
 .joinGameButtonHome{
   position: fixed;
+  fill: transparent;
   overflow: visible;
   opacity: 74%;
   text-align: center;
