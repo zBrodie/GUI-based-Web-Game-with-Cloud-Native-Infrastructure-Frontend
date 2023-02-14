@@ -32,7 +32,8 @@ function HomePage(){
     const [showGIDText, setShowGameIDText] = useState(false)
     const [showJoinGameButton, setShowJoinGameButton] = useState(false)
     const [showNothingText, setShowNothingText] = useState(false)
-    const [showBackButton, setBackButton] = useState(false)
+    const [showJoinGameBackButton, setJoinGameBackButton] = useState(false)
+    const [showRenderNothingBackButton, setRenderNothingBackButton] = useState(false)
 
     const joinGame = useRef(null);
     const statsButton = useRef(null);
@@ -45,7 +46,7 @@ function HomePage(){
         setclickedSettings(!clickedSettings);
         setClickedAch(!clickedAch);
         setClickedStats(!clickedStats);
-        setBackButton(!showBackButton);
+        setJoinGameBackButton(!showJoinGameBackButton);
     }
 
     function renderNothingYet(){
@@ -53,7 +54,7 @@ function HomePage(){
         setclickedSettings(!clickedSettings);
         setClickedAch(!clickedAch);
         setClickedStats(!clickedStats);
-        setBackButton(!showBackButton)
+        setRenderNothingBackButton(!showRenderNothingBackButton);
     }
 
 
@@ -103,8 +104,10 @@ function HomePage(){
 
                 <input className={showGIDText? "gameIDTextBoxHome" : null} id = "gameIDTextBoxHome" placeholder={"Enter Game ID!"} type = "text"/>
                 <button className = {showJoinGameButton? "gameIDJoinButton" : null} type = "submit" id = "gameIDJoingButton" onClick = {launchJoinGame} >JOIN!</button>
-                <button className = {showBackButton? "homepageBackButton" : null} type="back" id="homepageBackButton"> BACK</button>
+                <button className = {showJoinGameBackButton? "joinGameBackButton" : null} type="back" id="joinGameBackButton" onClick={setGameIDBox} > BACK</button>
+
                 <div id = "nothingText" className = {showNothingText? "nothingText" : null}>SORRY! THERE IS NOTHING HERE YET :,(</div>
+                <button className = {showRenderNothingBackButton? "renderNothingBackButton" : null} type="back" id="renderNothingBackButton" onClick={renderNothingYet} > BACK</button>
 
                 <div className={ clickedAch?  "achievementsButtonHome" : null}>
                     <button ref = {achievementsButton} className={ clickedAch?  "achievementsButtonHome" : null} id="achievementsButtonHome"  onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">ACHIEVEMENTS
