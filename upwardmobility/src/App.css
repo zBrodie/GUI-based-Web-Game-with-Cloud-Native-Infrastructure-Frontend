@@ -360,10 +360,10 @@ input::placeholder{
   position: fixed;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.5vw;
+  font-size: .75vw;
   font-family: Common Pixel;
   -webkit-text-fill-color: white;
-  left: 3.25%;
+  left: 1.25%;
   top: 46.334807%;
   color: white;
 }
