@@ -31,6 +31,7 @@ function App() {
               <Route exact path="/HomePage" element={<HomePage/>}></Route>
             <Route exact path ="/CreateAccount" element={<SignupPage/>}/>
             <Route exact path = "/GamePage" element={<GamePage/>}/>
+            <Route exact path = "/GameLobby" element={<GameLobby/>}></Route>
           </Routes>
         </Router>
 

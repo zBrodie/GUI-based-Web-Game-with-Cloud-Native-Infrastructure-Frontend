@@ -44,6 +44,14 @@ input.GameLobby{
     border-style: solid;
     border-color: white;
     border-width: 5px;
+    font-weight: normal;
+    font-family: "Common Pixel";
+    font-size: 30px;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .mediaViewInfo {
