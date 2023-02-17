@@ -54,20 +54,21 @@ input::placeholder{
   stroke: rgba(0,0,0,1);
   stroke-width: 3px;
   background-color: #F5F5F5;
-  opacity: 74%;
   stroke-linejoin: miter;
+  stroke-linecap: butt;
+  opacity: 74%;
   white-space: nowrap;
   text-align: center;
   font-style: normal;
-  font-family: Common Pixel;
   font-weight: normal;
+  font-family: Common Pixel;
   font-size: 1.5vw;
-  stroke-linecap: butt;
   stroke-miterlimit: 4;
   shape-rendering: auto;
 }
 .joinGameButtonHome{
   position: fixed;
+  fill: transparent;
   overflow: visible;
   opacity: 74%;
   text-align: center;
@@ -76,6 +77,7 @@ input::placeholder{
   height: 8.850829%;
   left: 39%;
   top: 84%;
+  cursor: pointer;
 }
 #Ellipse_1 {
   fill: rgba(255,255,255,1);
@@ -150,6 +152,7 @@ input::placeholder{
   -webkit-text-fill-color: black;
   left: 68%;
   top: 84%;
+  cursor: pointer;
 }
 #accountName {
   left: 3.240211%;
@@ -198,6 +201,7 @@ input::placeholder{
   left: 3.25%;
   top: 31.027624%;
   justify-content: center;
+  cursor: pointer;
 }
 #achievementsButtonHome{
   fill: transparent;
@@ -232,6 +236,7 @@ input::placeholder{
   height: 6.850829%;
   left: 3.25%;
   top: 46.334807%;
+  cursor: pointer;
 }
 #Stats {
   left: 76px;
@@ -293,6 +298,7 @@ input::placeholder{
   height: 6.850829%;
   left: 3.25%;
   top: 61.569061%;
+  cursor: pointer;
 }
 
 #Upward_Mobility_big_Home_Page {
@@ -353,7 +359,57 @@ input::placeholder{
   height: 6.850829%;
   left: 4.75%;
   top: 55.569061%;
+  cursor: pointer;
 }
+
+#joinGameBackButton{
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+}
+
+.joinGameBackButton{
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+  -webkit-text-fill-color: white;
+  width: 10.159105%;
+  height: 6.850829%;
+  left: 4.75%;
+  top: 85.569061%;
+  cursor: pointer;
+}
+
+#renderNothingBackButton{
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+}
+
+.renderNothingBackButton{
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+  -webkit-text-fill-color: white;
+  width: 10.159105%;
+  height: 6.850829%;
+  left: 4.75%;
+  top: 85.569061%;
+  cursor: pointer;
+}
+
 .nothingText{
   overflow-wrap: break-word;
   white-space: initial;

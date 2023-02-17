@@ -352,6 +352,7 @@ input::placeholder{
     line-height: 75px;
     font-family: "Common Pixel";
     -webkit-text-fill-color: white;
+    cursor: pointer;
 }
 #Repeat_Password {
     left: -5px;
@@ -381,6 +382,7 @@ input::placeholder{
     font-size: 24px;
     color: rgba(255,255,255,1);
     background: none;
+    cursor: pointer;
 }
 #Upward_Mobility_big {
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));

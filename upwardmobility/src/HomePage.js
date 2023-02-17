@@ -27,11 +27,14 @@ function HomePage(){
 
     const [clickedStats, setClickedStats] = useState(true);
     const [clickedAch, setClickedAch] = useState(true);
-    const [clickedSettings, setclickedSettings] = useState(true);
+    const [clickedSettings, setClickedSettings] = useState(true);
     const [clickedJoin, setClickedJoin] = useState(true);
+    const [clickedCreate, setClickedCreate] = useState(true);
     const [showGIDText, setShowGameIDText] = useState(false)
     const [showJoinGameButton, setShowJoinGameButton] = useState(false)
     const [showNothingText, setShowNothingText] = useState(false)
+    const [showJoinGameBackButton, setJoinGameBackButton] = useState(false)
+    const [showRenderNothingBackButton, setRenderNothingBackButton] = useState(false)
 
     const joinGame = useRef(null);
     const statsButton = useRef(null);
@@ -41,16 +44,23 @@ function HomePage(){
     function setGameIDBox(){
         setShowGameIDText(!showGIDText);
         setShowJoinGameButton(!showJoinGameButton);
-        setclickedSettings(!clickedSettings);
+        setClickedSettings(!clickedSettings);
         setClickedAch(!clickedAch);
         setClickedStats(!clickedStats);
+        setJoinGameBackButton(!showJoinGameBackButton);
+        setClickedJoin(!clickedJoin);
+        setClickedCreate(!clickedCreate);
+
     }
 
     function renderNothingYet(){
         setShowNothingText(!showNothingText);
-        setclickedSettings(!clickedSettings);
+        setClickedSettings(!clickedSettings);
         setClickedAch(!clickedAch);
         setClickedStats(!clickedStats);
+        setRenderNothingBackButton(!showRenderNothingBackButton);
+        setClickedJoin(!clickedJoin);
+        setClickedCreate(!clickedCreate);
     }
 
 
@@ -70,7 +80,7 @@ function HomePage(){
                     </button>
                 </div>
 
-                <div className="createGameButtonHome">
+                <div className={clickedCreate ? "createGameButtonHome" : null}>
                     <button className="createGameButtonHome"  onClick={renderGameLobby} type="submit" id="createGameButtonHome" rx="0" ry="0" x="0" y="0" >CREATE
                         GAME
                     </button>
@@ -100,7 +110,10 @@ function HomePage(){
 
                 <input className={showGIDText? "gameIDTextBoxHome" : null} id = "gameIDTextBoxHome" placeholder={"Enter Game ID!"} type = "text"/>
                 <button className = {showJoinGameButton? "gameIDJoinButton" : null} type = "submit" id = "gameIDJoingButton" onClick = {launchJoinGame} >JOIN!</button>
+                <button className = {showJoinGameBackButton? "joinGameBackButton" : null} type="back" id="joinGameBackButton" onClick={setGameIDBox} > BACK</button>
+
                 <div id = "nothingText" className = {showNothingText? "nothingText" : null}>SORRY! THERE IS NOTHING HERE YET :,(</div>
+                <button className = {showRenderNothingBackButton? "renderNothingBackButton" : null} type="back" id="renderNothingBackButton" onClick={renderNothingYet} > BACK</button>
 
                 <div className={ clickedAch?  "achievementsButtonHome" : null}>
                     <button ref = {achievementsButton} className={ clickedAch?  "achievementsButtonHome" : null} id="achievementsButtonHome"  onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">ACHIEVEMENTS
