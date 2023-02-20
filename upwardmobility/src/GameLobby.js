@@ -34,29 +34,29 @@ function GameLobby(){
             <div className="nonsideMenuLobby">
                 <rect id="Rectangle_51" rx="0" ry="0" x="0" y="0">
                 </rect>
-                <svg className="Rectangle_52">
-                    <rect id="Rectangle_52" rx="0" ry="0" x="0" y="0">
+                <svg className="Player_1">
+                    <rect id="Player_1" rx="0" ry="0" x="0" y="0">
                     </rect>
                 </svg>
 
-                <svg className="Rectangle_53">
-                    <rect id="Rectangle_53" rx="0" ry="0" x="0" y="0">
+                <svg className="Player_2">
+                    <rect id="Player_2" rx="0" ry="0" x="0" y="0">
                     </rect>
                 </svg>
-                <svg className="Rectangle_54">
-                    <rect id="Rectangle_54" rx="0" ry="0" x="0" y="0">
+                <svg className="Player_3">
+                    <rect id="Player_3" rx="0" ry="0" x="0" y="0">
                     </rect>
                 </svg>
-                <svg className="Rectangle_55">
-                    <rect id="Rectangle_55" rx="0" ry="0" x="0" y="0">
+                <svg className="Player_4">
+                    <rect id="Player_4" rx="0" ry="0" x="0" y="0">
                     </rect>
                 </svg>
-                <svg className="Rectangle_56">
-                    <rect id="Rectangle_56" rx="0" ry="0" x="0" y="0">
+                <svg className="Player_5">
+                    <rect id="Player_5" rx="0" ry="0" x="0" y="0">
                     </rect>
                 </svg>
-                <svg className="Rectangle_57">
-                    <rect id="Rectangle_57" rx="0" ry="0" x="0" y="0">
+                <svg className="Player_6">
+                    <rect id="Player_6" rx="0" ry="0" x="0" y="0">
                     </rect>
                 </svg>
             </div>

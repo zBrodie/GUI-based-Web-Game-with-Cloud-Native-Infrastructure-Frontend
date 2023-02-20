@@ -3,13 +3,13 @@
     src:url("./undertale-deltarune-text-font-extended.ttf") format('truetype')
 }
 
+
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    white;
     font-size: 2vw;
     font-family: "Common Pixel";
     text-align: left;
 }
-
 
 button.GameLobby{
     height: 80px;
@@ -23,6 +23,7 @@ button.GameLobby{
     font-family: "Common Pixel";
     font-size: 1vw;
     color: white;
+    cursor:pointer;
 }
 
 p{
@@ -90,91 +91,6 @@ input.GameLobby{
     top: 0px;
 }
 
-#Rectangle_38 {
-    fill: transparent;
-    stroke: rgba(255,255,255,1);
-    stroke-width: 4px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_38 {
-    position: absolute;
-    overflow: visible;
-    width: 209px;
-    height: 53px;
-    left: 49px;
-    top: 311px;
-}
-#Rectangle_39 {
-    fill: transparent;
-    stroke: rgba(255,255,255,1);
-    stroke-width: 4px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_39 {
-    position: absolute;
-    overflow: visible;
-    width: 209px;
-    height: 53px;
-    left: 50px;
-    top: 410px;
-}
-
-#Rectangle_40 {
-    fill: transparent;
-    stroke: rgba(255,255,255,1);
-    stroke-width: 4px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_40 {
-    position: absolute;
-    overflow: visible;
-    width: 209px;
-    height: 53px;
-    left: 50px;
-    top: 507px;
-}
-
-#Rectangle_41 {
-    fill: transparent;
-    stroke: rgba(255,255,255,1);
-    stroke-width: 4px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_41 {
-    position: absolute;
-    overflow: visible;
-    width: 209px;
-    height: 53px;
-    left: 50px;
-    top: 607px;
-}
-#Repeat_Password {
-    left: -5px;
-    top: 623px;
-    position: absolute;
-    overflow: visible;
-    width: 317px;
-    height: 24px;
-    text-align: center;
-    font-family: "Common Pixel";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    color: rgba(255,255,255,1);
-}
-
 #Upward_Mobility_big_Lobby {
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
     position: absolute;
@@ -185,20 +101,7 @@ input.GameLobby{
     top: 2.85635359%;
     overflow: visible;
 }
-#Username {
-    left: 58px;
-    top: 322px;
-    position: absolute;
-    overflow: visible;
-    width: 191px;
-    height: 34px;
-    text-align: center;
-    font-family: "Common Pixel";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    color: rgba(255,255,255,1);
-}
+
 #nonsideMenuLobby {
     fill: rgba(54,57,63,1);
 }
@@ -210,7 +113,7 @@ input.GameLobby{
     background-color: #36393F;
     left: 16%
 }
-#Rectangle_52 {
+#Player_1 {
     stroke: #707070;
     stroke-width: 5px;
     stroke-linejoin: miter;
@@ -218,7 +121,7 @@ input.GameLobby{
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Rectangle_52 {
+.Player_1 {
     position: absolute;
     overflow: visible;
     background-color: #36393F;
@@ -229,7 +132,7 @@ input.GameLobby{
     left: 16%;
     top: 1px;
 }
-#Rectangle_53 {
+#Player_2 {
     fill: transparent;
     stroke: rgba(112,112,112,1);
     stroke-width: 1px;
@@ -238,7 +141,7 @@ input.GameLobby{
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Rectangle_53 {
+.Player_2 {
     position: absolute;
     overflow: visible;
     background-color: #36393F;
@@ -249,7 +152,7 @@ input.GameLobby{
     border-color: #707070;
     top: 1px;
 }
-#Rectangle_54 {
+#Player_3 {
     fill: transparent;
     stroke: rgba(112,112,112,1);
     stroke-width: 1px;
@@ -258,7 +161,7 @@ input.GameLobby{
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Rectangle_54 {
+.Player_3 {
     position: absolute;
     overflow: visible;
     width: 31.173275%;
@@ -269,7 +172,7 @@ input.GameLobby{
     border-color: #707070;
     top: 1px;
 }
-#Rectangle_55 {
+#Player_4 {
     fill: transparent;
     stroke: rgba(112,112,112,1);
     stroke-width: 1px;
@@ -278,7 +181,7 @@ input.GameLobby{
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Rectangle_55 {
+.Player_4 {
     position: absolute;
     overflow: hidden;
     width: 31.173275%;
@@ -289,7 +192,7 @@ input.GameLobby{
     border-color: #707070;
     top: 49.944751%;
 }
-#Rectangle_56 {
+#Player_5 {
     fill: transparent;
     stroke: rgba(112,112,112,1);
     stroke-width: 1px;
@@ -298,7 +201,7 @@ input.GameLobby{
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Rectangle_56 {
+.Player_5 {
     position: absolute;
     overflow: hidden;
     width: 31.173275%;
@@ -309,7 +212,7 @@ input.GameLobby{
     border-color: #707070;
     top: 49.944751%;
 }
-#Rectangle_57 {
+#Player_6 {
     fill: transparent;
     stroke: rgba(112,112,112,1);
     stroke-width: 1px;
@@ -318,7 +221,7 @@ input.GameLobby{
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Rectangle_57 {
+.Player_6 {
     position: absolute;
     overflow: hidden;
     width: 31.173275%;
