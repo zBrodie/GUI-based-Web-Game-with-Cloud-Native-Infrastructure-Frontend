@@ -25,9 +25,12 @@ function HomePage(){
         navigate("/GameLobby")
     }
 
+    const renderLoginPage = ()=>{
+        navigate("/")
+    }
+
     const [clickedStats, setClickedStats] = useState(true);
     const [clickedAch, setClickedAch] = useState(true);
-    const [clickedSettings, setClickedSettings] = useState(true);
     const [clickedJoin, setClickedJoin] = useState(true);
     const [clickedCreate, setClickedCreate] = useState(true);
     const [showGIDText, setShowGameIDText] = useState(false)
@@ -36,12 +39,18 @@ function HomePage(){
     const [showJoinGameBackButton, setJoinGameBackButton] = useState(false)
     const [showRenderNothingBackButton, setRenderNothingBackButton] = useState(false)
 
+    const [clickedSettings, setClickedSettings] = useState(true);
+    const [showSettingsBackButton, setSettingsBackButton] = useState(false);
+    const[showSignoutButton, setSignoutButton] = useState(false);
+
+
     const joinGame = useRef(null);
     const createGame = useRef(null);
     const statsButton = useRef(null);
     const achievementsButton = useRef(null);
     const settingsButton = useRef(null);
 
+    // Click join game button method
     function setGameIDBox(){
         setShowGameIDText(!showGIDText);
         setShowJoinGameButton(!showJoinGameButton);
@@ -64,6 +73,16 @@ function HomePage(){
         setClickedCreate(!clickedCreate);
     }
 
+    // Click settings button Method
+    function renderSettings(){
+        setClickedSettings(!clickedSettings);
+        setClickedAch(!clickedAch);
+        setClickedStats(!clickedStats);
+        setSettingsBackButton(!showSettingsBackButton);
+        setClickedJoin(!clickedJoin);
+        setClickedCreate(!clickedCreate);
+        setSignoutButton(!showSignoutButton);
+    }
 
     function launchJoinGame(){
         let submittedGameID = document.getElementById("gameIDTextBoxHome").value
@@ -123,7 +142,11 @@ function HomePage(){
 
                 {/*Everything for the settings tab*/}
                 <div className={ clickedSettings? "settingsButtonHome" : null}>
-                    <button ref = {settingsButton} className={ clickedSettings? "settingsButtonHome" : null} id="settingsButtonHome" onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">SETTINGS</button>
+                    <button ref = {settingsButton} className={ clickedSettings? "settingsButtonHome" : null} id="settingsButtonHome" onClick={renderSettings} rx="0" ry="0" x="0" y="0">SETTINGS</button>
+                </div>
+                <button className = {showSettingsBackButton? "settingsBackButton" : null} type="back" id="settingsBackButton" onClick={renderSettings} > BACK</button>
+                <div >
+                    <button className={showSignoutButton? "signOutButton" : null} id="signOutButton" onClick={renderLoginPage} > LOG OUT</button>
                 </div>
 
             </div>
