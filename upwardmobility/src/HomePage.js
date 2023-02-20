@@ -37,6 +37,7 @@ function HomePage(){
     const [showRenderNothingBackButton, setRenderNothingBackButton] = useState(false)
 
     const joinGame = useRef(null);
+    const createGame = useRef(null);
     const statsButton = useRef(null);
     const achievementsButton = useRef(null);
     const settingsButton = useRef(null);
@@ -76,12 +77,12 @@ function HomePage(){
                 <img id="sayonara4now-cyberpunk-city-sc" src={background} srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
                 <div className={clickedJoin ? "joinGameButtonHome" : null} >
-                    <button  ref = {joinGame}  className="joinGameButtonHome" onClick={setGameIDBox} type="submit" id="joinGameButtonHome" rx="0" ry="0" x="0" y="0">JOIN GAME
+                    <button  ref = {joinGame}  className={clickedJoin ? "joinGameButtonHome" : null} onClick={setGameIDBox} type="submit" id="joinGameButtonHome" rx="0" ry="0" x="0" y="0">JOIN GAME
                     </button>
                 </div>
 
                 <div className={clickedCreate ? "createGameButtonHome" : null}>
-                    <button className="createGameButtonHome"  onClick={renderGameLobby} type="submit" id="createGameButtonHome" rx="0" ry="0" x="0" y="0" >CREATE
+                    <button ref = {createGame} className={clickedCreate ? "createGameButtonHome" : null}  onClick={renderGameLobby} type="submit" id="createGameButtonHome" rx="0" ry="0" x="0" y="0" >CREATE
                         GAME
                     </button>
                 </div>
@@ -94,6 +95,7 @@ function HomePage(){
                 <img className={"Upward_Mobility_big_Home_Page"} id="Upward_Mobility_big_Home_Page" src={logo}/>
             </div>
 
+            {/*Everything for side menu*/}
             <div className="sideMenuHome">
                 <rect className={"sideMenuHome"} id="sideMenuHome">
                 </rect>
@@ -116,13 +118,14 @@ function HomePage(){
                 <button className = {showRenderNothingBackButton? "renderNothingBackButton" : null} type="back" id="renderNothingBackButton" onClick={renderNothingYet} > BACK</button>
 
                 <div className={ clickedAch?  "achievementsButtonHome" : null}>
-                    <button ref = {achievementsButton} className={ clickedAch?  "achievementsButtonHome" : null} id="achievementsButtonHome"  onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">ACHIEVEMENTS
-                    </button>
+                    <button ref = {achievementsButton} className={ clickedAch?  "achievementsButtonHome" : null} id="achievementsButtonHome"  onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">ACHIEVEMENTS</button>
                 </div>
 
+                {/*Everything for the settings tab*/}
                 <div className={ clickedSettings? "settingsButtonHome" : null}>
                     <button ref = {settingsButton} className={ clickedSettings? "settingsButtonHome" : null} id="settingsButtonHome" onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">SETTINGS</button>
                 </div>
+
             </div>
         </div>
     );
