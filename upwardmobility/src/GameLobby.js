@@ -17,6 +17,11 @@ function GameLobby(){
         navigate("/GamePage")
     }
 
+    const renderHomePage = () =>{
+        navigate("/HomePage")
+    }
+
+
     return(
         <div className={"GameLobby"}>
             <div className="sideMenuLobby">
@@ -24,9 +29,10 @@ function GameLobby(){
                 </rect>
                 <p id="MaxPlayerText">MAX PLAYERS:</p>
                 <input className={"GameLobby"} type="text" placeholder="6"/>
-                <p id="RoundTime">Round Time: </p>
-                <input className={"GameLobby"} type="text" id="roundInput" placeholder="25sec"/>
-                <button className={"GameLobby"}  onClick={renderGamePage} type="submit" text="Start">Start</button>
+                <p id="RoundTime">Round Time(sec): </p>
+                <input className={"GameLobby"} type="text" id="roundInput" placeholder="25"/>
+                <button id="startGameButton" className={"GameLobby"}  onClick={renderGamePage} type="submit" text="Start">Start</button>
+                <button id="createGameBackButton" className={"createGameBackButton"} onClick={renderHomePage} type="back"> BACK</button>
             </div>
 
             <img id="Upward_Mobility_big_Lobby" src="Upward_Mobility_big.png" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
