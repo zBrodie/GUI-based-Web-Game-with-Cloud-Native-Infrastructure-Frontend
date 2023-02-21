@@ -5,8 +5,8 @@ import background from './sayonara4now-cyberpunk-city-sc.png';
 import upward from './Upward_Mobility_big.png'
 import logo from './Upward_Mobility_big_x.png'
 import SignupPage from './SignupPage'
-
-
+import {CognitoUserPool, AuthenticationDetails, CognitoUser} from "amazon-cognito-identity-js";
+import UserPool from "./UserPool";
 
 import {
     BrowserRouter as Router,
@@ -15,10 +15,39 @@ import {
     Link,
     useNavigate
 } from 'react-router-dom'
+//import userPool from "./UserPool";
+import {useState} from "react";
 
 function Login() {
 
     const navigate = useNavigate();
+/*
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+    const user = new CognitoUser({
+        Username: email,
+        Pool: userPool
+    })
+
+    const authDetails = new AuthenticationDetails({
+        Username: email,
+        Password: password
+    })
+
+    user.authenticateUser(authDetails, {
+        onSuccess: (data) => {
+            console.log("onSuccess: ", data)
+            loadHomePage()
+        },
+        onFailure: (err) =>{
+            console.log("onFailure: ", err)
+        },
+        newPasswordRequired: (data) =>{
+            console.log("new password required: ", data)
+        }
+    })
+*/
 
     const createAccountPage = () => {
         navigate("/CreateAccount")
@@ -46,7 +75,7 @@ function Login() {
                     <span>Please Log In:</span>
                 </div>
                 <form>
-                    <input type={"text"} placeholder={"USERNAME"} id ="Username_Input_Field_Login" className="Username_Input_Field_Login"></input>
+                    <input type={"text"} placeholder={"EMAIL"} id ="Username_Input_Field_Login" className="Username_Input_Field_Login"></input>
                 </form>
                 <form>
                     <input className={"Password_Input_Field"}  type = "text" placeholder={"PASSWORD"} id ="Password_Input_Field_Login"/>

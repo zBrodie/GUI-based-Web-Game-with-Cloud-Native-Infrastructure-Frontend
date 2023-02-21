@@ -5,8 +5,16 @@ import upward from './Upward_Mobility_big.png'
 import { useNavigate} from "react-router-dom";
 import logo from './Upward_Mobility_big_x.png'
 import upwardz from './Upward_Mobility_big_z.png'
+import {useState} from "react";
+//import UserPool from "./UserPool";
+//import userPool from "./UserPool";
 
 function SignupPage() {
+
+    const [username, setUserName] = useState("")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [confirmPassword, setConfPassword] = useState("")
 
     const navigate = useNavigate();
 
@@ -14,9 +22,28 @@ function SignupPage() {
         navigate("/")
     }
 
+    /*
+    const onSubmit = (event) =>{
+        event.preventDefault();
+
+        if(password.toString() == confirmPassword.toString()){
+            UserPool.signUp(email, password, [], null, (err, data) => {
+                if(err){
+                    console.error(err);
+                }
+                console.log(data);
+            })
+        }
+        else{
+            alert("PASSWORDS DO NOT MATCH!")
+        }
+
+    }
+        */
     return (
         <div className="SignupPage">
             <div id="Web_1920__3">
+                <form></form>
                 <img id="sayonara4now-cyberpunk-city-sc" src="sayonara4now-cyberpunk-city-sc.png"
                      srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
@@ -32,22 +59,22 @@ function SignupPage() {
                         <span>Create your account:<br/></span><br/>
                     </div>
                     <form>
-                        <input placeholder={"USERNAME"} id = "Rectangle_38" type={"text"} className="Username_Input_Field_Sign">
+                        <input value = {username}  onChange={(event => setUserName(event.target.value))} placeholder={"USERNAME"} id = "Rectangle_38" type={"text"} className="Username_Input_Field_Sign">
                         </input>
                     </form>
 
                     <form>
-                        <input type={"text"} placeholder={"EMAIL"} id ="Rectangle_39" className="Email_Input_Field">
+                        <input value = {email}  onChange={(event => setEmail(event.target.value))}  type={"text"} placeholder={"EMAIL"} id ="Rectangle_39" className="Email_Input_Field">
                         </input>
                     </form>
 
                     <form>
-                        <input id ="Password_Input_Field_Sign"  type = "text" id= "Rectangle_40"  placeholder={"PASSWORD"} className="Password_Input_Field_Sign">
+                        <input value = {password}  onChange={(event => setPassword(event.target.value))} id ="Password_Input_Field_Sign"  type = "password" id= "Rectangle_40"  placeholder={"PASSWORD"} className="Password_Input_Field_Sign">
                         </input>
                     </form>
 
                     <form>
-                        <input id = "Rectangle_41" placeholder={"REPEAT PASSWORD"} type = "text" className="Repeat_Input_Field">
+                        <input value = {confirmPassword}  onChange={(event => setConfPassword(event.target.value))} id = "Rectangle_41" placeholder={"REPEAT PASSWORD"} type = "password" className="Repeat_Input_Field">
                         </input>
                     </form>
 

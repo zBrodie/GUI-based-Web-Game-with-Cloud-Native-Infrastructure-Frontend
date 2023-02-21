@@ -28,6 +28,34 @@ input::placeholder{
   --web-view-ids: HomePage;
 }
 
+.statsText1{
+  position: absolute;
+  font-family: "Common Pixel";
+  -webkit-text-fill-color: white;
+  font-size: 1.5vw;
+  left: 3.25%;
+  top: 31.027624%;
+}
+
+.statsText2{
+   position: absolute;
+   font-family: "Common Pixel";
+   -webkit-text-fill-color: white;
+   font-size: 1.5vw;
+   left: 3.25%;
+   top: 40.027624%;
+ }
+.statsText3{
+  position: absolute;
+  font-family: "Common Pixel";
+  -webkit-text-fill-color: white;
+  font-size: 1.5vw;
+  left: 3.25%;
+  top: 53.027624%;
+}
+
+
+
 #HomePage {
   position: fixed;
   width: 100%;

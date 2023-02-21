@@ -44,6 +44,10 @@ function HomePage(){
     const[showSignoutButton, setSignoutButton] = useState(false);
 
 
+    const [showStat1, setStat1] = useState(false);
+    const [showStat2, setStat2] = useState(false);
+    const [showStat3, setStat3] = useState(false);
+
     const joinGame = useRef(null);
     const createGame = useRef(null);
     const statsButton = useRef(null);
@@ -82,6 +86,17 @@ function HomePage(){
         setClickedJoin(!clickedJoin);
         setClickedCreate(!clickedCreate);
         setSignoutButton(!showSignoutButton);
+    }
+
+    function clickedStatsFunc(){
+        setClickedStats(false);
+        setSettingsBackButton(true);
+        setClickedSettings(false);
+        setClickedAch(false);
+
+        setStat1(true)
+        setStat2(true)
+        setStat3(true)
     }
 
     function launchJoinGame(){
@@ -126,8 +141,13 @@ function HomePage(){
                 </div>
 
                 <div className={ clickedStats?  "statsButtonHome" : null}>
-                    <button ref = {statsButton} className={ clickedStats?  "statsButtonHome" : null} id="statsButtonHome" rx="0" ry="0" x="0" y="0" onClick={renderNothingYet}>STATS</button>
+                    <button ref = {statsButton} className={ clickedStats?  "statsButtonHome" : null} id="statsButtonHome" rx="0" ry="0" x="0" y="0" onClick={clickedStatsFunc}>STATS</button>
                 </div>
+
+                <label className={showStat1? "statsText1" : null} >Number of wins: </label>
+                <label className={showStat2? "statsText2" : null}>Number of games played: </label>
+                <label className={showStat3? "statsText3" : null}>Number of deaths: </label>
+
 
                 <input className={showGIDText? "gameIDTextBoxHome" : null} id = "gameIDTextBoxHome" placeholder={"Enter Game ID!"} type = "text"/>
                 <button className = {showJoinGameButton? "gameIDJoinButton" : null} type = "submit" id = "gameIDJoingButton" onClick = {launchJoinGame} >JOIN!</button>
