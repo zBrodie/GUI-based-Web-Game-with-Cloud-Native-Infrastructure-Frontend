@@ -79,13 +79,17 @@ function HomePage(){
 
     // Click settings button Method
     function renderSettings(){
-        setClickedSettings(!clickedSettings);
-        setClickedAch(!clickedAch);
-        setClickedStats(!clickedStats);
-        setSettingsBackButton(!showSettingsBackButton);
-        setClickedJoin(!clickedJoin);
-        setClickedCreate(!clickedCreate);
-        setSignoutButton(!showSignoutButton);
+        setClickedSettings(false);
+        setClickedAch(false);
+        setClickedStats(false);
+        setSettingsBackButton(true);
+        setClickedJoin(true);
+        setClickedCreate(true);
+        setSignoutButton(true);
+
+        setStat1(false)
+        setStat2(false)
+        setStat3(false)
     }
 
     function clickedStatsFunc(){
@@ -97,6 +101,22 @@ function HomePage(){
         setStat1(true)
         setStat2(true)
         setStat3(true)
+    }
+
+    function hitBackButton(){
+        setClickedJoin(true);
+        setClickedCreate(true);
+
+        setStat1(false)
+        setStat2(false)
+        setStat3(false)
+
+        setSignoutButton(false)
+
+        setClickedStats(true);
+        setSettingsBackButton(false);
+        setClickedSettings(true);
+        setClickedAch(true);
     }
 
     function launchJoinGame(){
@@ -164,7 +184,7 @@ function HomePage(){
                 <div className={ clickedSettings? "settingsButtonHome" : null}>
                     <button ref = {settingsButton} className={ clickedSettings? "settingsButtonHome" : null} id="settingsButtonHome" onClick={renderSettings} rx="0" ry="0" x="0" y="0">SETTINGS</button>
                 </div>
-                <button className = {showSettingsBackButton? "settingsBackButton" : null} type="back" id="settingsBackButton" onClick={renderSettings} > BACK</button>
+                <button className = {showSettingsBackButton? "settingsBackButton" : null} type="back" id="settingsBackButton" onClick={hitBackButton} > BACK</button>
                 <div >
                     <button className={showSignoutButton? "signOutButton" : null} id="signOutButton" onClick={renderLoginPage} > LOG OUT</button>
                 </div>
