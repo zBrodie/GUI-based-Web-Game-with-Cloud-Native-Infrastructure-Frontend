@@ -499,3 +499,26 @@ input::placeholder{
   top: 46.334807%;
   color: white;
 }
+
+#statsBackButton{
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+}
+.statsBackButton{
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+  -webkit-text-fill-color: white;
+  width: 10.159105%;
+  height: 6.850829%;
+  left: 4.75%;
+  top: 85.569061%;
+  cursor: pointer;
+}

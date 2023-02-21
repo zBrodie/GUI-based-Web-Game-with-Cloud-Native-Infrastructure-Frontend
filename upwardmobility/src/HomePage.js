@@ -29,24 +29,28 @@ function HomePage(){
         navigate("/")
     }
 
-    const [clickedStats, setClickedStats] = useState(true);
-    const [clickedAch, setClickedAch] = useState(true);
     const [clickedJoin, setClickedJoin] = useState(true);
     const [clickedCreate, setClickedCreate] = useState(true);
     const [showGIDText, setShowGameIDText] = useState(false)
     const [showJoinGameButton, setShowJoinGameButton] = useState(false)
-    const [showNothingText, setShowNothingText] = useState(false)
     const [showJoinGameBackButton, setJoinGameBackButton] = useState(false)
-    const [showRenderNothingBackButton, setRenderNothingBackButton] = useState(false)
 
+    // Settings
     const [clickedSettings, setClickedSettings] = useState(true);
     const [showSettingsBackButton, setSettingsBackButton] = useState(false);
-    const[showSignoutButton, setSignoutButton] = useState(false);
+    const [showSignoutButton, setSignoutButton] = useState(false);
 
-
+    // Stats
+    const [clickedStats, setClickedStats] = useState(true);
+    const [showStatsBackButton, setStatsBackButton] = useState(false);
     const [showStat1, setStat1] = useState(false);
     const [showStat2, setStat2] = useState(false);
     const [showStat3, setStat3] = useState(false);
+
+    // Achievements
+    const [clickedAch, setClickedAch] = useState(true);
+    const [showAchBackButton, setAchBackButton] = useState(false)
+    const [showNothingText, setShowNothingText] = useState(false)
 
     const joinGame = useRef(null);
     const createGame = useRef(null);
@@ -64,61 +68,44 @@ function HomePage(){
         setJoinGameBackButton(!showJoinGameBackButton);
         setClickedJoin(!clickedJoin);
         setClickedCreate(!clickedCreate);
-
     }
 
-    function renderNothingYet(){
+    // Click achievements button method
+    function renderAchievements(){
         setShowNothingText(!showNothingText);
         setClickedSettings(!clickedSettings);
         setClickedAch(!clickedAch);
         setClickedStats(!clickedStats);
-        setRenderNothingBackButton(!showRenderNothingBackButton);
+        setAchBackButton(!showAchBackButton);
         setClickedJoin(!clickedJoin);
         setClickedCreate(!clickedCreate);
     }
 
     // Click settings button Method
     function renderSettings(){
-        setClickedSettings(false);
-        setClickedAch(false);
-        setClickedStats(false);
-        setSettingsBackButton(true);
-        setClickedJoin(true);
-        setClickedCreate(true);
-        setSignoutButton(true);
-
-        setStat1(false)
-        setStat2(false)
-        setStat3(false)
+        setClickedJoin(!clickedJoin);
+        setClickedCreate(!clickedCreate);
+        setClickedSettings(!clickedSettings);
+        setClickedAch(!clickedAch);
+        setClickedStats(!clickedStats);
+        setSettingsBackButton(!showSettingsBackButton);
+        setSignoutButton(!showSignoutButton);
     }
 
-    function clickedStatsFunc(){
-        setClickedStats(false);
-        setSettingsBackButton(true);
-        setClickedSettings(false);
-        setClickedAch(false);
-
-        setStat1(true)
-        setStat2(true)
-        setStat3(true)
+    // Click stats button method
+    function renderStats(){
+        setClickedJoin(!clickedJoin);
+        setClickedCreate(!clickedCreate);
+        setClickedStats(!clickedStats);
+        setClickedSettings(!clickedSettings);
+        setClickedAch(!clickedAch);
+        setStatsBackButton(!showStatsBackButton);
+        setStat1(!showStat1);
+        setStat2(!showStat2);
+        setStat3(!showStat3);
     }
 
-    function hitBackButton(){
-        setClickedJoin(true);
-        setClickedCreate(true);
-
-        setStat1(false)
-        setStat2(false)
-        setStat3(false)
-
-        setSignoutButton(false)
-
-        setClickedStats(true);
-        setSettingsBackButton(false);
-        setClickedSettings(true);
-        setClickedAch(true);
-    }
-
+    // Clicking join after entering a game code
     function launchJoinGame(){
         let submittedGameID = document.getElementById("gameIDTextBoxHome").value
         console.log(submittedGameID);
@@ -160,34 +147,34 @@ function HomePage(){
                     <span>THELEGNED27</span>
                 </div>
 
-                <div className={ clickedStats?  "statsButtonHome" : null}>
-                    <button ref = {statsButton} className={ clickedStats?  "statsButtonHome" : null} id="statsButtonHome" rx="0" ry="0" x="0" y="0" onClick={clickedStatsFunc}>STATS</button>
-                </div>
-
-                <label className={showStat1? "statsText1" : null} >Number of wins: </label>
-                <label className={showStat2? "statsText2" : null}>Number of games played: </label>
-                <label className={showStat3? "statsText3" : null}>Number of deaths: </label>
-
-
                 <input className={showGIDText? "gameIDTextBoxHome" : null} id = "gameIDTextBoxHome" placeholder={"Enter Game ID!"} type = "text"/>
                 <button className = {showJoinGameButton? "gameIDJoinButton" : null} type = "submit" id = "gameIDJoingButton" onClick = {launchJoinGame} >JOIN!</button>
                 <button className = {showJoinGameBackButton? "joinGameBackButton" : null} type="back" id="joinGameBackButton" onClick={setGameIDBox} > BACK</button>
 
                 <div id = "nothingText" className = {showNothingText? "nothingText" : null}>SORRY! THERE IS NOTHING HERE YET :,(</div>
-                <button className = {showRenderNothingBackButton? "renderNothingBackButton" : null} type="back" id="renderNothingBackButton" onClick={renderNothingYet} > BACK</button>
+                <button className = {showAchBackButton? "renderNothingBackButton" : null} type="back" id="renderNothingBackButton" onClick={renderAchievements} > BACK</button>
 
                 <div className={ clickedAch?  "achievementsButtonHome" : null}>
-                    <button ref = {achievementsButton} className={ clickedAch?  "achievementsButtonHome" : null} id="achievementsButtonHome"  onClick={renderNothingYet} rx="0" ry="0" x="0" y="0">ACHIEVEMENTS</button>
+                    <button ref = {achievementsButton} className={ clickedAch?  "achievementsButtonHome" : null} id="achievementsButtonHome"  onClick={renderAchievements} rx="0" ry="0" x="0" y="0">ACHIEVEMENTS</button>
                 </div>
 
                 {/*Everything for the settings tab*/}
                 <div className={ clickedSettings? "settingsButtonHome" : null}>
                     <button ref = {settingsButton} className={ clickedSettings? "settingsButtonHome" : null} id="settingsButtonHome" onClick={renderSettings} rx="0" ry="0" x="0" y="0">SETTINGS</button>
                 </div>
-                <button className = {showSettingsBackButton? "settingsBackButton" : null} type="back" id="settingsBackButton" onClick={hitBackButton} > BACK</button>
+                <button className = {showSettingsBackButton? "settingsBackButton" : null} type="back" id="settingsBackButton" onClick={renderSettings} > BACK</button>
                 <div >
                     <button className={showSignoutButton? "signOutButton" : null} id="signOutButton" onClick={renderLoginPage} > LOG OUT</button>
                 </div>
+
+                {/*Everything for the stats tab*/}
+                <div className={ clickedStats?  "statsButtonHome" : null}>
+                    <button ref = {statsButton} className={ clickedStats?  "statsButtonHome" : null} id="statsButtonHome" rx="0" ry="0" x="0" y="0" onClick={renderStats}>STATS</button>
+                </div>
+                <button className = {showStatsBackButton? "statsBackButton" : null} type="back" id="statsBackButton" onClick={renderStats} > BACK</button>
+                <label className={showStat1? "statsText1" : null} >Number of wins: </label>
+                <label className={showStat2? "statsText2" : null}>Number of games played: </label>
+                <label className={showStat3? "statsText3" : null}>Number of deaths: </label>
 
             </div>
         </div>
