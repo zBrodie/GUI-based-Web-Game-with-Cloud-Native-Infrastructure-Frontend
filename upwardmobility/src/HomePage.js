@@ -29,8 +29,11 @@ function HomePage(){
         navigate("/")
     }
 
+
     const [clickedJoin, setClickedJoin] = useState(true);
     const [clickedCreate, setClickedCreate] = useState(true);
+
+    // Join Game
     const [showGIDText, setShowGameIDText] = useState(false)
     const [showJoinGameButton, setShowJoinGameButton] = useState(false)
     const [showJoinGameBackButton, setJoinGameBackButton] = useState(false)
@@ -147,16 +150,17 @@ function HomePage(){
                     <span>THELEGNED27</span>
                 </div>
 
+                {/*Everything for join game tab*/}
                 <input className={showGIDText? "gameIDTextBoxHome" : null} id = "gameIDTextBoxHome" placeholder={"Enter Game ID!"} type = "text"/>
                 <button className = {showJoinGameButton? "gameIDJoinButton" : null} type = "submit" id = "gameIDJoingButton" onClick = {launchJoinGame} >JOIN!</button>
                 <button className = {showJoinGameBackButton? "joinGameBackButton" : null} type="back" id="joinGameBackButton" onClick={setGameIDBox} > BACK</button>
 
-                <div id = "nothingText" className = {showNothingText? "nothingText" : null}>SORRY! THERE IS NOTHING HERE YET :,(</div>
-                <button className = {showAchBackButton? "renderNothingBackButton" : null} type="back" id="renderNothingBackButton" onClick={renderAchievements} > BACK</button>
-
+                {/*Everything for the achievements tab*/}
                 <div className={ clickedAch?  "achievementsButtonHome" : null}>
                     <button ref = {achievementsButton} className={ clickedAch?  "achievementsButtonHome" : null} id="achievementsButtonHome"  onClick={renderAchievements} rx="0" ry="0" x="0" y="0">ACHIEVEMENTS</button>
                 </div>
+                <button className = {showAchBackButton? "achievementsBackButton" : null} type="back" id="achievementsBackButton" onClick={renderAchievements} > BACK</button>
+                <div id = "nothingText" className = {showNothingText? "nothingText" : null}>SORRY! THERE IS NOTHING HERE YET :,(</div>
 
                 {/*Everything for the settings tab*/}
                 <div className={ clickedSettings? "settingsButtonHome" : null}>

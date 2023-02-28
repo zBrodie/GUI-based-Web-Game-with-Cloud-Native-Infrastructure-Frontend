@@ -1,3 +1,12 @@
+/*
+Searching through the css file: name of the section to find and menu
+Control + F and enter below to find a section
+  Settings Menu
+  Stats Menu
+  Achievements Menu
+  Join Menu
+*/
+
 @font-face {
   font-family: 'Common Pixel';
   src:url("undertale-deltarune-text-font-extended.ttf") format('truetype')
@@ -28,34 +37,6 @@ input::placeholder{
   --web-view-ids: HomePage;
 }
 
-.statsText1{
-  position: absolute;
-  font-family: "Common Pixel";
-  -webkit-text-fill-color: white;
-  font-size: 1.5vw;
-  left: 3.25%;
-  top: 31.027624%;
-}
-
-.statsText2{
-   position: absolute;
-   font-family: "Common Pixel";
-   -webkit-text-fill-color: white;
-   font-size: 1.5vw;
-   left: 3.25%;
-   top: 40.027624%;
- }
-.statsText3{
-  position: absolute;
-  font-family: "Common Pixel";
-  -webkit-text-fill-color: white;
-  font-size: 1.5vw;
-  left: 3.25%;
-  top: 53.027624%;
-}
-
-
-
 #HomePage {
   position: fixed;
   width: 100%;
@@ -77,53 +58,7 @@ input::placeholder{
   left: 16%;
   overflow: visible;
 }
-#joinGameButtonHome{
-  fill: rgba(245,245,245,0.741);
-  stroke: rgba(0,0,0,1);
-  stroke-width: 3px;
-  background-color: #F5F5F5;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  opacity: 74%;
-  white-space: nowrap;
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  font-family: Common Pixel;
-  font-size: 1.5vw;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
-}
-.joinGameButtonHome{
-  position: fixed;
-  fill: transparent;
-  overflow: visible;
-  opacity: 74%;
-  text-align: center;
-  -webkit-text-fill-color: black;
-  width: 12.159105%;
-  height: 8.850829%;
-  left: 39%;
-  top: 84%;
-  cursor: pointer;
-}
-#Ellipse_1 {
-  fill: rgba(255,255,255,1);
-  stroke: rgba(112,112,112,1);
-  stroke-width: 1px;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
-}
-.Ellipse_1 {
-  position: fixed;
-  overflow: visible;
-  width: 84px;
-  height: 94px;
-  left: 5.836544%;
-  top: 10.287293%;
-}
+
 #sideMenu {
   fill: rgba(47,49,54,1);
 }
@@ -196,103 +131,133 @@ input::placeholder{
   font-size: 32px;
   color: rgba(255,255,255,1);
 }
-#statsButtonHome{
-  fill: transparent;
-  stroke: rgba(255,255,255,1);
-  stroke-width: 3px;
-  background-color:#2F3136;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  text-align: center;
+
+#Upward_Mobility_big_Home_Page {
+  position: absolute;
+  content: url("Upward_Mobility_big.png");
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
+  width: 53.697949%;
+  height: 52.044199%;
+  left: 32.628962%;
+  top: 20.331492%;
+  overflow: visible;
+}
+.Upward_Mobility_big_Home_Page{
+  position: absolute;
+  content: url("Upward_Mobility_big.png");
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
+  width: 53.697949%;
+  height: 52.044199%;
+  top: 20.331492%;
+  overflow: visible;
+}
+
+.nothingText{
+  overflow-wrap: break-word;
+  white-space: initial;
+  position: fixed;
   font-style: normal;
   font-weight: normal;
+  font-size: .75vw;
   font-family: Common Pixel;
-  font-size: 30px;
-  line-height: 15px;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
+  -webkit-text-fill-color: white;
+  left: 1.25%;
+  top: 46.334807%;
+  color: white;
 }
-.statsButtonHome {
-  background-color:#2F3136;
-  position: fixed;
-  overflow: visible;
-  border: 3px solid white;
+
+
+/*Join Menu*/
+#joinGameButtonHome{
+  fill: rgba(245,245,245,0.741);
+  stroke: rgba(0,0,0,1);
+  stroke-width: 3px;
+  background-color: #F5F5F5;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  opacity: 74%;
   white-space: nowrap;
   text-align: center;
   font-style: normal;
   font-weight: normal;
+  font-family: Common Pixel;
   font-size: 1.5vw;
-  line-height: 75px;
-  -webkit-text-fill-color: white;
-  width: 13.159105%;
-  height: 6.850829%;
-  left: 3.25%;
-  top: 31.027624%;
-  justify-content: center;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.joinGameButtonHome{
+  position: fixed;
+  fill: transparent;
+  overflow: visible;
+  opacity: 74%;
+  text-align: center;
+  -webkit-text-fill-color: black;
+  width: 12.159105%;
+  height: 8.850829%;
+  left: 39%;
+  top: 84%;
   cursor: pointer;
 }
-#achievementsButtonHome{
-  fill: transparent;
-  stroke: rgba(255,255,255,1);
-  stroke-width: 3px;
-  background-color:#2F3136;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  text-align: center;
-  font-family: Common Pixel;
-  font-style: normal;
-  font-weight: normal;
+
+#joinGameBackButton{
   font-size: 1.5vw;
-  line-height: 15px;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
+  font-family: Common Pixel;
 }
-.achievementsButtonHome{
+.joinGameBackButton{
   background-color:#2F3136;
   position: fixed;
   overflow: visible;
   border: 3px solid white;
   white-space: nowrap;
   text-align: center;
-
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
-  line-height: 75px;
+  font-size: 1.5vw;
+  font-family: Common Pixel;
   -webkit-text-fill-color: white;
+  width: 10.159105%;
+  height: 6.850829%;
+  left: 4.75%;
+  top: 85.569061%;
+  cursor: pointer;
+}
+
+.gameIDTextBoxHome{
+  position: fixed;
   width: 13.159105%;
   height: 6.850829%;
   left: 3.25%;
   top: 46.334807%;
+  background-color:#2F3136;
+  font-weight: normal;
+  font-family: "Common Pixel";
+  font-size: 30px;
+  line-height: 75px;
+  -webkit-text-fill-color: white;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+}
+.gameIDJoinButton{
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+  -webkit-text-fill-color: white;
+  width: 10.159105%;
+  height: 6.850829%;
+  left: 4.75%;
+  top: 55.569061%;
   cursor: pointer;
 }
-#Stats {
-  left: 76px;
-  top: 253px;
-  position: absolute;
-  overflow: visible;
-  width: 151px;
-  height: 32px;
-  text-align: center;
 
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  color: rgba(255,255,255,1);
-}
-#Achievements {
-  left: 51px;
-  top: 391px;
-  position: absolute;
-  overflow: visible;
-  width: 204px;
-  height: 32px;
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  color: rgba(255,255,255,1);
-}
+/*Settings Menu*/
 #settingsButtonHome {
   fill: transparent;
   stroke: rgba(255,255,255,1);
@@ -329,120 +294,10 @@ input::placeholder{
   cursor: pointer;
 }
 
-#Upward_Mobility_big_Home_Page {
-  position: absolute;
-  content: url("Upward_Mobility_big.png");
-  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
-  width: 53.697949%;
-  height: 52.044199%;
-  left: 32.628962%;
-  top: 20.331492%;
-  overflow: visible;
-}
-.Upward_Mobility_big_Home_Page{
-  position: absolute;
-  content: url("Upward_Mobility_big.png");
-  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
-  width: 53.697949%;
-  height: 52.044199%;
-  top: 20.331492%;
-  overflow: visible;
-}
-
-.gameIDTextBoxHome{
-  position: fixed;
-  width: 13.159105%;
-  height: 6.850829%;
-  left: 3.25%;
-  top: 46.334807%;
-  background-color:#2F3136;
-  font-weight: normal;
-  font-family: "Common Pixel";
-  font-size: 30px;
-  line-height: 75px;
-  -webkit-text-fill-color: white;
-  border: 3px solid white;
-  white-space: nowrap;
-  text-align: center;
-}
-
-#joinGameButtonHome{
-  font-size: 1.5vw;
-  font-family: Common Pixel;
-}
-
-.gameIDJoinButton{
-  background-color:#2F3136;
-  position: fixed;
-  overflow: visible;
-  border: 3px solid white;
-  white-space: nowrap;
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.5vw;
-  font-family: Common Pixel;
-  -webkit-text-fill-color: white;
-  width: 10.159105%;
-  height: 6.850829%;
-  left: 4.75%;
-  top: 55.569061%;
-  cursor: pointer;
-}
-
-#joinGameBackButton{
-  font-size: 1.5vw;
-  font-family: Common Pixel;
-}
-
-.joinGameBackButton{
-  background-color:#2F3136;
-  position: fixed;
-  overflow: visible;
-  border: 3px solid white;
-  white-space: nowrap;
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.5vw;
-  font-family: Common Pixel;
-  -webkit-text-fill-color: white;
-  width: 10.159105%;
-  height: 6.850829%;
-  left: 4.75%;
-  top: 85.569061%;
-  cursor: pointer;
-}
-
-#renderNothingBackButton{
-  font-size: 1.5vw;
-  font-family: Common Pixel;
-}
-
-.renderNothingBackButton{
-  background-color:#2F3136;
-  position: fixed;
-  overflow: visible;
-  border: 3px solid white;
-  white-space: nowrap;
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.5vw;
-  font-family: Common Pixel;
-  -webkit-text-fill-color: white;
-  width: 10.159105%;
-  height: 6.850829%;
-  left: 4.75%;
-  top: 85.569061%;
-  cursor: pointer;
-}
-
 #settingsBackButton{
   font-size: 1.5vw;
   font-family: Common Pixel;
 }
-
 .settingsBackButton{
   background-color:#2F3136;
   position: fixed;
@@ -466,7 +321,6 @@ input::placeholder{
   font-size: 1.5vw;
   font-family: Common Pixel;
 }
-
 .signOutButton{
   background-color:#2F3136;
   position: fixed;
@@ -486,18 +340,21 @@ input::placeholder{
   cursor: pointer;
 }
 
-.nothingText{
-  overflow-wrap: break-word;
-  white-space: initial;
-  position: fixed;
+
+/*Stats Menu*/
+#Stats {
+  left: 76px;
+  top: 253px;
+  position: absolute;
+  overflow: visible;
+  width: 151px;
+  height: 32px;
+  text-align: center;
+
   font-style: normal;
   font-weight: normal;
-  font-size: .75vw;
-  font-family: Common Pixel;
-  -webkit-text-fill-color: white;
-  left: 1.25%;
-  top: 46.334807%;
-  color: white;
+  font-size: 30px;
+  color: rgba(255,255,255,1);
 }
 
 #statsBackButton{
@@ -521,4 +378,141 @@ input::placeholder{
   left: 4.75%;
   top: 85.569061%;
   cursor: pointer;
+}
+
+#statsButtonHome{
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 3px;
+  background-color:#2F3136;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-family: Common Pixel;
+  font-size: 30px;
+  line-height: 15px;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.statsButtonHome {
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  line-height: 75px;
+  -webkit-text-fill-color: white;
+  width: 13.159105%;
+  height: 6.850829%;
+  left: 3.25%;
+  top: 31.027624%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.statsText1{
+  position: absolute;
+  font-family: "Common Pixel";
+  -webkit-text-fill-color: white;
+  font-size: 1.5vw;
+  left: 3.25%;
+  top: 31.027624%;
+}
+
+.statsText2{
+  position: absolute;
+  font-family: "Common Pixel";
+  -webkit-text-fill-color: white;
+  font-size: 1.5vw;
+  left: 3.25%;
+  top: 40.027624%;
+}
+.statsText3{
+  position: absolute;
+  font-family: "Common Pixel";
+  -webkit-text-fill-color: white;
+  font-size: 1.5vw;
+  left: 3.25%;
+  top: 53.027624%;
+}
+
+
+/*Achievements Menu*/
+#achievementsButtonHome{
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 3px;
+  background-color:#2F3136;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  text-align: center;
+  font-family: Common Pixel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  line-height: 15px;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.achievementsButtonHome{
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 75px;
+  -webkit-text-fill-color: white;
+  width: 13.159105%;
+  height: 6.850829%;
+  left: 3.25%;
+  top: 46.334807%;
+  cursor: pointer;
+}
+
+#achievementsBackButton{
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+}
+.achievementsBackButton{
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+  -webkit-text-fill-color: white;
+  width: 10.159105%;
+  height: 6.850829%;
+  left: 4.75%;
+  top: 85.569061%;
+  cursor: pointer;
+}
+
+#Achievements {
+  left: 51px;
+  top: 391px;
+  position: absolute;
+  overflow: visible;
+  width: 204px;
+  height: 32px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(255,255,255,1);
 }
