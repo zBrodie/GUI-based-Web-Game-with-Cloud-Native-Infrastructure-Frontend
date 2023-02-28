@@ -47,14 +47,11 @@ function SignupPage() {
                 <img id="sayonara4now-cyberpunk-city-sc" src="sayonara4now-cyberpunk-city-sc.png"
                      srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
-                    <svg className="Rectangle_30">
-                        <rect id="Rectangle_30" rx="0" ry="0" x="0" y="0" width="305" height="905">
+                    <svg className="SPSideBarBackground">
+                        <rect id="SPSideBarBackground" rx="0" ry="0" x="0" y="0" width="305" height="905">
                         </rect>
                     </svg>
-                    <svg className="Rectangle_34">
-                        <rect id="Rectangle_34" rx="0" ry="0" x="0" y="0" width="1" height="1">
-                        </rect>
-                    </svg>
+
                     <div className="Create_your_account__" id="Create_your_account__">
                         <span>Create your account:<br/></span><br/>
                     </div>
@@ -74,7 +71,7 @@ function SignupPage() {
                     </form>
 
                     <form>
-                        <input value = {confirmPassword}  onChange={(event => setConfPassword(event.target.value))} id = "Rectangle_41" placeholder={"REPEAT PASSWORD"} type = "password" className="Repeat_Input_Field">
+                        <input value = {confirmPassword}  onChange={(event => setConfPassword(event.target.value))} id = "confirmPassword" placeholder={"REPEAT PASSWORD"} type = "password" className="Repeat_Input_Field">
                         </input>
                     </form>
 

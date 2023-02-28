@@ -63,14 +63,11 @@ function Login() {
                 <img id="sayonara4now-cyberpunk-city-sc" src="sayonara4now-cyberpunk-city-sc.png"
                      srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
-                <svg className="Rectangle_30">
-                    <rect id="Rectangle_30" rx="0" ry="0" x="0" y="0">
+                <svg className="LSideBarBackground">
+                    <rect id="LSideBarBackground" rx="0" ry="0" x="0" y="0">
                     </rect>
                 </svg>
-                <svg className="Rectangle_34">
-                    <rect id="Rectangle_34" rx="0" ry="0" x="0" y="0" width="1" height="1">
-                    </rect>
-                </svg>
+
                 <div id="Please_Log_In">
                     <span>Please Log In:</span>
                 </div>

@@ -55,10 +55,10 @@ input::placeholder{
     overflow: visible;
     content:url("sayonara4now-cyberpunk-city-sc.png");
 }
-#Rectangle_30 {
+#SPSideBarBackground {
     fill: rgba(47,49,54,1);
 }
-.Rectangle_30 {
+.SPSideBarBackground {
     position: absolute;
     overflow: visible;
     width: 18.955873%;
@@ -67,57 +67,7 @@ input::placeholder{
     top: 0px;
     background-color: #2F3136;
 }
-#Rectangle_34 {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_34 {
-    position: absolute;
-    overflow: visible;
-    width: 1px;
-    height: 1px;
-    left: 0px;
-    top: 0px;
-}
-#Rectangle_35 {
-    fill: transparent;
-    stroke: rgba(0,0,0,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_35 {
-    position: absolute;
-    overflow: visible;
-    width: 1608px;
-    height: 905px;
-    left: 1px;
-    top: 0px;
-}
-#Rectangle_37 {
-    fill: transparent;
-    stroke: rgba(0,0,0,1);
-    stroke-width: 4px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_37 {
-    position: absolute;
-    overflow: visible;
-    width: 1609px;
-    height: 905px;
-    left: 0px;
-    top: 0px;
-}
+
 #Create_your_account__ {
     left: 2.175264%;
     overflow: visible;
