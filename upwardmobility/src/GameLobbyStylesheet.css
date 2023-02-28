@@ -139,6 +139,9 @@ input.GameLobby{
     background-color: #36393F;
     left: 16%
 }
+
+
+/*Player List*/
 #Player_1 {
     stroke: #707070;
     stroke-width: 5px;

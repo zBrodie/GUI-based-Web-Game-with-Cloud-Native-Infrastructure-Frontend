@@ -54,30 +54,7 @@
     left: 0px;
     top: 0px;
 }
-#Inventory {
-    fill: rgba(41,43,47,1);
-}
-.Inventory{
-    position: absolute;
-    overflow: visible;
-    background-color: #292B2F;
-    width: 80.981976%;
-    height: 25.966851%;
-    left: 0px;
-    top: 74.033149%;
-}
-#ChatAndLogo {
-    fill: rgba(47,49,54,1);
-}
-.ChatAndLogo{
-    position: absolute;
-    overflow: visible;
-    background-color: #2F3136;
-    width:19.018024%;
-    height: 100%;
-    left: 80.981976%;
-    top: 18.563536%;
-}
+
 #ProgresionImage{
     position: absolute;
     content: url("./StartFinishScale.png");
@@ -140,7 +117,10 @@
     font-size: 1vw;
     color: rgba(255,255,255,1);
 }
-#Rectangle_46 {
+
+
+/*Player List*/
+#GamePlayerBackground {
     fill: rgba(255,255,255,1);
     stroke: rgba(112,112,112,1);
     stroke-width: 1px;
@@ -149,7 +129,7 @@
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Rectangle_46 {
+.GamePlayerBackground {
     position: absolute;
     overflow: visible;
     width: 61.901802%;
@@ -167,7 +147,8 @@
     top: 0px;
     overflow: visible;
 }
-#Ellipse_2 {
+
+#GamePlayer_1 {
     fill: rgba(54,57,63,1);
     stroke: rgba(234,0,217,1);
     stroke-width: 5px;
@@ -176,7 +157,7 @@
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Ellipse_2 {
+.GamePlayer_1 {
     position: absolute;
     overflow: visible;
     width: 6.587943%;
@@ -184,7 +165,7 @@
     left: 24.798011%;
     top: 2.209945%;
 }
-#Ellipse_3 {
+#GamePlayer_2 {
     fill: rgba(54,57,63,1);
     stroke: rgba(115,248,255,1);
     stroke-width: 5px;
@@ -193,7 +174,7 @@
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Ellipse_3 {
+.GamePlayer_2 {
     position: absolute;
     overflow: visible;
     width: 6.587943%;
@@ -201,7 +182,7 @@
     left: 33.561218%;
     top: 2.209945%;
 }
-#Ellipse_4 {
+#GamePlayer_3 {
     fill: rgba(54,57,63,1);
     stroke: rgba(0,201,60,1);
     stroke-width: 5px;
@@ -210,7 +191,7 @@
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Ellipse_4 {
+.GamePlayer_3 {
     position: absolute;
     overflow: visible;
     width: 6.587943%;
@@ -218,7 +199,7 @@
     left: 42.324425%;
     top: 2.209945%;
 }
-#Ellipse_5 {
+#GamePlayer_4 {
     fill: rgba(54,57,63,1);
     stroke: rgba(196,0,0,1);
     stroke-width: 5px;
@@ -227,7 +208,7 @@
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Ellipse_5 {
+.GamePlayer_4 {
     position: absolute;
     overflow: visible;
     width: 6.587943%;
@@ -235,7 +216,7 @@
     left:51.087632%;
     top: 2.209945%;
 }
-#Ellipse_6 {
+#GamePlayer_5 {
     fill: rgba(54,57,63,1);
     stroke: rgba(105,0,225,1);
     stroke-width: 5px;
@@ -244,7 +225,7 @@
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Ellipse_6 {
+.GamePlayer_5 {
     position: absolute;
     overflow: visible;
     width: 6.587943%;
@@ -252,7 +233,7 @@
     left: 59.850839%;
     top: 2.209945%;
 }
-#Ellipse_7 {
+#GamePlayer_6 {
     fill: rgba(54,57,63,1);
     stroke: rgba(0,61,204,1);
     stroke-width: 5px;
@@ -261,7 +242,7 @@
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Ellipse_7 {
+.GamePlayer_6 {
     position: absolute;
     overflow: visible;
     width: 6.587943%;
@@ -269,6 +250,22 @@
     left: 68.614046%;
     top: 2.209945%;
 }
+
+
+/*Inventory List*/
+#Inventory {
+    fill: rgba(41,43,47,1);
+}
+.Inventory{
+    position: absolute;
+    overflow: visible;
+    background-color: #292B2F;
+    width: 80.981976%;
+    height: 25.966851%;
+    left: 0px;
+    top: 74.033149%;
+}
+
 #InventoryLabel {
     fill: rgba(32,34,37,1);
 }
@@ -295,6 +292,22 @@
     font-size: 1vw;
     color: rgba(255,255,255,1);
 }
+
+
+/*Chat List*/
+#ChatAndLogo {
+    fill: rgba(47,49,54,1);
+}
+.ChatAndLogo{
+    position: absolute;
+    overflow: visible;
+    background-color: #2F3136;
+    width:19.018024%;
+    height: 100%;
+    left: 80.981976%;
+    top: 18.563536%;
+}
+
 #chatBox {
     fill: rgba(64,68,75,1);
 }
@@ -309,10 +322,12 @@
     left: 81.47918%;
     top: 95.138122%;
 }
-#Rectangle_49 {
+
+
+#GamePageIcon {
     fill: rgba(41,43,47,1);
 }
-.Rectangle_49 {
+.GamePageIcon {
     position: absolute;
     overflow: visible;
     background-color: #292B2F;
