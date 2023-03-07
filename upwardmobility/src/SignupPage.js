@@ -6,8 +6,9 @@ import { useNavigate} from "react-router-dom";
 import logo from './Upward_Mobility_big_x.png'
 import upwardz from './Upward_Mobility_big_z.png'
 import {useState} from "react";
-//import UserPool from "./UserPool";
-//import userPool from "./UserPool";
+import UserPool from "./UserPool";
+import {CognitoUserAttribute} from "amazon-cognito-identity-js";
+
 
 function SignupPage() {
 
@@ -22,30 +23,52 @@ function SignupPage() {
         navigate("/")
     }
 
-    /*
+
+    let attributeList = []
     const onSubmit = (event) =>{
         event.preventDefault();
 
+        var dataUserName = {
+            Name: 'name',
+            Value: username
+        }
+
+        var dataUserEmail = {
+            Name: 'email',
+            Value: email
+        }
+
+        var passUserName = new CognitoUserAttribute(dataUserName)
+        var passUserEmail = new CognitoUserAttribute(dataUserEmail)
+        attributeList.push(passUserName)
+
+        console.log(username)
         if(password.toString() == confirmPassword.toString()){
-            UserPool.signUp(email, password, [], null, (err, data) => {
+            UserPool.signUp(email, password, [dataUserName, dataUserEmail], null, (err, data) => {
                 if(err){
                     console.error(err);
                 }
                 console.log(data);
             })
+            alert("PLEASE MAKE SURE TO VERIFY YOUR EMAIL!")
+            loadHomePage()
         }
         else{
             alert("PASSWORDS DO NOT MATCH!")
         }
 
     }
-        */
+
+    const loadHomePage = () =>{
+        navigate("/HomePage")
+    }
+
     return (
         <div className="SignupPage">
             <div id="Web_1920__3">
-                <form></form>
-                <img id="sayonara4now-cyberpunk-city-sc" src="sayonara4now-cyberpunk-city-sc.png"
-                     srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
+                <form onSubmit={onSubmit}>
+                    <img id="sayonara4now-cyberpunk-city-sc" src="sayonara4now-cyberpunk-city-sc.png"
+                         srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
                     <svg className="SPSideBarBackground">
                         <rect id="SPSideBarBackground" rx="0" ry="0" x="0" y="0" width="305" height="905">
@@ -75,13 +98,14 @@ function SignupPage() {
                         </input>
                     </form>
 
-                    <button id = "SignUpBotton" className={"Sign_Button"}>SIGN UP</button>
+                    <button type="submit" id = "SignUpBotton" className={"Sign_Button"}>SIGN UP</button>
                     <button id="Already_have_an_account___Clic" onClick={loginPage}>
-                       Already have an account? <br/><br/>Click here
+                        Already have an account? <br/><br/>Click here
                     </button>
                     <img  className="Upward_Mobility_big" src="{logo}" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
 
                     <img className="Upward_Mobility_big" id="Upward_Mobility_big_z" src="{logo}" srcSet="Upward_Mobility_big_z.png 1x, src/Templates/Upward_Mobility_big_z@2x.png 2x"/>
+                </form>
             </div>
         </div>
     );

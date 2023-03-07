@@ -21,33 +21,36 @@ import {useState} from "react";
 function Login() {
 
     const navigate = useNavigate();
-/*
+
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    const user = new CognitoUser({
-        Username: email,
-        Pool: userPool
-    })
+    const onSubmit = (event) =>{
+        event.preventDefault()
 
-    const authDetails = new AuthenticationDetails({
-        Username: email,
-        Password: password
-    })
+        const user = new CognitoUser({
+            Username: email,
+            Pool: UserPool
+        })
 
-    user.authenticateUser(authDetails, {
-        onSuccess: (data) => {
-            console.log("onSuccess: ", data)
-            loadHomePage()
-        },
-        onFailure: (err) =>{
-            console.log("onFailure: ", err)
-        },
-        newPasswordRequired: (data) =>{
-            console.log("new password required: ", data)
-        }
-    })
-*/
+        const authDetails = new AuthenticationDetails({
+            Username: email,
+            Password: password
+        })
+
+        user.authenticateUser(authDetails, {
+            onSuccess: (data) => {
+                console.log("onSuccess: ", data)
+                loadHomePage()
+            },
+            onFailure: (err) =>{
+                console.log("onFailure: ", err)
+            },
+            newPasswordRequired: (data) =>{
+                console.log("new password required: ", data)
+            }
+        })
+    }
 
     const createAccountPage = () => {
         navigate("/CreateAccount")
@@ -60,37 +63,40 @@ function Login() {
     return (
         <div className="App">
             <div id="Web_1920__2">
-                <img id="sayonara4now-cyberpunk-city-sc" src="sayonara4now-cyberpunk-city-sc.png"
-                     srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
+                <form onSubmit={onSubmit}>
+                    <img id="sayonara4now-cyberpunk-city-sc" src="sayonara4now-cyberpunk-city-sc.png"
+                         srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
-                <svg className="LSideBarBackground">
-                    <rect id="LSideBarBackground" rx="0" ry="0" x="0" y="0">
-                    </rect>
-                </svg>
+                    <svg className="LSideBarBackground">
+                        <rect id="LSideBarBackground" rx="0" ry="0" x="0" y="0">
+                        </rect>
+                    </svg>
 
-                <div id="Please_Log_In">
-                    <span>Please Log In:</span>
-                </div>
-                <form>
-                    <input type={"text"} placeholder={"EMAIL"} id ="Username_Input_Field_Login" className="Username_Input_Field_Login"></input>
+                    <div id="Please_Log_In">
+                        <span>Please Log In:</span>
+                    </div>
+                    <form>
+                        <input value = {email}  onChange={(event => setEmail(event.target.value))} type={"text"} placeholder={"EMAIL"} id ="Username_Input_Field_Login" className="Username_Input_Field_Login"></input>
+                    </form>
+                    <form>
+                        <input value = {password}  onChange={(event => setPassword(event.target.value))} className={"Password_Input_Field"}  type = "password" placeholder={"PASSWORD"} id ="Password_Input_Field_Login"/>
+                    </form>
+
+                    <button id="Dont_have_an_account__Click_He" onClick={createAccountPage}>
+                        <a></a>
+                        Dont have an account?<br/><br/>Click Here
+                    </button>
+
+                    <div id="Forgot_Password">
+                        <a href="">Forgot Password?</a>
+                    </div>
+                    <img className="Upward_Mobility_big" id="Upward_Mobility_big" src="{upward}" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
+
+                    <img  className="Upward_Mobility_big" id="Upward_Mobility_big_x" src="{logo}" srcSet="Upward_Mobility_big_x.png 1x, Upward_Mobility_big_x@2x.png 2x"/>
+
+                    <button id={"Login_Button_Submit"} className="Login_Button_Submit" type="submit">LOGIN</button>
                 </form>
-                <form>
-                    <input className={"Password_Input_Field"}  type = "text" placeholder={"PASSWORD"} id ="Password_Input_Field_Login"/>
-                </form>
 
-                <button id="Dont_have_an_account__Click_He" onClick={createAccountPage}>
-                    <a></a>
-                    Dont have an account?<br/><br/>Click Here
-                </button>
-
-                <div id="Forgot_Password">
-                    <a href="">Forgot Password?</a>
-                </div>
-                <img className="Upward_Mobility_big" id="Upward_Mobility_big" src="{upward}" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
-
-                <img  className="Upward_Mobility_big" id="Upward_Mobility_big_x" src="{logo}" srcSet="Upward_Mobility_big_x.png 1x, Upward_Mobility_big_x@2x.png 2x"/>
-
-                <button id={"Login_Button_Submit"} className="Login_Button_Submit" type={"submit"} onClick={loadHomePage}>LOGIN</button>
             </div>
         </div>
     );

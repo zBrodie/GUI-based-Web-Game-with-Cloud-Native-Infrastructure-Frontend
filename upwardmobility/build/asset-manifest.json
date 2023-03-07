@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab09d4ec.css",
-    "main.js": "/static/js/main.b365c8c8.js",
+    "main.css": "/static/css/main.405256b2.css",
+    "main.js": "/static/js/main.00034216.js",
     "static/js/787.8ddb8251.chunk.js": "/static/js/787.8ddb8251.chunk.js",
     "static/media/SuperMarioGalaxyWindGarden.mp3": "/static/media/SuperMarioGalaxyWindGarden.9e558ab263ccc501db05.mp3",
     "static/media/sayonara4now-cyberpunk-city-sc.png": "/static/media/sayonara4now-cyberpunk-city-sc.10c64f3fccf0d966bc66.png",
     "static/media/Upward_Mobility_big_z.png": "/static/media/Upward_Mobility_big_z.79e50efb5a66b7803044.png",
-    "static/media/undertale-deltarune-text-font-extended.ttf": "/static/media/undertale-deltarune-text-font-extended.3c22d6ec78d709dadabd.ttf",
+    "static/media/usethisfont.ttf": "/static/media/usethisfont.3c22d6ec78d709dadabd.ttf",
     "static/media/Upward_Mobility_big_x.png": "/static/media/Upward_Mobility_big_x.5ad68f322bdf0a96d9ae.png",
     "static/media/GameDieBigpng.png": "/static/media/GameDieBigpng.3a5e84701fbe036dc2ec.png",
     "static/media/unknown@2x.png": "/static/media/unknown@2x.b3d4007bd4df68ee4daf.png",
     "static/media/Upward_Mobility_big.png": "/static/media/Upward_Mobility_big.e9c5cdbe82f0465095e1.png",
     "static/media/PlayerListBackground.png": "/static/media/PlayerListBackground.3c8fddaf0be9d82e1c31.png",
     "index.html": "/index.html",
-    "main.ab09d4ec.css.map": "/static/css/main.ab09d4ec.css.map",
-    "main.b365c8c8.js.map": "/static/js/main.b365c8c8.js.map",
+    "main.405256b2.css.map": "/static/css/main.405256b2.css.map",
+    "main.00034216.js.map": "/static/js/main.00034216.js.map",
     "787.8ddb8251.chunk.js.map": "/static/js/787.8ddb8251.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab09d4ec.css",
-    "static/js/main.b365c8c8.js"
+    "static/css/main.405256b2.css",
+    "static/js/main.00034216.js"
   ]
 }
