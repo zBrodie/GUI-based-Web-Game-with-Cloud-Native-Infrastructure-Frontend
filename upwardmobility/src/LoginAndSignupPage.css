@@ -6,6 +6,10 @@
     src:url("usethisfont.ttf") format('truetype')
 }
 
+#EnterEmailLable{
+    font-size: 1.5vw;
+}
+
 input::placeholder{
     font-family: "Common Pixel";
     font-color: white;
@@ -119,10 +123,39 @@ a:visited {
     font-weight: normal;
     font-family: "Common Pixel";
     font-color: white;
-    font-size: 30px;
+    font-size: 1.5vw;
     line-height: 75px;
     -webkit-text-fill-color: white;
 }
+
+.sendCodeButton{
+    position: absolute;
+    background-color:#2F3136;
+    border: 3px solid white;
+    width: 8.969434%;
+    height: 5.856354%;
+    left: 4.783219%;
+    top: 45.237569%;
+    font-family: "Common Pixel";
+    font-color: white;
+    font-size: 1vw;
+    -webkit-text-fill-color: white;
+}
+
+.confirmNewPasword{
+    position: absolute;
+    background-color:#2F3136;
+    border: 3px solid white;
+    width: 8.969434%;
+    height: 5.856354%;
+    left: 4.783219%;
+    top: 75.237569%;
+    font-family: "Common Pixel";
+    font-color: white;
+    font-size: 1vw;
+    -webkit-text-fill-color: white;
+}
+
 #Username {
     left: 58px;
     top: 347px;
@@ -176,6 +209,27 @@ a:visited {
     line-height: 75px;
     -webkit-text-fill-color: white;
 }
+
+.forgotConfirmPassField{
+    position: fixed;
+    overflow: visible;
+    width: 12.989434%;
+    height: 5.856354%;
+    left: 2.983219%;
+    top: 63.055249%;
+    background-color:#2F3136;
+    border: 3px solid white;
+    white-space: nowrap;
+    font-color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Common Pixel";
+    font-size: 30px;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+}
+
 #Password {
     left: 76px;
     top: 463px;

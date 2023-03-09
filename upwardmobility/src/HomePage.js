@@ -3,7 +3,13 @@ import unknown from './unknown@2x.png';
 import background from './sayonara4now-cyberpunk-city-sc.png';
 import upward from './Upward_Mobility_big.png'
 import logo from './Upward_Mobility_big_x.png'
-import {useRef, useState} from "react";
+import {useContext, useRef, useState} from "react";
+
+
+import {AccountContext} from "./Account.js"
+import Status from "./Status";
+
+import UserPool from "./UserPool";
 
 import {
     BrowserRouter as Router,
@@ -16,6 +22,9 @@ import Login from "./Login";
 
 function HomePage(){
     const navigate = useNavigate();
+
+    const [status, setStatus] = useState(false)
+    const {getSession} = useContext(AccountContext)
 
     const renderGamePage = () =>{
         navigate("/GamePage")
@@ -115,6 +124,14 @@ function HomePage(){
         renderGamePage()
     }
 
+    function clickedLogout(){
+        const user = UserPool.getCurrentUser();
+        if(user){
+            user.signOut()
+        }
+        renderLoginPage()
+    }
+
     return(
         <div className="HomePage">
             <div className= "nonsideMenuHome" name = "nonSideMenuHome">
@@ -168,7 +185,7 @@ function HomePage(){
                 </div>
                 <button className = {showSettingsBackButton? "settingsBackButton" : null} type="back" id="settingsBackButton" onClick={renderSettings} > BACK</button>
                 <div >
-                    <button className={showSignoutButton? "signOutButton" : null} id="signOutButton" onClick={renderLoginPage} > LOG OUT</button>
+                    <button className={showSignoutButton? "signOutButton" : null} id="signOutButton" onClick={clickedLogout} > LOG OUT</button>
                 </div>
 
                 {/*Everything for the stats tab*/}

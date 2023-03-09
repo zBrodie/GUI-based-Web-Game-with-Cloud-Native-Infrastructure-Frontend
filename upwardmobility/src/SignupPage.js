@@ -24,6 +24,8 @@ function SignupPage() {
     }
 
 
+
+
     let attributeList = []
     const onSubmit = (event) =>{
         event.preventDefault();
@@ -61,6 +63,12 @@ function SignupPage() {
 
     const loadHomePage = () =>{
         navigate("/HomePage")
+    }
+
+    const user = UserPool.getCurrentUser()
+    if(user){
+        console.log("Hits")
+        loadHomePage()
     }
 
     return (

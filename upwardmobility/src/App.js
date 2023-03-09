@@ -19,7 +19,9 @@ import {
 import GamePage from "./GamePage";
 import GameLobby from "./GameLobby";
 import ReactAudioPlayer from "react-audio-player";
-
+import {Account} from "./Account";
+import Status from "./Status";
+import ForgotPassword from "./ForgotPassword";
 function App() {
 
 
@@ -27,11 +29,12 @@ function App() {
       <>
         <Router>
           <Routes>
-            <Route exact path = "/" element={<Login/>}/>
-              <Route exact path="/HomePage" element={<HomePage/>}></Route>
-            <Route exact path ="/CreateAccount" element={<SignupPage/>}/>
+            <Route exact path = "/" element={<Account> <Status/> <Login/> </Account>}/>
+              <Route exact path="/HomePage" element={<Account> <Status/> <HomePage/> </Account>}></Route>
+            <Route exact path ="/CreateAccount" element={<Account> <Status/> <SignupPage/> </Account>}/>
             <Route exact path = "/GamePage" element={<GamePage/>}/>
             <Route exact path = "/GameLobby" element={<GameLobby/>}></Route>
+            <Route exact path = "/ForgotPassword"  element ={<Account> <ForgotPassword/> </Account>}/>
           </Routes>
         </Router>
 

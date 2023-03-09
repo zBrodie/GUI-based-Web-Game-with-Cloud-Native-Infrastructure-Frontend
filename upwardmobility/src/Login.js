@@ -16,7 +16,8 @@ import {
     useNavigate
 } from 'react-router-dom'
 //import userPool from "./UserPool";
-import {useState} from "react";
+import {useState, useContext} from "react";
+import {AccountContext} from "./Account.js"
 
 function Login() {
 
@@ -25,31 +26,18 @@ function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
+    const {authenticate} = useContext(AccountContext)
+
     const onSubmit = (event) =>{
         event.preventDefault()
 
-        const user = new CognitoUser({
-            Username: email,
-            Pool: UserPool
-        })
-
-        const authDetails = new AuthenticationDetails({
-            Username: email,
-            Password: password
-        })
-
-        user.authenticateUser(authDetails, {
-            onSuccess: (data) => {
-                console.log("onSuccess: ", data)
-                loadHomePage()
-            },
-            onFailure: (err) =>{
-                console.log("onFailure: ", err)
-            },
-            newPasswordRequired: (data) =>{
-                console.log("new password required: ", data)
-            }
-        })
+        authenticate(email, password)
+            .then(data => {
+                console.log("Logged in!", data)
+            })
+            .catch(err => {
+                console.log("Failed to Login", err)
+            })
     }
 
     const createAccountPage = () => {
@@ -58,6 +46,16 @@ function Login() {
 
     const loadHomePage = () =>{
         navigate("/HomePage")
+    }
+
+    const loadForgotPassword = () =>{
+        navigate("/ForgotPassword")
+    }
+
+    const user = UserPool.getCurrentUser()
+    if(user){
+        console.log("Hits")
+        loadHomePage()
     }
 
     return (
@@ -72,7 +70,7 @@ function Login() {
                         </rect>
                     </svg>
 
-                    <div id="Please_Log_In">
+                    <div  id="Please_Log_In">
                         <span>Please Log In:</span>
                     </div>
                     <form>
@@ -88,7 +86,7 @@ function Login() {
                     </button>
 
                     <div id="Forgot_Password">
-                        <a href="">Forgot Password?</a>
+                        <a onClick={loadForgotPassword} href="">Forgot Password?</a>
                     </div>
                     <img className="Upward_Mobility_big" id="Upward_Mobility_big" src="{upward}" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
 
