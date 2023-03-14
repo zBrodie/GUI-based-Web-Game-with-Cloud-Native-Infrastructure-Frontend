@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Common Pixel';
-    src:url("https://github.com/zBrodie/GUI-based-Web-Game-with-Cloud-Native-Infrastructure/blob/7a75b12c805edcd1736f551ad186e9f0786368a3/upwardmobility/src/undertale-deltarune-text-font-extended.ttf") format('truetype')
+    src:url("usethisfont.ttf") format('truetype')
 }
 
 /*
@@ -39,7 +39,7 @@ TODOS: Fix Font sizing not scalling down
     --web-enable-deep-linking: true;
 }
 #sayonara4now-cyberpunk-city-sc_k {
-    content:url("public/assets/sayonara4now-cyberpunk-city-sc.png");
+    content:url("sayonara4now-cyberpunk-city-sc.png");
     width: 100%;
     height: 100%;
     left: 305px;
@@ -58,7 +58,7 @@ TODOS: Fix Font sizing not scalling down
     font-style: normal;
     font-family: Common Pixel;
     font-weight: normal;
-    font-size: 2vw;
+    font-size: 1.5vw;
     line-height: 100px;
     stroke-linecap: butt;
     stroke-miterlimit: 4;
@@ -97,13 +97,13 @@ TODOS: Fix Font sizing not scalling down
     fill: rgba(47,49,54,1);
 }
 .sideMenu {
-    position: inherit;
+    position: absolute;
     overflow: visible;
     background-color:#2F3136;
     width: 16%;
     height: 100%;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
 }
 .nonsideMenu{
     position: inherit;
@@ -113,12 +113,12 @@ TODOS: Fix Font sizing not scalling down
     left: 16%
 }
 #unknown {
-    content:url("public/assets/unknown@2x.png");
+    content:url("unknown@2x.png");
     position: fixed;
-    width: 5.282784%;
-    height: 10.14751%;
-    left: 5.336544%;
-    top: 7.787293%;
+    width: 7.282784%;
+    height: 14.14751%;
+    left: 4.336544%;
+    top: 5.787293%;
     overflow: visible;
 }
 #createGameButton {
@@ -133,7 +133,7 @@ TODOS: Fix Font sizing not scalling down
     font-style: normal;
     font-weight: normal;
     font-family: Common Pixel;
-    font-size: 1.52vw;
+    font-size: 1.5vw;
     height: 100px;
     stroke-miterlimit: 4;
     shape-rendering: auto;
@@ -151,8 +151,8 @@ TODOS: Fix Font sizing not scalling down
     top: 84%;
 }
 #accountName {
-    left: 1.240211%;
-    top: 18.488398%;
+    left: 1.740211%;
+    top: 20.488398%;
     position: fixed;
     overflow: visible;
     width: 252px;
@@ -195,7 +195,8 @@ TODOS: Fix Font sizing not scalling down
     width: 13.159105%;
     height: 6.850829%;
     left: 1.25%;
-    top: 26.25%;
+    top: 31.027624%;
+    justify-content: center;
 }
 #achievementsButton{
     fill: transparent;
@@ -229,7 +230,7 @@ TODOS: Fix Font sizing not scalling down
     width: 13.159105%;
     height: 6.850829%;
     left: 1.25%;
-    top: 41.561326%;
+    top: 46.334807%;
 }
 #Stats {
     left: 76px;
@@ -290,7 +291,7 @@ TODOS: Fix Font sizing not scalling down
     width: 13.159105%;
     height: 6.850829%;
     left: 1.25%;
-    top: 56.79558%;
+    top: 61.569061%;
     transform: matrix(1,0,0,1,0,0);
 }
 #Settings_ {
@@ -307,12 +308,12 @@ TODOS: Fix Font sizing not scalling down
     color: rgba(255,255,255,1);
 }
 #Upward_Mobility_big {
-    content:url("public/assets/Upward_Mobility_big.png");
+    content: url("Upward_Mobility_big.png");
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
     position: fixed;
     width: 53.697949%;
     height: 52.044199%;
-    left: 28%;
-    top: 17%;
+    left: 32.628962%;
+    top: 20.331492%;
     overflow: visible;
 }

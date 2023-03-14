@@ -3,8 +3,20 @@
 
 @font-face {
     font-family: 'Common Pixel';
-    src:url("undertale-deltarune-text-font-extended.ttf") format('truetype')
+    src:url("usethisfont.ttf") format('truetype')
 }
+
+#EnterEmailLable{
+    font-size: 1.5vw;
+}
+
+input::placeholder{
+    font-family: "Common Pixel";
+    font-color: white;
+    font-size: large;
+    text-align: center;
+}
+
 a:visited {
     color: white;
     background-color: transparent;
@@ -49,10 +61,10 @@ a:visited {
     overflow: visible;
     content:url("sayonara4now-cyberpunk-city-sc.png");
 }
-#Rectangle_30 {
+#LSideBarBackground {
     fill: rgba(47,49,54,1);
 }
-.Rectangle_30 {
+.LSideBarBackground {
     position: absolute;
     overflow: visible;
     width: 18.955873%;
@@ -61,60 +73,10 @@ a:visited {
     top: 0px;
     background-color: #2F3136;
 }
-#Rectangle_34 {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_34 {
-    position: absolute;
-    overflow: visible;
-    width: 1px;
-    height: 1px;
-    left: 0px;
-    top: 0px;
-}
-#Rectangle_35 {
-    fill: transparent;
-    stroke: rgba(0,0,0,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_35 {
-    position: absolute;
-    overflow: visible;
-    width: 1608px;
-    height: 905px;
-    left: 1px;
-    top: 0px;
-}
-#Rectangle_37 {
-    fill: transparent;
-    stroke: rgba(0,0,0,1);
-    stroke-width: 4px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Rectangle_37 {
-    position: absolute;
-    overflow: visible;
-    width: 1609px;
-    height: 905px;
-    left: 0px;
-    top: 0px;
-}
+
 #Please_Log_In {
     left: 1.243008%;
-    top: 28.176796%;
+    top: 25.176796%;
     position: absolute;
     overflow: visible;
     width: 16.718459%;
@@ -126,7 +88,7 @@ a:visited {
     font-size: 24px;
     color: rgba(255,255,255,1);
 }
-#Username_Input_Field {
+#Username_Input_Field_Login {
     fill: transparent;
     stroke: rgba(255,255,255,1);
     stroke-width: 4px;
@@ -146,7 +108,7 @@ a:visited {
     line-height: 75px;
     -webkit-text-fill-color: white;
 }
-.Username_Input_Field {
+.Username_Input_Field_Login{
     position: absolute;
     overflow: visible;
     width: 12.969434%;
@@ -154,17 +116,46 @@ a:visited {
     left: 2.983219%;
     top: 37.237569%;
     background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
     border: 3px solid white;
     white-space: nowrap;
     text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-family: "Common Pixel";
+    font-color: white;
+    font-size: 1.5vw;
     line-height: 75px;
     -webkit-text-fill-color: white;
 }
+
+.sendCodeButton{
+    position: absolute;
+    background-color:#2F3136;
+    border: 3px solid white;
+    width: 8.969434%;
+    height: 5.856354%;
+    left: 4.783219%;
+    top: 45.237569%;
+    font-family: "Common Pixel";
+    font-color: white;
+    font-size: 1vw;
+    -webkit-text-fill-color: white;
+}
+
+.confirmNewPasword{
+    position: absolute;
+    background-color:#2F3136;
+    border: 3px solid white;
+    width: 8.969434%;
+    height: 5.856354%;
+    left: 4.783219%;
+    top: 75.237569%;
+    font-family: "Common Pixel";
+    font-color: white;
+    font-size: 1vw;
+    -webkit-text-fill-color: white;
+}
+
 #Username {
     left: 58px;
     top: 347px;
@@ -179,7 +170,7 @@ a:visited {
     font-size: 32px;
     color: rgba(255,255,255,1);
 }
-#Password_Input_Field {
+#Password_Input_Field_Login{
     fill: transparent;
     stroke: rgba(255,255,255,1);
     stroke-width: 4px;
@@ -200,24 +191,45 @@ a:visited {
     -webkit-text-fill-color: white;
 }
 .Password_Input_Field {
-    position: absolute;
+    position: fixed;
     overflow: visible;
     width: 12.989434%;
     height: 5.856354%;
     left: 2.983219%;
     top: 50.055249%;
     background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
     border: 3px solid white;
     white-space: nowrap;
+    font-color: white;
     text-align: center;
     font-style: normal;
     font-weight: normal;
+    font-family: "Common Pixel";
     font-size: 30px;
     line-height: 75px;
     -webkit-text-fill-color: white;
 }
+
+.forgotConfirmPassField{
+    position: fixed;
+    overflow: visible;
+    width: 12.989434%;
+    height: 5.856354%;
+    left: 2.983219%;
+    top: 63.055249%;
+    background-color:#2F3136;
+    border: 3px solid white;
+    white-space: nowrap;
+    font-color: white;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Common Pixel";
+    font-size: 30px;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+}
+
 #Password {
     left: 76px;
     top: 463px;
@@ -235,7 +247,7 @@ a:visited {
 #Dont_have_an_account__Click_He {
     left: 3.169671%;
     top: 84.309392%;
-    position: absolute;
+    position: fixed;
     overflow: visible;
     width: 11.995028%;
     height: 11.933702%;
@@ -245,6 +257,8 @@ a:visited {
     font-weight: normal;
     font-size: 24px;
     color: rgba(255,255,255,1);
+    background: none;
+    cursor: pointer;
 }
 #Forgot_Password {
     left: 3.169671%;
@@ -259,8 +273,9 @@ a:visited {
     font-weight: normal;
     font-size: 24px;
     color: rgba(255,255,255,1);
+    cursor: pointer;
 }
-#Upward_Mobility_big {
+#Upward_Mobility_big_Login_Page {
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
     position: absolute;
     width: 18.147918%;
@@ -280,7 +295,7 @@ a:visited {
     overflow: visible;
     content:url("Upward_Mobility_big_z.png");
 }
-#Login_Button {
+#Login_Button_Submit{
     fill: transparent;
     stroke: rgba(255,255,255,1);
     stroke-width: 4px;
@@ -297,10 +312,10 @@ a:visited {
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 75px;
     -webkit-text-fill-color: white;
 }
-.Login_Button {
+
+.Login_Button_Submit{
     position: absolute;
     overflow: visible;
     width: 12.969434%;
@@ -308,16 +323,15 @@ a:visited {
     left: 2.983219%;
     top: 62.872928%;
     background-color:#2F3136;
-    position: fixed;
-    overflow: visible;
     border: 3px solid white;
     white-space: nowrap;
     text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 75px;
+    font-size: large;
+    font-family: "Common Pixel";
     -webkit-text-fill-color: white;
+    cursor: pointer;
 }
 #Login {
     left: 4.723431%;
@@ -333,3 +347,4 @@ a:visited {
     font-size: 32px;
     color: rgba(255,255,255,1);
 }
+

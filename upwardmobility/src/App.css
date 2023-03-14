@@ -1,6 +1,15 @@
+/*
+Searching through the css file: name of the section to find and menu
+Control + F and enter below to find a section
+  Settings Menu
+  Stats Menu
+  Achievements Menu
+  Join Menu
+*/
+
 @font-face {
   font-family: 'Common Pixel';
-  src:url("undertale-deltarune-text-font-extended.ttf") format('truetype')
+  src:url("usethisfont.ttf") format('truetype')
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -13,6 +22,14 @@
 TODOS: Fix Font sizing not scalling down
         Fix Images looking weird when downsizing screen
 */
+
+input::placeholder{
+  font-family: "Common Pixel";
+  font-color: white;
+  font-size: large;
+}
+
+
 .mediaViewInfo {
   --web-view-name: HomePage;
   --web-view-id: HomePage;
@@ -24,12 +41,7 @@ TODOS: Fix Font sizing not scalling down
 :root {
   --web-view-ids: HomePage;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: none;
-}
+
 #HomePage {
   position: fixed;
   width: 100%;
@@ -45,93 +57,48 @@ TODOS: Fix Font sizing not scalling down
 }
 #sayonara4now-cyberpunk-city-sc_k {
   content:url("sayonara4now-cyberpunk-city-sc.png");
+  position: fixed;
   width: 100%;
   height: 100%;
-  left: 305px;
-  top: 0px;
+  left: 16%;
   overflow: visible;
 }
-#joinGameButton {
-  fill: rgba(245,245,245,0.741);
-  stroke: rgba(0,0,0,1);
-  stroke-width: 3px;
-  background-color: #F5F5F5;
-  opacity: 74%;
-  stroke-linejoin: miter;
-  white-space: nowrap;
-  text-align: center;
-  font-style: normal;
-  font-family: Common Pixel;
-  font-weight: normal;
-  font-size: 1.5vw;
-  line-height: 100px;
-  stroke-linecap: butt;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
-}
-.joinGameButton {
-  position: fixed;
-  overflow: visible;
-  background-color: #F5F5F5;
-  opacity: 74%;
-  text-align: center;
-  -webkit-text-fill-color: black;
-  width: 12.159105%;
-  height: 8.850829%;
-  left: 39%;
-  top: 84%;
-}
-#Ellipse_1 {
-  fill: rgba(255,255,255,1);
-  stroke: rgba(112,112,112,1);
-  stroke-width: 1px;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
-}
-.Ellipse_1 {
-  position: fixed;
-  overflow: visible;
-  width: 84px;
-  height: 94px;
-  left: 5.836544%;
-  top: 10.287293%;
-}
+
 #sideMenu {
   fill: rgba(47,49,54,1);
 }
-.sideMenu {
-  position: absolute;
+.sideMenuHome{
+  position: fixed;
   overflow: visible;
   background-color:#2F3136;
-  width: 16%;
+  width: 20%;
   height: 100%;
   left: 0;
   top: 0;
 }
-.nonsideMenu{
-  position: inherit;
+.nonsideMenuHome{
+  position: absolute;
   overflow: visible;
-  width: 84%;
+  width: 100%;
   height: 100%;
-  left: 16%
 }
 #unknown {
   content:url("unknown@2x.png");
   position: fixed;
   width: 7.282784%;
   height: 14.14751%;
-  left: 4.336544%;
+  left: 6.336544%;
   top: 5.787293%;
   overflow: visible;
 }
-#createGameButton {
+#createGameButtonHome {
   fill: rgba(245,245,245,0.741);
   stroke: rgba(0,0,0,1);
   stroke-width: 3px;
   stroke-linejoin: miter;
   stroke-linecap: butt;
+  width: 12.159105%;
+  height: 8.850829%;
   opacity: 74%;
   white-space: nowrap;
   text-align: center;
@@ -139,24 +106,24 @@ TODOS: Fix Font sizing not scalling down
   font-weight: normal;
   font-family: Common Pixel;
   font-size: 1.5vw;
-  height: 100px;
   stroke-miterlimit: 4;
   shape-rendering: auto;
 }
-.createGameButton {
+.createGameButtonHome {
   position: fixed;
+  fill: transparent;
   overflow: visible;
   width: 12.159105%;
   height: 8.850829%;
-  background-color: #F5F5F5;
   opacity: 74%;
   text-align: center;
   -webkit-text-fill-color: black;
   left: 68%;
   top: 84%;
+  cursor: pointer;
 }
 #accountName {
-  left: 1.740211%;
+  left: 3.240211%;
   top: 20.488398%;
   position: fixed;
   overflow: visible;
@@ -166,77 +133,220 @@ TODOS: Fix Font sizing not scalling down
   font-style: normal;
   font-family: Common Pixel;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 32px;
   color: rgba(255,255,255,1);
 }
-#statsButton {
-  fill: transparent;
-  stroke: rgba(255,255,255,1);
-  stroke-width: 3px;
-  background-color:#2F3136;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  font-family: Common Pixel;
-  font-size: 30px;
-  line-height: 15px;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
-}
-.statsButton {
-  background-color:#2F3136;
-  position: fixed;
-  overflow: visible;
-  border: 3px solid white;
-  white-space: nowrap;
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 75px;
-  -webkit-text-fill-color: white;
-  width: 13.159105%;
-  height: 6.850829%;
-  left: 1.25%;
-  top: 31.027624%;
-  justify-content: center;
-}
-#achievementsButton{
-  fill: transparent;
-  stroke: rgba(255,255,255,1);
-  stroke-width: 3px;
-  background-color:#2F3136;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  text-align: center;
-  font-family: Common Pixel;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 15px;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
-}
-.achievementsButton {
-  background-color:#2F3136;
-  position: fixed;
-  overflow: visible;
-  border: 3px solid white;
-  white-space: nowrap;
-  text-align: center;
 
+#Upward_Mobility_big_Home_Page {
+  position: absolute;
+  content: url("Upward_Mobility_big.png");
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
+  width: 53.697949%;
+  height: 52.044199%;
+  left: 32.628962%;
+  top: 20.331492%;
+  overflow: visible;
+}
+.Upward_Mobility_big_Home_Page{
+  position: absolute;
+  content: url("Upward_Mobility_big.png");
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
+  width: 53.697949%;
+  height: 52.044199%;
+  top: 20.331492%;
+  overflow: visible;
+}
+
+.nothingText{
+  overflow-wrap: break-word;
+  white-space: initial;
+  position: fixed;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
-  line-height: 75px;
+  font-size: .75vw;
+  font-family: Common Pixel;
   -webkit-text-fill-color: white;
-  width: 13.159105%;
-  height: 6.850829%;
   left: 1.25%;
   top: 46.334807%;
+  color: white;
 }
+
+
+/*Join Menu*/
+#joinGameButtonHome{
+  fill: rgba(245,245,245,0.741);
+  stroke: rgba(0,0,0,1);
+  stroke-width: 3px;
+  background-color: #F5F5F5;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  opacity: 74%;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-family: Common Pixel;
+  font-size: 1.5vw;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.joinGameButtonHome{
+  position: fixed;
+  fill: transparent;
+  overflow: visible;
+  opacity: 74%;
+  text-align: center;
+  -webkit-text-fill-color: black;
+  width: 12.159105%;
+  height: 8.850829%;
+  left: 39%;
+  top: 84%;
+  cursor: pointer;
+}
+
+#joinGameBackButton{
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+}
+.joinGameBackButton{
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+  -webkit-text-fill-color: white;
+  width: 10.159105%;
+  height: 6.850829%;
+  left: 4.75%;
+  top: 85.569061%;
+  cursor: pointer;
+}
+
+.gameIDTextBoxHome{
+  position: fixed;
+  width: 13.159105%;
+  height: 6.850829%;
+  left: 3.25%;
+  top: 46.334807%;
+  background-color:#2F3136;
+  font-weight: normal;
+  font-family: "Common Pixel";
+  font-size: 30px;
+  line-height: 75px;
+  -webkit-text-fill-color: white;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+}
+.gameIDJoinButton{
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+  -webkit-text-fill-color: white;
+  width: 10.159105%;
+  height: 6.850829%;
+  left: 4.75%;
+  top: 55.569061%;
+  cursor: pointer;
+}
+
+/*Settings Menu*/
+#settingsButtonHome {
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 3px;
+  background-color:#2F3136;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  text-align: center;
+  width: 13.159105%;
+  height: 6.850829%;
+  left: 3.25%;
+  top: 61.569061%;
+  font-family: Common Pixel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  stroke-miterlimit: 4;
+}
+.settingsButtonHome {
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  -webkit-text-fill-color: white;
+  width: 13.159105%;
+  height: 6.850829%;
+  left: 3.25%;
+  top: 61.569061%;
+  cursor: pointer;
+}
+
+#settingsBackButton{
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+}
+.settingsBackButton{
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+  -webkit-text-fill-color: white;
+  width: 10.159105%;
+  height: 6.850829%;
+  left: 4.75%;
+  top: 85.569061%;
+  cursor: pointer;
+}
+
+#signOutButton{
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+}
+.signOutButton{
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+  -webkit-text-fill-color: white;
+  width: 13.159105%;
+  height: 6.850829%;
+  left: 3%;
+  top: 50.569061%;
+  cursor: pointer;
+}
+
+
+/*Stats Menu*/
 #Stats {
   left: 76px;
   top: 253px;
@@ -251,20 +361,95 @@ TODOS: Fix Font sizing not scalling down
   font-size: 30px;
   color: rgba(255,255,255,1);
 }
-#Achievements {
-  left: 51px;
-  top: 391px;
-  position: absolute;
+
+#statsBackButton{
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+}
+.statsBackButton{
+  background-color:#2F3136;
+  position: fixed;
   overflow: visible;
-  width: 204px;
-  height: 32px;
+  border: 3px solid white;
+  white-space: nowrap;
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
-  color: rgba(255,255,255,1);
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+  -webkit-text-fill-color: white;
+  width: 10.159105%;
+  height: 6.850829%;
+  left: 4.75%;
+  top: 85.569061%;
+  cursor: pointer;
 }
-#settingsButton {
+
+#statsButtonHome{
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 3px;
+  background-color:#2F3136;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-family: Common Pixel;
+  font-size: 30px;
+  line-height: 15px;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.statsButtonHome {
+  background-color:#2F3136;
+  position: fixed;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  line-height: 75px;
+  -webkit-text-fill-color: white;
+  width: 13.159105%;
+  height: 6.850829%;
+  left: 3.25%;
+  top: 31.027624%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.statsText1{
+  position: absolute;
+  font-family: "Common Pixel";
+  -webkit-text-fill-color: white;
+  font-size: 1.5vw;
+  left: 3.25%;
+  top: 31.027624%;
+}
+
+.statsText2{
+  position: absolute;
+  font-family: "Common Pixel";
+  -webkit-text-fill-color: white;
+  font-size: 1.5vw;
+  left: 3.25%;
+  top: 40.027624%;
+}
+.statsText3{
+  position: absolute;
+  font-family: "Common Pixel";
+  -webkit-text-fill-color: white;
+  font-size: 1.5vw;
+  left: 3.25%;
+  top: 53.027624%;
+}
+
+
+/*Achievements Menu*/
+#achievementsButtonHome{
   fill: transparent;
   stroke: rgba(255,255,255,1);
   stroke-width: 3px;
@@ -275,12 +460,12 @@ TODOS: Fix Font sizing not scalling down
   font-family: Common Pixel;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 1.5vw;
+  line-height: 15px;
   stroke-miterlimit: 4;
   shape-rendering: auto;
 }
-.settingsButton {
+.achievementsButtonHome{
   background-color:#2F3136;
   position: fixed;
   overflow: visible;
@@ -295,30 +480,44 @@ TODOS: Fix Font sizing not scalling down
   -webkit-text-fill-color: white;
   width: 13.159105%;
   height: 6.850829%;
-  left: 1.25%;
-  top: 61.569061%;
-  transform: matrix(1,0,0,1,0,0);
+  left: 3.25%;
+  top: 46.334807%;
+  cursor: pointer;
 }
-#Settings_ {
-  left: 64px;
-  top: 525px;
+
+#achievementsBackButton{
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+}
+.achievementsBackButton{
+  background-color:#2F3136;
   position: fixed;
-  overflow: hidden;
-  width: 179px;
-  height: 40px;
+  overflow: visible;
+  border: 3px solid white;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  font-family: Common Pixel;
+  -webkit-text-fill-color: white;
+  width: 10.159105%;
+  height: 6.850829%;
+  left: 4.75%;
+  top: 85.569061%;
+  cursor: pointer;
+}
+
+#Achievements {
+  left: 51px;
+  top: 391px;
+  position: absolute;
+  overflow: visible;
+  width: 204px;
+  height: 32px;
   text-align: center;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   color: rgba(255,255,255,1);
-}
-#Upward_Mobility_big {
-  content: url("Upward_Mobility_big.png");
-  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
-  position: fixed;
-  width: 53.697949%;
-  height: 52.044199%;
-  left: 32.628962%;
-  top: 20.331492%;
-  overflow: visible;
 }

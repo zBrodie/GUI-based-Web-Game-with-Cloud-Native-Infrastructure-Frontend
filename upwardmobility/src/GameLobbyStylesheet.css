@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Common Pixel';
+    src:url("usethisfont.ttf") format('truetype')
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+    font-size: 2vw;
+    font-family: "Common Pixel";
+    text-align: left;
+}
+
+button.GameLobby{
+    height: 8.839779%;
+    width: 75.475451%;
+    margin-top: 40%;
+    margin-left: -50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    background-color: #2F3136 ;
+    font-family: "Common Pixel";
+    color: white;
+    cursor:pointer;
+    position: absolute;
+    font-size: 2vw;
+}
+
+p{
+    font-family: "Common Pixel";
+    font-size: 32pt;
+    color: white;
+    margin-left: 10px ;
+}
+
+#MaxPlayerText{
+    margin-top: 175px;
+}
+
+input.GameLobby{
+    width: 50.638906%;
+    height: 7.071823%;
+    margin-left: 5.209945%;
+    background-color: #2F3136;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    font-weight: normal;
+    font-family: "Common Pixel";
+    font-size: 2vw;
+    line-height: 75px;
+    -webkit-text-fill-color: white;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#createGameBackButton{
+    font-size: 1.5vw;
+    font-family: Common Pixel;
+
+}
+
+.createGameBackButton{
+    background-color:#2F3136;
+    position: fixed;
+    overflow: visible;
+    border: 3px solid white;
+    white-space: nowrap;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5vw;
+    font-family: Common Pixel;
+    -webkit-text-fill-color: white;
+    width: 10.159105%;
+    height: 6.850829%;
+    left: 2.75%;
+    top: 85.569061%;
+    cursor: pointer;
+}
+
+.mediaViewInfo {
+    --web-view-name: Web 1920 – 5;
+    --web-view-id: Web_1920__5;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: fit;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+#Web_1920__5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,1);
+    overflow: hidden;
+    --web-view-name: Web 1920 – 5;
+    --web-view-id: Web_1920__5;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: fit;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+#sideMenuLobby {
+    fill: rgba(47,49,54,1);
+}
+.sideMenuLobby {
+    position: fixed;
+    overflow: visible;
+    background-color:#2F3136;
+    width: 16%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+#Upward_Mobility_big_Lobby {
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
+    position: absolute;
+    overflow: visible;
+    width: 16.147918%;
+    height: 17.569061%;
+    content: url("./Upward_Mobility_big.png");
+    top: 2.85635359%;
+    overflow: visible;
+}
+
+#nonsideMenuLobby {
+    fill: rgba(54,57,63,1);
+}
+.nonsideMenuLobby{
+    position: inherit;
+    overflow: visible;
+    width: 84%;
+    height: 100%;
+    background-color: #36393F;
+    left: 16%
+}
+
+
+/*Player List*/
+#Player_1 {
+    stroke: #707070;
+    stroke-width: 5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Player_1 {
+    position: absolute;
+    overflow: visible;
+    background-color: #36393F;
+    width: 31.173275%;
+    height: 49.944751%;
+    border-style: solid;
+    border-color: #707070;
+    left: 16%;
+    top: 1px;
+}
+#Player_2 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Player_2 {
+    position: absolute;
+    overflow: visible;
+    background-color: #36393F;
+    width: 31.173275%;
+    height: 49.944751%;
+    left: 42.973275%;
+    border-style: solid;
+    border-color: #707070;
+    top: 1px;
+}
+#Player_3 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Player_3 {
+    position: absolute;
+    overflow: visible;
+    width: 31.173275%;
+    height: 49.944751%;
+    left: 68.648229%;
+    background-color: #36393F;
+    border-style: solid;
+    border-color: #707070;
+    top: 1px;
+}
+#Player_4 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Player_4 {
+    position: absolute;
+    overflow: hidden;
+    width: 31.173275%;
+    height: 49.944751%;
+    left: 16%;
+    background-color: #36393F;
+    border-style: solid;
+    border-color: #707070;
+    top: 49.944751%;
+}
+#Player_5 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Player_5 {
+    position: absolute;
+    overflow: hidden;
+    width: 31.173275%;
+    height: 49.944751%;
+    left: 42.973275%;
+    background-color: #36393F;
+    border-style: solid;
+    border-color: #707070;
+    top: 49.944751%;
+}
+#Player_6 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Player_6 {
+    position: absolute;
+    overflow: hidden;
+    width: 31.173275%;
+    height: 49.944751%;
+    left: 68.648229%;
+    top: 49.944751%;
+    background-color: #36393F;
+    border-style: solid;
+    border-color: #707070;
+}
