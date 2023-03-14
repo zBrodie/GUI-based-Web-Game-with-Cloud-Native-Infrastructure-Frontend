@@ -3,6 +3,11 @@
   src:url("undertale-deltarune-text-font-extended.ttf") format('truetype')
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+}
+
 /*
 
 TODOS: Fix Font sizing not scalling down
