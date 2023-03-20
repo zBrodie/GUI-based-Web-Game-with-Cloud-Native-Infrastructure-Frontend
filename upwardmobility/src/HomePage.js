@@ -4,6 +4,7 @@ import background from './sayonara4now-cyberpunk-city-sc.png';
 import upward from './Upward_Mobility_big.png'
 import logo from './Upward_Mobility_big_x.png'
 import {useContext, useRef, useState} from "react";
+import {AuthenticationDetails, CognitoUser} from "amazon-cognito-identity-js";
 
 
 import {AccountContext} from "./Account.js"
@@ -21,6 +22,9 @@ import {
 import Login from "./Login";
 
 function HomePage(){
+   const currUser = UserPool.getCurrentUser().getUsername()
+
+
     const navigate = useNavigate();
 
     const [status, setStatus] = useState(false)
@@ -37,6 +41,7 @@ function HomePage(){
     const renderLoginPage = ()=>{
         navigate("/")
     }
+
 
 
     const [clickedJoin, setClickedJoin] = useState(true);
@@ -164,7 +169,7 @@ function HomePage(){
                 <img id="unknown" src={unknown} srcSet="unknown.png 1x, unknown@2x.png 2x"/>
 
                 <div id="accountName">
-                    <span>THELEGNED27</span>
+                    <span id ="accountName" dangerouslySetInnerHTML={{ __html: currUser}}  ></span>
                 </div>
 
                 {/*Everything for join game tab*/}

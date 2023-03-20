@@ -123,7 +123,7 @@ input::placeholder{
   cursor: pointer;
 }
 #accountName {
-  left: 3.240211%;
+  left: 2.240211%;
   top: 20.488398%;
   position: fixed;
   overflow: visible;
@@ -133,7 +133,7 @@ input::placeholder{
   font-style: normal;
   font-family: Common Pixel;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 1.35vw;
   color: rgba(255,255,255,1);
 }
 

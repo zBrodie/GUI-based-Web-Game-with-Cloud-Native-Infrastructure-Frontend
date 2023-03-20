@@ -10,6 +10,7 @@ import UserPool from "./UserPool";
 import {CognitoUserAttribute} from "amazon-cognito-identity-js";
 
 
+
 function SignupPage() {
 
     const [username, setUserName] = useState("")
@@ -22,7 +23,6 @@ function SignupPage() {
     const loginPage = () => {
         navigate("/")
     }
-
 
 
 
@@ -43,22 +43,24 @@ function SignupPage() {
         var passUserName = new CognitoUserAttribute(dataUserName)
         var passUserEmail = new CognitoUserAttribute(dataUserEmail)
         attributeList.push(passUserName)
-
-        console.log(username)
-        if(password.toString() == confirmPassword.toString()){
-            UserPool.signUp(email, password, [dataUserName, dataUserEmail], null, (err, data) => {
-                if(err){
-                    console.error(err);
-                }
-                console.log(data);
-            })
-            alert("PLEASE MAKE SURE TO VERIFY YOUR EMAIL!")
-            loadHomePage()
+        if(document.getElementById("Rectangle_40").value.length != 0)
+        {
+            console.log(username)
+            if(password.toString() == confirmPassword.toString()){
+                UserPool.signUp(email, password, [dataUserName, dataUserEmail], null, (err, data) => {
+                    if(err){
+                        alert("Passwords must be 8 chars long")
+                        console.log(err)
+                    }
+                    console.log(data);
+                })
+                alert("PLEASE MAKE SURE TO VERIFY YOUR EMAIL!")
+                loadHomePage()
+            }
+            else{
+                alert("PASSWORDS DO NOT MATCH!")
+            }
         }
-        else{
-            alert("PASSWORDS DO NOT MATCH!")
-        }
-
     }
 
     const loadHomePage = () =>{
@@ -97,7 +99,7 @@ function SignupPage() {
                     </form>
 
                     <form>
-                        <input value = {password}  onChange={(event => setPassword(event.target.value))} id ="Password_Input_Field_Sign"  type = "password" id= "Rectangle_40"  placeholder={"PASSWORD"} className="Password_Input_Field_Sign">
+                        <input value = {password}  onChange={(event => setPassword(event.target.value))} id ="Password_Input_Field_Sign"  type = "password" id= "Rectangle_40"   placeholder={"PASSWORD"} className="Password_Input_Field_Sign">
                         </input>
                     </form>
 

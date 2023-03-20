@@ -161,7 +161,7 @@ TODOS: Fix Font sizing not scalling down
     font-style: normal;
     font-family: Common Pixel;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 1vw;
     color: rgba(255,255,255,1);
 }
 #statsButton {
