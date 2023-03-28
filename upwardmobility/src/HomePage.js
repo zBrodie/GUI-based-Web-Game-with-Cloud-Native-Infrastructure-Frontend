@@ -10,6 +10,8 @@ import {AuthenticationDetails, CognitoUser} from "amazon-cognito-identity-js";
 import {AccountContext} from "./Account.js"
 import Status from "./Status";
 
+import {useImg} from "./SignupPage";
+
 import UserPool from "./UserPool";
 
 import {
@@ -23,6 +25,8 @@ import Login from "./Login";
 
 function HomePage(){
    const currUser = UserPool.getCurrentUser().getUsername()
+
+    const cognitoUser = UserPool.getCurrentUser()
 
 
     const navigate = useNavigate();
@@ -166,7 +170,7 @@ function HomePage(){
                 <rect className={"sideMenuHome"} id="sideMenuHome">
                 </rect>
 
-                <img id="unknown" src={unknown} srcSet="unknown.png 1x, unknown@2x.png 2x"/>
+                <img id="unknown" src={unknown}/>
 
                 <div id="accountName">
                     <span id ="accountName" dangerouslySetInnerHTML={{ __html: currUser}}  ></span>

@@ -83,7 +83,6 @@ input::placeholder{
   height: 100%;
 }
 #unknown {
-  content:url("unknown@2x.png");
   position: fixed;
   width: 7.282784%;
   height: 14.14751%;

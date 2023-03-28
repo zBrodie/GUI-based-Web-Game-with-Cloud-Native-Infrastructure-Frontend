@@ -14,24 +14,43 @@ const AccountContext = createContext();
 
 const Account = (props) => {
 
-    const getSession = async () =>{
-        return await new Promise((resolve,reject) =>{
-            const user = UserPool.getCurrentUser()
-            if (user){
-                user.getSession((err, session) =>{
-                    if(err){
-                        reject()
+    const getSession = async () =>
+        await new Promise((resolve, reject) => {
+            const user = UserPool.getCurrentUser();
+            if (user) {
+                user.getSession(async (err, session) => {
+                    if (err) {
+                        reject();
+                    } else {
+                        const attributes = await new Promise((resolve, reject) => {
+                            user.getUserAttributes((err, attributes) => {
+                                if (err) {
+                                    reject(err);
+                                } else {
+                                    const results = {};
+
+                                    for (let attribute of attributes) {
+                                        const { Name, Value } = attribute;
+                                        results[Name] = Value;
+                                    }
+
+                                    resolve(results);
+                                }
+                            });
+                        });
+
+                        resolve({
+                            user,
+                            ...session,
+                            ...attributes
+                        });
                     }
-                    else{
-                        resolve(session)
-                    }
-                })
+                });
+            } else {
+                reject();
             }
-            else{
-                reject()
-            }
-        })
-    }
+        });
+
 
     const navigate = useNavigate();
     const loadHomePage = () =>{
@@ -46,9 +65,6 @@ const Account = (props) => {
     }
 
     const authenticate = async (Username, Password) => {
-
-
-
         return await new Promise((resolve, reject) => {
             const user = new CognitoUser({
                 Username: Username,
