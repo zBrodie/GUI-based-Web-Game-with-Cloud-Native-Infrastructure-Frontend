@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e59153af.css",
-    "main.js": "/static/js/main.66071d9a.js",
+    "main.css": "/static/css/main.092cc8b4.css",
+    "main.js": "/static/js/main.25b44607.js",
     "static/js/787.8ddb8251.chunk.js": "/static/js/787.8ddb8251.chunk.js",
     "static/media/SuperMarioGalaxyWindGarden.mp3": "/static/media/SuperMarioGalaxyWindGarden.9e558ab263ccc501db05.mp3",
     "static/media/sayonara4now-cyberpunk-city-sc.png": "/static/media/sayonara4now-cyberpunk-city-sc.10c64f3fccf0d966bc66.png",
@@ -13,12 +13,12 @@
     "static/media/Upward_Mobility_big.png": "/static/media/Upward_Mobility_big.e9c5cdbe82f0465095e1.png",
     "static/media/PlayerListBackground.png": "/static/media/PlayerListBackground.3c8fddaf0be9d82e1c31.png",
     "index.html": "/index.html",
-    "main.e59153af.css.map": "/static/css/main.e59153af.css.map",
-    "main.66071d9a.js.map": "/static/js/main.66071d9a.js.map",
+    "main.092cc8b4.css.map": "/static/css/main.092cc8b4.css.map",
+    "main.25b44607.js.map": "/static/js/main.25b44607.js.map",
     "787.8ddb8251.chunk.js.map": "/static/js/787.8ddb8251.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e59153af.css",
-    "static/js/main.66071d9a.js"
+    "static/css/main.092cc8b4.css",
+    "static/js/main.25b44607.js"
   ]
 }
