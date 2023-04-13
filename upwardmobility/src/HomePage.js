@@ -42,6 +42,10 @@ function HomePage(){
         navigate("/")
     }
 
+    const renderLobbySelect = () =>{
+        navigate("/LobbySelect")
+    }
+
 
 
     const [clickedJoin, setClickedJoin] = useState(true);
@@ -143,7 +147,7 @@ function HomePage(){
                 <img id="sayonara4now-cyberpunk-city-sc" src={background} srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
                 <div className={clickedJoin ? "joinGameButtonHome" : null} >
-                    <button  ref = {joinGame}  className={clickedJoin ? "joinGameButtonHome" : null} onClick={setGameIDBox} type="submit" id="joinGameButtonHome" rx="0" ry="0" x="0" y="0">JOIN GAME
+                    <button  ref = {joinGame}  className={clickedJoin ? "joinGameButtonHome" : null} onClick={renderLobbySelect} type="submit" id="joinGameButtonHome" rx="0" ry="0" x="0" y="0">JOIN GAME
                     </button>
                 </div>
 
