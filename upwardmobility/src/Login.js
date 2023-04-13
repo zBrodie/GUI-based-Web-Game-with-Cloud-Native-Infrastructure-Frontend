@@ -64,7 +64,6 @@ function Login() {
             <div id="Web_1920__2">
                 <form onSubmit={onSubmit}>
                     <img id="sayonara4now-cyberpunk-city-scLogin"/>
-
                     <svg className="LSideBarBackground">
 
                     </svg>

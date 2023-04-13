@@ -54,28 +54,22 @@ a:visited {
 }
 #sayonara4now-cyberpunk-city-scLogin {
     position: absolute;
-    width: 81%;
+    width: 3912px;
     height: 100%;
-    left: 18.955873%;
-    top: 0;
     overflow: visible;
     margin: 0;
     padding: 0;
-    background: url('./sayonara4now-cyberpunk-city-sc.png');
-    background-size: cover;
-    animation: slide 2s linear infinite;
+    background: url('./sayonara4now-cyberpunk-city-sc.png') repeat-x;
+    animation: slide 20s linear infinite;
 }
 
 
 @keyframes slide {
     0% {
-        transform: translateX(-50%);
-    }
-    50% {
-        transform: translateX(0%);
+        transform: translate3d(0, 0, 0);
     }
     100% {
-        transform: translateX(50%);
+        transform: translate3d(-1304px, 0, 0); /* The image width */
     }
 }
 
