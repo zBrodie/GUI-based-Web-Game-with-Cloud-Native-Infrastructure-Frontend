@@ -52,15 +52,33 @@ a:visited {
     --web-scale-on-resize: true;
     --web-enable-deep-linking: true;
 }
-#sayonara4now-cyberpunk-city-sc {
+#sayonara4now-cyberpunk-city-scLogin {
     position: absolute;
-    width: 81.044127%;
+    width: 81%;
     height: 100%;
     left: 18.955873%;
-    top: 0px;
+    top: 0;
     overflow: visible;
-    content:url("sayonara4now-cyberpunk-city-sc.png");
+    margin: 0;
+    padding: 0;
+    background: url('./sayonara4now-cyberpunk-city-sc.png');
+    background-size: cover;
+    animation: slide 2s linear infinite;
 }
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
 #LSideBarBackground {
     fill: rgba(47,49,54,1);
 }
@@ -75,6 +93,7 @@ a:visited {
 }
 
 #Please_Log_In {
+    text-shadow: 4px 6px 6px rgba(0,0,0,1);
     left: 1.243008%;
     top: 25.176796%;
     position: absolute;
@@ -109,6 +128,7 @@ a:visited {
     -webkit-text-fill-color: white;
 }
 .Username_Input_Field_Login{
+    animation: gradient 15s ease infinite;
     position: absolute;
     overflow: visible;
     width: 12.969434%;
@@ -245,6 +265,7 @@ a:visited {
     color: rgba(255,255,255,1);
 }
 #Dont_have_an_account__Click_He {
+    text-shadow: 4px 6px 6px rgba(0,0,0,1);
     left: 3.169671%;
     top: 84.309392%;
     position: fixed;
@@ -261,6 +282,7 @@ a:visited {
     cursor: pointer;
 }
 #Forgot_Password {
+    text-shadow: 4px 6px 6px rgba(0,0,0,.5);
     left: 3.169671%;
     top: 71.933702%;
     position: absolute;
@@ -316,6 +338,8 @@ a:visited {
 }
 
 .Login_Button_Submit{
+    box-shadow: 10px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
     position: absolute;
     overflow: visible;
     width: 12.969434%;

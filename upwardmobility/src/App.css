@@ -83,7 +83,6 @@ input::placeholder{
   height: 100%;
 }
 #unknown {
-  content:url("unknown@2x.png");
   position: fixed;
   width: 7.282784%;
   height: 14.14751%;
@@ -110,6 +109,8 @@ input::placeholder{
   shape-rendering: auto;
 }
 .createGameButtonHome {
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   position: fixed;
   fill: transparent;
   overflow: visible;
@@ -123,6 +124,7 @@ input::placeholder{
   cursor: pointer;
 }
 #accountName {
+  text-shadow: 4px 6px 6px rgba(0,0,0,1);
   left: 2.240211%;
   top: 20.488398%;
   position: fixed;
@@ -191,6 +193,8 @@ input::placeholder{
   shape-rendering: auto;
 }
 .joinGameButtonHome{
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   position: fixed;
   fill: transparent;
   overflow: visible;
@@ -209,6 +213,8 @@ input::placeholder{
   font-family: Common Pixel;
 }
 .joinGameBackButton{
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   background-color:#2F3136;
   position: fixed;
   overflow: visible;
@@ -244,6 +250,8 @@ input::placeholder{
   text-align: center;
 }
 .gameIDJoinButton{
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   background-color:#2F3136;
   position: fixed;
   overflow: visible;
@@ -282,6 +290,8 @@ input::placeholder{
   stroke-miterlimit: 4;
 }
 .settingsButtonHome {
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   background-color:#2F3136;
   position: fixed;
   overflow: visible;
@@ -304,6 +314,8 @@ input::placeholder{
   font-family: Common Pixel;
 }
 .settingsBackButton{
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   background-color:#2F3136;
   position: fixed;
   overflow: visible;
@@ -327,6 +339,8 @@ input::placeholder{
   font-family: Common Pixel;
 }
 .signOutButton{
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   background-color:#2F3136;
   position: fixed;
   overflow: visible;
@@ -367,6 +381,8 @@ input::placeholder{
   font-family: Common Pixel;
 }
 .statsBackButton{
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   background-color:#2F3136;
   position: fixed;
   overflow: visible;
@@ -386,6 +402,8 @@ input::placeholder{
 }
 
 #statsButtonHome{
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   fill: transparent;
   stroke: rgba(255,255,255,1);
   stroke-width: 3px;
@@ -402,6 +420,8 @@ input::placeholder{
   shape-rendering: auto;
 }
 .statsButtonHome {
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   background-color:#2F3136;
   position: fixed;
   overflow: visible;
@@ -466,6 +486,8 @@ input::placeholder{
   shape-rendering: auto;
 }
 .achievementsButtonHome{
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   background-color:#2F3136;
   position: fixed;
   overflow: visible;
@@ -490,6 +512,8 @@ input::placeholder{
   font-family: Common Pixel;
 }
 .achievementsBackButton{
+  box-shadow: 10px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
   background-color:#2F3136;
   position: fixed;
   overflow: visible;

@@ -12,6 +12,8 @@
 }
 
 button.GameLobby{
+    box-shadow: 10px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
     height: 8.839779%;
     width: 75.475451%;
     margin-top: 40%;
@@ -28,6 +30,7 @@ button.GameLobby{
 }
 
 p{
+    text-shadow: 4px 6px 6px rgba(0,0,0,.5);
     font-family: "Common Pixel";
     font-size: 32pt;
     color: white;
@@ -63,6 +66,8 @@ input.GameLobby{
 }
 
 .createGameBackButton{
+    box-shadow: 10px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
     background-color:#2F3136;
     position: fixed;
     overflow: visible;

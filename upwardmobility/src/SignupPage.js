@@ -9,9 +9,11 @@ import {useState} from "react";
 import UserPool from "./UserPool";
 import {CognitoUserAttribute} from "amazon-cognito-identity-js";
 
-
+var imgNum;
+export const useImg = imgNum;
 
 function SignupPage() {
+
 
     const [username, setUserName] = useState("")
     const [email, setEmail] = useState("")
@@ -23,6 +25,11 @@ function SignupPage() {
     const loginPage = () => {
         navigate("/")
     }
+
+    const accountImg = ['./imamazed.png','./imawesome.png', './imcool.png','./imcute.png', './imflat.png','img1.png', './impointing.png' , './improud.png', './imquiet.png',
+        './imsleeping.png', './imsmoking.png' ]
+
+    let imgNum = accountImg[Math.floor(Math.random() * accountImg.length)]
 
 
 
@@ -40,14 +47,20 @@ function SignupPage() {
             Value: email
         }
 
+        var dataUserPic = {
+            Name: 'picture',
+            Value: imgNum
+        }
+
         var passUserName = new CognitoUserAttribute(dataUserName)
         var passUserEmail = new CognitoUserAttribute(dataUserEmail)
+        var passPicture = new CognitoUserAttribute(dataUserPic)
         attributeList.push(passUserName)
         if(document.getElementById("Rectangle_40").value.length != 0)
         {
             console.log(username)
             if(password.toString() == confirmPassword.toString()){
-                UserPool.signUp(email, password, [dataUserName, dataUserEmail], null, (err, data) => {
+                UserPool.signUp(email, password, [dataUserName, dataUserEmail, passPicture], null, (err, data) => {
                     if(err){
                         alert("Passwords must be 8 chars long")
                         console.log(err)
@@ -81,8 +94,6 @@ function SignupPage() {
                          srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
                     <svg className="SPSideBarBackground">
-                        <rect id="SPSideBarBackground" rx="0" ry="0" x="0" y="0" width="305" height="905">
-                        </rect>
                     </svg>
 
                     <div className="Create_your_account__" id="Create_your_account__">
@@ -112,7 +123,7 @@ function SignupPage() {
                     <button id="Already_have_an_account___Clic" onClick={loginPage}>
                         Already have an account? <br/><br/>Click here
                     </button>
-                    <img  className="Upward_Mobility_big" src="{logo}" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
+                    <img onClick={loginPage} className="Upward_Mobility_big" src="{logo}" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
 
                     <img className="Upward_Mobility_big" id="Upward_Mobility_big_z" src="{logo}" srcSet="Upward_Mobility_big_z.png 1x, src/Templates/Upward_Mobility_big_z@2x.png 2x"/>
                 </form>
