@@ -69,6 +69,7 @@ input::placeholder{
 }
 
 #Create_your_account__ {
+    text-shadow: 4px 6px 6px rgba(0,0,0,1);
     left: 2.175264%;
     overflow: visible;
     top: 21.425414%;
@@ -286,6 +287,8 @@ input::placeholder{
     -webkit-text-fill-color: white;
 }
 .Sign_Button {
+    box-shadow: 10px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
     position: absolute;
     overflow: visible;
     width: 12.969434%;
@@ -319,6 +322,7 @@ input::placeholder{
     color: rgba(255,255,255,1);
 }
 #Already_have_an_account___Clic {
+    text-shadow: 4px 6px 6px rgba(0,0,0,1);
     left: 2.423866%;
     top: 85.889503%;
     position: absolute;
@@ -343,6 +347,7 @@ input::placeholder{
     top: 5.856354%;
     overflow: visible;
     content:url("Upward_Mobility_big.png");
+    cursor: pointer;
 }
 .Upward_Mobility_big{
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
@@ -353,6 +358,7 @@ input::placeholder{
     top: 3.856354%;
     overflow: visible;
     content:url("Upward_Mobility_big.png");
+    cursor: pointer;
 }
 #Upward_Mobility_big_z {
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 1));
@@ -363,4 +369,5 @@ input::placeholder{
     top: 17.900552%;
     overflow: visible;
     content:url("Upward_Mobility_big_z.png");
+    cursor: pointer;
 }

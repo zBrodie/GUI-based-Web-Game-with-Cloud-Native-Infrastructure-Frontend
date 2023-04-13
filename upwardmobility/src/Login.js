@@ -63,12 +63,10 @@ function Login() {
         <div className="App">
             <div id="Web_1920__2">
                 <form onSubmit={onSubmit}>
-                    <img id="sayonara4now-cyberpunk-city-sc" src="sayonara4now-cyberpunk-city-sc.png"
-                         srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
+                    <img id="sayonara4now-cyberpunk-city-scLogin"/>
 
                     <svg className="LSideBarBackground">
-                        <rect id="LSideBarBackground" rx="0" ry="0" x="0" y="0">
-                        </rect>
+
                     </svg>
 
                     <div  id="Please_Log_In">

@@ -94,8 +94,6 @@ function SignupPage() {
                          srcSet="sayonara4now-cyberpunk-city-sc.png 1x, sayonara4now-cyberpunk-city-sc@2x.png 2x"/>
 
                     <svg className="SPSideBarBackground">
-                        <rect id="SPSideBarBackground" rx="0" ry="0" x="0" y="0" width="305" height="905">
-                        </rect>
                     </svg>
 
                     <div className="Create_your_account__" id="Create_your_account__">
@@ -125,7 +123,7 @@ function SignupPage() {
                     <button id="Already_have_an_account___Clic" onClick={loginPage}>
                         Already have an account? <br/><br/>Click here
                     </button>
-                    <img  className="Upward_Mobility_big" src="{logo}" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
+                    <img onClick={loginPage} className="Upward_Mobility_big" src="{logo}" srcSet="Upward_Mobility_big.png 1x, Upward_Mobility_big@2x.png 2x"/>
 
                     <img className="Upward_Mobility_big" id="Upward_Mobility_big_z" src="{logo}" srcSet="Upward_Mobility_big_z.png 1x, src/Templates/Upward_Mobility_big_z@2x.png 2x"/>
                 </form>
