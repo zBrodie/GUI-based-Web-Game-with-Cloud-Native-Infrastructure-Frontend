@@ -18,6 +18,7 @@ import {
 } from 'react-router-dom'
 import GamePage from "./GamePage";
 import GameLobby from "./GameLobby";
+import LobbySelector from "./LobbySelector";
 import ReactAudioPlayer from "react-audio-player";
 import {Account} from "./Account";
 import Status from "./Status";
@@ -33,6 +34,7 @@ function App() {
               <Route exact path="/HomePage" element={<Account> <Status/> <HomePage/> </Account>}></Route>
             <Route exact path ="/CreateAccount" element={<Account> <Status/> <SignupPage/> </Account>}/>
             <Route exact path = "/GamePage" element={<GamePage/>}/>
+              <Route exact path = "/LobbySelect" element={<LobbySelector/>}/>
             <Route exact path = "/GameLobby" element={<GameLobby/>}></Route>
             <Route exact path = "/ForgotPassword"  element ={<Account> <ForgotPassword/> </Account>}/>
           </Routes>

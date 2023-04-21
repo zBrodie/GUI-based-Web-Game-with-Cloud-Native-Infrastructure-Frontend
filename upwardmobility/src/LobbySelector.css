@@ -1,0 +1,25 @@
+.LobbySelectorMain{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:#2F3136;
+}
+
+.LobbyList{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    border: 5px solid #707070;
+}
+
+.backLobbyButton{
+    position: absolute;
+    top: 92%;
+    background-color: #2F3136;
+    border: 5px solid white;
+    -webkit-text-fill-color: white;
+    width: 10%;
+    height: 5%;
+    font-family: "Common Pixel";
+
+}
