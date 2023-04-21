@@ -302,7 +302,6 @@ input::placeholder{
     font-style: normal;
     font-weight: normal;
     font-size: large;
-    line-height: 75px;
     font-family: "Common Pixel";
     -webkit-text-fill-color: white;
     cursor: pointer;
